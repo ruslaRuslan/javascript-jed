@@ -108,25 +108,25 @@ data type 2 yere bolunur:
 // __________________________________________________________________________________________________________________________________________
 
 
-function HBD(obj) {
-    obj.age = obj.age + 1
-}
+// function HBD(obj) {
+//     obj.age = obj.age + 1
+// }
 
-let ali = {
-    ad: 'ali',
-    age: 22,
-}
+// let ali = {
+//     ad: 'ali',
+//     age: 22,
+// }
 
-HBD(ali)
-console.log(ali.age) //23
+// HBD(ali)
+// console.log(ali.age) //23
 
-let intiqam = {
-    ad: 'intiqam',
-    age: 18,
-}
+// let intiqam = {
+//     ad: 'intiqam',
+//     age: 18,
+// }
 
-HBD(intiqam)
-console.log(intiqam.age) //19
+// HBD(intiqam)
+// console.log(intiqam.age) //19
 
 
 
