@@ -9,9 +9,15 @@ let car = {
     year: 2022,
     price: 70000,
 
-
+    owner: {
+        name: "Ali",
+        age: 23,
+        job: 'programmer'
+    }
 }
 
 let endirim = prompt('Ne qeder endirim isdiyisen?');
 car.price = car.price - endirim;
 console.log(car.price)
+
+// owner: {name, age, job}
