@@ -2,8 +2,6 @@
 // 2. qiymeti 1000 azn asagi sal! {14-cu setirdeki kimi}
 
 
-
-
 let car = {
     model: 'BMW',
     year: 2022,
@@ -13,11 +11,21 @@ let car = {
         name: "Ali",
         age: 23,
         job: 'programmer'
+    },
+    showInfo: () => {
+        console.log(`${car.owner.name} has ${car.model}. Its price is ${car.price}`)
     }
 }
 
-let endirim = prompt('Ne qeder endirim isdiyisen?');
-car.price = car.price - endirim;
-console.log(car.price)
+car.showInfo()
+
+// let endirim = prompt('Ne qeder endirim isdiyisen?');
+// car.price = car.price - endirim;
+// console.log(car.price)
+
 
 // owner: {name, age, job}
+// car.showInfo() // Ali has bmw. Its price is 70000
+// _______________________________________________________________________________________________________________________________________
+
+
