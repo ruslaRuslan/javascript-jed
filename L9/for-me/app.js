@@ -42,11 +42,11 @@ data type 2 yere bolunur:
 // ---
 
 // function changeNameObj(obj) {
-//     obj.ad = "ali"
+//     obj.add = "ali"
 // }
-// let key = { ad: "ahmad" }
+// let key = { add: "ahmad" }
 // changeNameObj(key);
-// console.log(key.ad);
+// console.log(key.add);
 
 
 
@@ -79,3 +79,30 @@ data type 2 yere bolunur:
 // console.log(obj.ad)
 
 // imumi baxdiqlarimiz / 1. kopyalama, 2.funksiya verilme, 3.ifadeler 
+
+// let a = 'ali'
+// let b = 'ahmad'
+// console.log(a === b)  //false 
+
+// __________________________________________________________________________________________________________________________________________
+
+// let obj = { ad: 'ali' }
+// let obj2 = { ad: 'ali' }
+
+// obj.ad = 'ferid'
+
+// console.log(obj.ad)
+// console.log(obj2.ad)
+
+// ----
+
+
+// let obj = { ad: 'ali', age: 12, gender: 'man' }
+// let obj2 = { ...obj }
+
+// obj.ad = 'ferid'
+
+// console.log(obj.ad)
+// console.log(obj2.ad)
+
+// __________________________________________________________________________________________________________________________________________
