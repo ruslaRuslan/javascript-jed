@@ -50,23 +50,36 @@
 
 
 
-const companySalaries = {
-    ruslan: 1220,
-    ali: 1120,
-    samil: 1450,
-    idris: 1999,
-    ramin: 120,
-    mesedi: 11
-};
-let sum = 0
-for (key in companySalaries) {
-    sum += companySalaries[key]
-}
-console.log(sum);
+// const companySalaries = {
+//     ruslan: 1220,
+//     ali: 1120,
+//     samil: 1450,
+//     idris: 1999,
+//     ramin: 120,
+//     mesedi: 11,
+// };
+// let sum = 0
+// for (key in companySalaries) {
+//     sum += companySalaries[key]
+// }
+// console.log(sum);
 
 
 // Bu shirketin iscilerinin maaslaridir. for-in ile maaslarin cemini tap:
 
+// _______________________________________________________________________________________________________________________________________
+
+// let satici = {
+//     name: 'Ali',
+//     age: 23,
+//     car: 'BMw',
+//     price: 70000,
+// }
+
+// let key = prompt("Isdediyin deyeri yaz");
+// console.log(satici[key]);
+
+// _______________________________________________________________________________________________________________________________________
 
 
 
