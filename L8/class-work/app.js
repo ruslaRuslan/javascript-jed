@@ -44,5 +44,34 @@
 // for (let key in car) {
 //     console.log(`${key} - ${car[key]}`)
 // }
+// _______________________________________________________________________________________________________________________________________
+
+
+
+
+
+const companySalaries = {
+    ruslan: 1220,
+    ali: 1120,
+    samil: 1450,
+    idris: 1999,
+    ramin: 120,
+    mesedi: 11
+};
+let sum = 0
+for (key in companySalaries) {
+    sum += companySalaries[key]
+}
+console.log(sum);
+
+
+// Bu shirketin iscilerinin maaslaridir. for-in ile maaslarin cemini tap:
+
+
+
+
+
+
+
 
 
