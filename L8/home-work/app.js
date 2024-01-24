@@ -149,8 +149,15 @@
 
 
 
+//-------------------------------------------------------------------------------------task-08--------------------------------------------------------------------------- 
 
-
+// function countProperties(obj) {
+//     return Object.keys(obj).length;
+// }
+// const myObject = { ad: 'Ali', soyad: 'Isiyev', yas: 23, cinsiyet: 'kisi' };
+// const propertyCount = countProperties(myObject);
+// console.log(`Object has ${propertyCount} properties.`);
+// // ____________________________________________________________________________________________________________________________________________________________________
 
 
 
