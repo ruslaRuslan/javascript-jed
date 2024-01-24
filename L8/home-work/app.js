@@ -110,15 +110,14 @@
 
 
 //-------------------------------------------------------------------------------------task-05--------------------------------------------------------------------------- 
-// const divideByNumber = (divisor) => {
-//     return number => {
-//         return number / divisor;
-//     }
-// }
-// const divideByFive = divideByNumber(5);
-// console.log(divideByFive(5))
-// console.log(divideByFive(10))
+const divideByNumber = (divisor) =>  number =>  number / divisor;
+const divideByFive = divideByNumber(5);
+console.log(divideByFive(5))
+console.log(divideByFive(10))
 // // _________________________________________________________________________________________________________________________________________________________________
+
+
+//-------------------------------------------------------------------------------------task-06--------------------------------------------------------------------------- 
 
 
 
