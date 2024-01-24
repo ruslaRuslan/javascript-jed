@@ -172,3 +172,44 @@
 // const propertyCount = countProperties(myObject);
 // console.log(propertyCount)
 // // ____________________________________________________________________________________________________________________________________________________________________
+
+
+// const calculator = {
+//     ed1: 0,
+//     ed2: 0,
+
+//     read: function () {
+//         this.ed1 = parseFloat(prompt("Birinci ededi daxil edin."));
+//         this.ed2 = parseFloat(prompt("Ikinci ededi daxil edin."));
+
+//     },
+
+//     sum: function () {
+//         console.log(`Summ: ${this.ed1 + this.ed2}`);
+//     },
+
+//     mul: function () {
+//         console.log(`Summ: ${this.ed1 * this.ed2}`);
+//     },
+
+//     div: function () {
+//         if (this.ed2 !== 0) {
+//             console.log(`Summ: ${this.ed1 + this.ed2} `);
+//         } else {
+//             console.log(`Divide by zero!`)
+//         }
+//     },
+
+//     sub: function () {
+//         console.log(`Summ: ${this.ed1 - this.ed2}`);
+//     }
+
+// };
+
+// calculator.read()
+// calculator.sum()
+// calculator.mul()
+// calculator.div()
+// calculator.sub()
+// // ____________________________________________________________________________________________________________________________________________________________________
+
