@@ -37,69 +37,76 @@
 
 
 
+//-------------------------------------------------------------------------------------task-04--------------------------------------------------------------------------- 
 
 
-const human = {
-    "id": 1,
+// const human = {
+//     "id": 1,
 
-    "name": "Leanne Graham",
+//     "name": "Leanne Graham",
 
-    "username": "Bret",
+//     "username": "Bret",
 
-    "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-            "lat": "-37.3159",
-            "lng": "81.1496"
-        }
-    },
+//     "address": {
+//         "street": "Kulas Light",
+//         "suite": "Apt. 556",
+//         "city": "Gwenborough",
+//         "zipcode": "92998-3874",
+//         "geo": {
+//             "lat": "-37.3159",
+//             "lng": "81.1496"
+//         }
+//     },
 
-    "phone": "1-770-736-8031 x56442",
+//     "phone": "1-770-736-8031 x56442",
 
-    "website": "hildegard.org",
+//     "website": "hildegard.org",
 
-    "company": {
-        "name": "Romaguera-Crona",
-        "catchPhrase": "Multi-layered client-server neural-net",
-        "bs": "harness real-time e-markets"
-    }
-}
+//     "company": {
+//         "name": "Romaguera-Crona",
+//         "catchPhrase": "Multi-layered client-server neural-net",
+//         "bs": "harness real-time e-markets"
+//     }
+// }
 
 
-const getID = () => human.id
-console.log(getID());
+// const getID = () => human.id
+// console.log(getID());
 
+// // ___________________________________________
+
+// const getFullName = () => human.username + ' | ' + human.name
+
+// console.log(getFullName());
+
+// // ___________________________________________
+
+// const getAddress = () => human.address.street + ' |' + human.address.suite + ' ' + human.address.city + '  ' + human.address.zipcode + '  ' + human.address.geo
+
+// console.log(getAddress())
+// // ___________________________________________
+
+// const getGeoLocation = () => human.phone + ' | ' + human.website
+
+
+// console.log(getGeoLocation())
+// // ___________________________________________
+
+// const getPhone = () => human.phone
+
+// console.log(getPhone())
+// // ___________________________________________
+
+// const getCompanyInfo = () => human.company.name + ' | ' + human.company.catchPhrase + ' | ' + human.company.bs
+
+// console.log(getCompanyInfo())
 // ___________________________________________
 
-const getFullName = () => human.username + ' | ' + human.name
-
-console.log(getFullName());
-
-// ___________________________________________
-
-const getAddress = () => human.address.street + ' |' + human.address.suite + ' ' + human.address.city + '  ' + human.address.zipcode + '  ' + human.address.geo
-
-console.log(getAddress())
-// ___________________________________________
-
-const getGeoLocation = () => human.phone + ' | ' + human.website
 
 
-console.log(getGeoLocation())
-// ___________________________________________
 
-const getPhone = () => human.phone
 
-console.log(getPhone())
-// ___________________________________________
 
-const getCompanyInfo = () => human.company.name + ' | ' + human.company.catchPhrase + ' | ' + human.company.bs
-
-console.log(getCompanyInfo())
-// ___________________________________________
 
 
 
