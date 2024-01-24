@@ -130,6 +130,24 @@
 
 
 
+//-------------------------------------------------------------------------------------task-07--------------------------------------------------------------------------- 
+
+// function deletedProperty(propertyName, obj) {
+//     if (obj.hasOwnProperty(propertyName)) {
+//         delete obj[propertyName];
+//         console.log(`Property "${propertyName}" deleted succesfully.`);
+//     } else {
+//         console.log(`Property "${propertyName}" does not exist in the object.`);
+//     }
+// }
+
+// const myObject = { ad: 'Ali', soyad: 'Isiyev', yas: 23 };
+
+// deletedProperty('soyad', myObject);
+// console.log(myObject)
+// // ____________________________________________________________________________________________________________________________________________________________________
+
+
 
 
 
