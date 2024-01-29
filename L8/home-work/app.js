@@ -15,7 +15,7 @@
 // propertyTaker = (obj, propertyName) => obj[propertyName];
 
 
-// console.log(propertyTaker({ country: 'Japan', continent: 'Asia' }, 'continent'));
+// console.log(propertyTaker({ country: 'Japan', continent: 'Asia' }, 'continent'))z;
 // console.log(propertyTaker({ country: 'Sweden', continent: 'Europe' }, 'country'));
 // console.log(propertyTaker({ name: 'Ali', age: 12 }, 'name'));
 
