@@ -33,17 +33,17 @@
 // function myFunction(a, b) {
 //     return b.split(a).length - 1;
 //   }
-  
+
 //   console.log(myFunction('m', 'how many times does the character occur in this sentence?')); // Ожидаемый результат: 2
 //   console.log(myFunction('h', 'how many times does the character occur in this sentence?')); // Ожидаемый результат: 4
 //   console.log(myFunction('?', 'how many times does the character occur in this sentence?')); // Ожидаемый результат: 1
 //   console.log(myFunction('z', 'how many times does the character occur in this sentence?')); // Ожидаемый результат: 0
 // _______________________________________________________________________________________________________________________________________________________________________
-  
+
 // function myFunction(a) {
 //     return Math.round(a * 100) / 100;
 //   }
-  
+
 //   console.log(myFunction(2.12397)); // Ожидаемый результат: 2.12
 //   console.log(myFunction(3.136));   // Ожидаемый результат: 3.14
 //   console.log(myFunction(1.12397)); // Ожидаемый результат: 1.12
@@ -54,12 +54,12 @@
 // function myFunction(a) {
 //     return Array.from(String(a), Number);
 //   }
-  
+
 //   console.log(myFunction(10));      // Ожидаемый результат: [1, 0]
 //   console.log(myFunction(931));     // Ожидаемый результат: [9, 3, 1]
 //   console.log(myFunction(193278));  // Ожидаемый результат: [1, 9, 3, 2, 7, 8]
 // _______________________________________________________________________________________________________________________________________________________________________
-  
+
 
 // function prop2Taker(obj) {
 //         return obj['prop-2'];
@@ -71,12 +71,27 @@
 // _______________________________________________________________________________________________________________________________________________________________________
 
 
-function myFunction(a) {
-    return { key: a };
-  }
-  
-  // Тестовые случаи
-  console.log(myFunction('a')); // Ожидалось: {key:'a'}
-  console.log(myFunction('z')); // Ожидалось: {key:'z'}
-  console.log(myFunction('b')); // Ожидалось: {key:'b'}
-  
+// function myFunction(a) {
+//     return { key: a };
+//   }
+//   console.log(myFunction('a')); // Ожидалось: {key:'a'}
+//   console.log(myFunction('z')); // Ожидалось: {key:'z'}
+//   console.log(myFunction('b')); // Ожидалось: {key:'b'}
+// _______________________________________________________________________________________________________________________________________________________________________
+
+// const o = {
+//     ad: "Ali"
+// }
+// const o2 = o;
+// const o3 = {
+//     ad: "Ali"
+// }
+// console.log(o == o2)
+// console.log(o == o3)
+// console.log(o2 == o3)
+
+// _______________________________________________________________________________________________________________________________________________________________________
+
+
+
+
