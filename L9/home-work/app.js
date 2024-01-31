@@ -198,8 +198,10 @@ showJob(human)
 
 // // T5. showCompany(human) // Islediyim shirketin adi NARTech-dir.
 
+let showCompany = (human) => {
+console.log(`Islediyim shirketin adi ${human.ish.shirket}.`)
+}
 showCompany(human)
-
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 
