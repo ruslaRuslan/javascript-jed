@@ -25,16 +25,23 @@ console.log(car2)
 // showInfo(car)
 // -> zapi markali masin, 1969-da russiya-da istehsal olunub.
 
-const showInfo = (car) => {
-    car = { model: 'zapi', il: 1969, olke:'Russiya'};
-    console.log(`${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`)
-}
+const showInfo = (car) => car = { model: 'zapi', il: 1969, olke: 'Russiya' }; console.log(`${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`)
 showInfo(car)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 // T3. showAge(car) // Verilen masinin 55 yasi var.
 
+const showAge = (car) => {
+    car = {
+        model: 'zapi',
+        il: 1969,
+        olke: 'Russiya'
+    }
+    result = 2024 - `${car.il}`;
+    console.log(`Verilen masinin ${result} yasi var`)
+}
+showAge(car)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------------------------
