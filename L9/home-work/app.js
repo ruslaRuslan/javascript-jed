@@ -18,7 +18,7 @@
 
 
 
-// // ---------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------
 // // T2. Bir Arrow  funksiya yarat. Ona car obyektini verim. O console-a bele bir mesaj cixartsin:
 // // showInfo(car)
 // // -> zapi markali masin, 1969-da russiya-da istehsal olunub.
@@ -26,7 +26,7 @@
 // const showInfo = (car) => console.log(`${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`)
 // showInfo(car)
 
-// // ---------------------------------------------------------------------------------------------------------------------------------------
+// // ----------------------------------------------------------------------------------------------------------------------------------------
 
 // // T3. showAge(car) // Verilen masinin 55 yasi var.
 
@@ -52,7 +52,7 @@
 //     console.log(`${car.model} markali masinin sahibi ${car.sahib.soyad} ${car.sahib.ad}dir. O ${car.sahib.dogumil}-ci ilde dogulub`)
 // }
 // showOwner(car)
-// // ---------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T6. showAgeDifferences(car) // sahibinin dogum ili ile masinin il ferqi. (sahib 2000, zapi 1969) -> 31 il.
@@ -66,7 +66,7 @@
 //     console.log(`Sahibinin dogum ili ile masinin il ferqi. ${result} il`)
 // }
 // showAgeDifferences(car)
-// // ---------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T7*. Yeni bir car3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
@@ -81,7 +81,7 @@
 // console.log(car3)
 // console.log(car)
 
-// // ---------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T8. isEqual(car, car3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
@@ -95,7 +95,7 @@
 // }
 // isEqual(car, car3)
 
-// // ---------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T9. isSameName(car, car2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "Bunlar ferqli modeldirler" mesajini console-a cixarsin.
@@ -109,7 +109,7 @@
 // }
 // isSameName(car, car2);
 
-// // ---------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T10. isSameOwner(car, car3)-> bu funksiya 2 obyekt alir, obyektlerin sahiblerinin adlari eynidirse "Bunlar eyni adama mexsusdur", eks halda "bunlar ferqli adamlara mexsusdur" mesajini console-a cixarsin.
@@ -206,13 +206,23 @@ showCompany(human)
 
 // // T6. showAgeDifference(human) // baslangicIl-den cixmalisan dogumil-ni ->  Men 24 yasinda ise baslamisam.
 
-let showAgeDifference = (human) => console.log(`Men ${human.ish.baslangicIl - human.dogumil } yasinda baslamisam`)
+let showAgeDifference = (human) => console.log(`Men ${human.ish.baslangicIl - human.dogumil} yasinda baslamisam`)
 showAgeDifference(human)
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T7*. Yeni bir human3 obyekti yarat Spread (...) operatoru ile. Shirket melumatlarini deyis. (JED Academy et)
+
+
+let human3 = { ...human };
+human3.ish = { ...human.ish };
+human3.ish.shirket = 'JED Academy'
+console.log(human.ish);
+console.log(human3.ish);
+
+
+
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -221,15 +231,34 @@ showAgeDifference(human)
 
 // // T8. isEqual(human, human3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
 
+let isEqual = (human, human3) => {
+    if (human === human3) {
+        console.log(" Bunlar eyni obyektlerdir")
+    } else {
+        console.log("Bunlar ferqli obyektlerdir")
+    }
+}
+isEqual(human, human3)
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T9. isSameName(human, human2) -> bu funksiya 2 obyekt alir, obyektlerin adlari eynidirse "Bunlar eyni ada sahibdirler", eks halda "Bunlar ferqli ada sahibdirler" mesajini console-a cixarsin.
 
+let isSameName = (human, human2) => {
+    if (human.ad === human2.ad) {
+        console.log("Bunlar eyni ada sahibdirler")
+    } else {
+        console.log("Bunlar ferqli ada sahibdirler")
+    }
+}
+
+isSameName(human, human2)
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // // T10. isSameCompany(human, human3)-> bu funksiya 2 obyekt alir, obyektlerin shirketlerinin adlari eynidirse "Bunlar eyni shirketdirler", eks halda "bunlar ferqli shirketdirler" mesajini console-a cixarsin.
+
+
 
