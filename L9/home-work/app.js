@@ -68,13 +68,25 @@ showAgeDifferences(car)
 
 
 
+const car3 = { ...car.sahib };
+car3.ad = 'Ali';
+car3.soyad = 'Isiyev';
+car3.dogumil = 1995;
+console.log(car3)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // T8. isEqual(car, car3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
 
-
+const isEqual = (car, car3) => {
+    if (car === car3) {
+        console.log("Bunlar eyni obyektlerdir")
+    } else {
+        console.log("Bunlar ferqli obyektlerdir")
+    }
+}
+isEqual(car, car3)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
