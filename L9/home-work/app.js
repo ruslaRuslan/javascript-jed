@@ -198,15 +198,17 @@ showJob(human)
 
 // // T5. showCompany(human) // Islediyim shirketin adi NARTech-dir.
 
-let showCompany = (human) => {
-console.log(`Islediyim shirketin adi ${human.ish.shirket}.`)
-}
+let showCompany = (human) => console.log(`Islediyim shirketin adi ${human.ish.shirket}-dir.`)
+
 showCompany(human)
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 
-
 // // T6. showAgeDifference(human) // baslangicIl-den cixmalisan dogumil-ni ->  Men 24 yasinda ise baslamisam.
+
+let showAgeDifference = (human) => console.log(`Men ${human.ish.baslangicIl - human.dogumil } yasinda baslamisam`)
+showAgeDifference(human)
+
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 
