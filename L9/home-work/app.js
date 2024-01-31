@@ -91,10 +91,16 @@ isEqual(car, car3)
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-// T9. isSameName(car, car2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "bunlar ferqli modeldirler" mesajini console-a cixarsin.
+// T9. isSameName(car, car2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "Bunlar ferqli modeldirler" mesajini console-a cixarsin.
 
-
-
+function isSameName(car, car2) {
+    if (car === car2) {
+        console.log("Bunlar eyni modeldirler")
+    } else {
+        console.log("Bunlar ferqli modeldirler");
+    }
+}
+isSameName(car, car2)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
