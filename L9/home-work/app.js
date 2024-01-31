@@ -261,4 +261,11 @@ isSameName(human, human2)
 // // T10. isSameCompany(human, human3)-> bu funksiya 2 obyekt alir, obyektlerin shirketlerinin adlari eynidirse "Bunlar eyni shirketdirler", eks halda "bunlar ferqli shirketdirler" mesajini console-a cixarsin.
 
 
-
+let isSameCompany = (human, human3) => {
+    if (human.ish.ad === human3.ish.ad) {
+        console.log("Bunlar eyni shirketdirler")
+    } else {
+        console.log("bunlar ferqli shirketdirler")
+    }
+}
+isSameCompany(human, human3)
