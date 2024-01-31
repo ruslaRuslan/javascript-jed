@@ -9,12 +9,10 @@ const car = {
     olke: 'Russiya'
 }
 
-car2 = { ...car }
+let car2 = { ...car }
 
-car2 = {
-    model: 'BMW',
-    il: 2024,
-}
+car2.model = 'BMW'
+car2.il = 2024
 console.log(car)
 console.log(car2)
 
@@ -25,7 +23,7 @@ console.log(car2)
 // showInfo(car)
 // -> zapi markali masin, 1969-da russiya-da istehsal olunub.
 
-const showInfo = (car) => car = { model: 'zapi', il: 1969, olke: 'Russiya' }; console.log(`${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`)
+const showInfo = (car) => console.log(`${car.model} markali masin, ${car.il}-da ${car.olke}-da istehsal olunub.`)
 showInfo(car)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -33,12 +31,7 @@ showInfo(car)
 // T3. showAge(car) // Verilen masinin 55 yasi var.
 
 const showAge = (car) => {
-    car = {
-        model: 'zapi',
-        il: 1969,
-        olke: 'Russiya'
-    }
-    result = 2024 - `${car.il}`;
+    let result = 2024 - `${car.il}`;
     console.log(`Verilen masinin ${result} yasi var`)
 }
 showAge(car)
@@ -49,23 +42,30 @@ showAge(car)
 
 // T4. car obyektine yeni bir property-e elave et. sahib: {ad:'Ruslan', soyad:'Zeynalov', dogumIl:2000}
 
+car.sahib = { ad: 'Ruslan', soyad: 'Zeynalov', dogumil: 2000 }
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // T5. showOwner(car) // zapi markali masinin sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
-
-
+const showOwner = (car) => {
+    console.log(`${car.model} markali masinin sahibi ${car.sahib.ad}dir. O ${car.sahib.dogumil}-ci ilde dogulub`)
+}
+showOwner(car)
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // T6. showAgeDifferences(car) // sahibinin dogum ili ile masinin il ferqi. (sahib 2000, zapi 1969) -> 31 il.
-
-
+const showAgeDifferences = (car) => {
+    let result = `${car.sahib.dogumil - car.il}`
+    console.log(`Sahibinin dogum ili ile masinin il ferqi. ${result} il`)
+}
+showAgeDifferences(car)
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // T7*. Yeni bir car3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
+
 
 
 
