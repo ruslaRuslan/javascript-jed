@@ -368,7 +368,7 @@ const isEqual = (laptop, laptop3) => {
         console.log("Bunlar ferqli obyektlerdir");
     }
 }
-
+isEqual(laptop, laptop3)
 // -----------------------------------------------
 
 // T9. isSameName(laptop, laptop2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "bunlar ferqli modeldirler" mesajini console-a cixarsin.
