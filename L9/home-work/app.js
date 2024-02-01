@@ -332,6 +332,18 @@ showOwner(laptop)
 
 // T6. showAgeDifferences(laptop) // sahibinin dogum ili ile laptopun il ferqi. (sahib 2000, zapi 2018) -> 18 il.
 
+const showAgeDifferences = (laptop) => {
+    let result;
+    if (laptop.sahib.dogumil > laptop.il) {
+        result = laptop.sahib.dogumil - laptop.il;
+    }
+    else {
+       result = laptop.il - laptop.sahib.dogumil
+    }
+    console.log(`sahibinin dogum ili ile laptopun il ferqi. ${result} il`);
+}
+showAgeDifferences(laptop);
+
 
 // -----------------------------------------------
 
