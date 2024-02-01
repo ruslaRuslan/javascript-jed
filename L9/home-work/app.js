@@ -346,7 +346,7 @@ showAgeDifferences(laptop);
 
 // 
 // -----------------------------------------------
-
+// 
 // T7*. Yeni bir laptop3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
 
 
