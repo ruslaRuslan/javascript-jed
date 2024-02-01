@@ -325,6 +325,9 @@ laptop.sahib = { ad: 'Ruslan', soyad: 'Zeynalov', dogumil: 2000 };
 
 // T5. showOwner(laptop) // HP markali laptopun sahibi Zeynalov Ruslandir. O 2000-ci ilde dogulub.
 
+const showOwner = (laptop) => console.log(`${laptop.model} markali laptopun sahibi ${laptop.sahib.soyad} ${laptop.sahib.ad}dir. O ${laptop.sahib.dogumil} ilde dogulub.`)
+
+showOwner(laptop)
 
 // -----------------------------------------------
 
