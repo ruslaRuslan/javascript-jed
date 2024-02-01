@@ -355,11 +355,7 @@ laptop3.sahib.ad = 'Ali';
 laptop3.sahib.soyad = 'Isiyev';
 laptop.sahib.dogumil = 1995;
 
-// let human3 = { ...human };
-// human3.ish = { ...human.ish };
-// human3.ish.shirket = 'JED Academy'
-// console.log(human.ish);
-// console.log(human3.ish);
+
 
 // -----------------------------------------------
 
