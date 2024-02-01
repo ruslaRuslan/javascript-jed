@@ -338,18 +338,28 @@ const showAgeDifferences = (laptop) => {
         result = laptop.sahib.dogumil - laptop.il;
     }
     else {
-       result = laptop.il - laptop.sahib.dogumil
+        result = laptop.il - laptop.sahib.dogumil
     }
     console.log(`sahibinin dogum ili ile laptopun il ferqi. ${result} il`);
 }
 showAgeDifferences(laptop);
 
-// 
+
 // -----------------------------------------------
 // 
 // T7*. Yeni bir laptop3 obyekti yarat Spread (...) operatoru ile. Sahib melumatlarini deyis. (sahib: ali, isiyev, 1995)
 
+laptop3 = { ...laptop };
+laptop3.sahib = { ...laptop.sahib };
+laptop3.sahib.ad = 'Ali';
+laptop3.sahib.soyad = 'Isiyev';
+laptop.sahib.dogumil = 1995;
 
+// let human3 = { ...human };
+// human3.ish = { ...human.ish };
+// human3.ish.shirket = 'JED Academy'
+// console.log(human.ish);
+// console.log(human3.ish);
 
 // -----------------------------------------------
 
