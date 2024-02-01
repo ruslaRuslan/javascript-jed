@@ -361,7 +361,13 @@ laptop.sahib.dogumil = 1995;
 
 // T8. isEqual(laptop, laptop3) -> bu funksiya 2 obyekt alir, onlar beraberdirse, console-a "Bunlar eyni obyektlerdir " , eks halda "Bunlar ferqli obyektlerdir"
 
-
+const isEqual = (laptop, laptop3) => {
+    if (laptop === laptop3) {
+        console.log("Bunlar eyni obyektlerdir ");
+    } else {
+        console.log("Bunlar ferqli obyektlerdir");
+    }
+}
 
 // -----------------------------------------------
 
