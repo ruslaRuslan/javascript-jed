@@ -226,8 +226,19 @@
 
 
 
-const ad = 'Ruslan Zeynalov Mehman'
-// string metodlar
-let netice = ad.toLocaleUpperCase()
-console.log(netice);  // RUSLAN ZEYNALOV MEHMAN
+// const ad = 'Ruslan Zeynalov Mehman'
+// // string metodlar
+// let netice = ad.toLocaleUpperCase()
+// console.log(netice);  // RUSLAN ZEYNALOV MEHMAN
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+function toCapitalCase(ad) {
+    console.log(ad.replace(ad[0], ad[0].toUpperCase()))
+}
+
+toCapitalCase('Ali')
+toCapitalCase('sada')
+toCapitalCase('intiqam elizade')
 
