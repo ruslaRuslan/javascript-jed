@@ -13,8 +13,14 @@
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
-let ad = new String('Ruslan');
-console.dir(ad)
+// let ad = new String('Ruslan');
+// console.dir(ad)
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-
+let name = 'Ruslan';
+console.log(name[0]);
+console.log(name['1']);
+console.log(name[2]);
+console.log(name['3']);
+console.log(name[4]);
+console.log(name[5]);
