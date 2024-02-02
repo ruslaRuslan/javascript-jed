@@ -217,7 +217,10 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-
+const ad = 'Ruslan Zeynalov Mehman'
+// string metodlar
+let netice = ad.split(',')
+console.log(netice);   // eynalov
 
 
 
