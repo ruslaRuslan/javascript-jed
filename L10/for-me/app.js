@@ -70,3 +70,16 @@
 
 // const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
 // ad.charAt(0) //ve ad.[] eynidirler
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// // //string-in metodlari
+// let netice = ad.concat("JS")
+// let netice2 = "JS".concat(ad)
+// console.log(netice, netice2);
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// //string-in metodlari
