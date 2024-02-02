@@ -25,14 +25,22 @@
 // console.log(name[4]);
 // console.log(name[5]);
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const ad = 'ali'
-const obj = {
-    ad: 'ferid'
-}
-obj['ad'] = 'intiqam',
-console.log(ad['1']);
+// const ad = 'ali'
+// const obj = {
+//     ad: 'ferid'
+// }
+// obj['ad'] = 'intiqam',
+//     console.log(ad['1']);
+
+
+// let ad = 'ali';
+// ad[0] = 'c';
+// console.log(ad);
+
+
 /*
 1. imutable
 2. mutable
