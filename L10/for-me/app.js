@@ -186,8 +186,13 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
+// const ad = 'Ruslan Zeynalov'
+// // string metodlar
+// let netice = ad.slice(2, 15)
+// console.log(netice);   //slan Zeynalov
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 const ad = 'Ruslan Zeynalov'
 // string metodlar
-let netice = ad.slice(2, 15)
-console.log(netice);   //slan Zeynalov
-
+let netice = ad.slice(8)
+console.log(netice);   //eynalov
