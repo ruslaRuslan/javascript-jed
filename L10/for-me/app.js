@@ -154,10 +154,16 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const ad = 'ruslan'
+// const ad = 'ruslan'
+// // string metodlar
+// let netice = ad.replace('ruslan', 'ALI')
+// console.log(netice);   //ALI
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+const ad = 'Ruslan Zeynalov'
 // string metodlar
-let netice = ad.replace('ruslan', 'ALI')
+let netice = ad.replaceAll('l', '[Ali]')
 console.log(netice);   //ALI
-
-
 
