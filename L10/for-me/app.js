@@ -83,3 +83,9 @@
 
 const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
 // //string-in metodlari
+let netice = ad.endsWith('W')
+console.log(netice); //false
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
