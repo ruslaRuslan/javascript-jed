@@ -162,8 +162,18 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const ad = 'Ruslan Zeynalov'
-// string metodlar
-let netice = ad.replaceAll('l', '[Ali]')
-console.log(netice);   //ALI
+// const ad = 'Ruslan Zeynalov'
+// // string metodlar
+// let netice = ad.replaceAll('l', '[Ali]')
+// console.log(netice);   //ALI
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+const ad = 'Ruslan Zeynalov kjbhj bnb lllllllllll bhjbdhiljbdjbb dhu bhibhdibdh vhicb dhjh bjhvhjb '
+let countLength = ad.length - ad.replaceAll('l', '').length
+console.log(countLength);
+// string metodlar
+let netice = ad.replace('a', '')
+console.log(netice);   
+// ---------------------------------------------------------------------------------------------------------------------------------------
