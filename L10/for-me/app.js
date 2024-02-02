@@ -170,10 +170,21 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const ad = 'Ruslan Zeynalov kjbhj bnb lllllllllll bhjbdhiljbdjbb dhu bhibhdibdh vhicb dhjh bjhvhjb '
-let countLength = ad.length - ad.replaceAll('l', '').length
-console.log(countLength);
-// string metodlar
-let netice = ad.replace('a', '')
-console.log(netice);   
+// const ad = 'Ruslan Zeynalov kjbhj bnb lllllllllll bhjbdhiljbdjbb dhu bhibhdibdh vhicb dhjh bjhvhjb '
+// let countLength = ad.length - ad.replaceAll('l', '').length
+// console.log(countLength);
+// // string metodlar
+// let netice = ad.replace('a', '')
+// console.log(netice);
+
 // ---------------------------------------------------------------------------------------------------------------------------------------
+
+// const ad = 'Ruslan Zeynalov'
+// // string metodlar
+// let netice = ad.slice(0, 4)
+// console.log(netice);   //Rusl
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
