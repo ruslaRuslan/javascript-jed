@@ -100,7 +100,13 @@
 // let netice = ad.includes('bv') //ancax  olani gorsedir
 // console.log(netice); //false
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// // //string-in metodlari
+// let netice = ad.indexOf('jnj') //(hardan basladigini gorsedir) necenci oldugunu gorsedir
+// console.log(netice); //10
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
