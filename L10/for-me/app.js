@@ -234,11 +234,21 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
+// function toCapitalCase(ad) {
+//     console.log(ad.replace(ad[0], ad[0].toUpperCase()));
+// }
+
+// toCapitalCase('Ali');
+// toCapitalCase('sada');
+// toCapitalCase('intiqam elizade');
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 function toCapitalCase(ad) {
-    console.log(ad.replace(ad[0], ad[0].toUpperCase()))
+    console.log(ad[0].toUpperCase() + ad.slice(1, ad.length));
 }
 
-toCapitalCase('Ali')
-toCapitalCase('sada')
-toCapitalCase('intiqam elizade')
-
+toCapitalCase('Ali');
+toCapitalCase('sada');
+toCapitalCase('intiqam elizade');
