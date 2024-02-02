@@ -245,10 +245,24 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-function toCapitalCase(ad) {
-    console.log(ad[0].toUpperCase() + ad.slice(1, ad.length));
-}
+// function toCapitalCase(ad) {
+//     console.log(ad[0].toUpperCase() + ad.slice(1, ad.length));
+// }
 
-toCapitalCase('Ali');
-toCapitalCase('sada');
-toCapitalCase('intiqam elizade');
+// toCapitalCase('Ali');
+// toCapitalCase('sada');
+// toCapitalCase('intiqam elizade');
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// let ad = prompt('Adi daxil et')
+// console.log(ad.length);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+let ad = prompt('Adi daxil et')
+console.log(ad.trim());
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
