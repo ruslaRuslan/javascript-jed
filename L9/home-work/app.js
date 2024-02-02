@@ -312,8 +312,16 @@ showInfo(laptop);
 
 // -----------------------------------------------
 // T3. showAge(laptop) // Verilen laptopun 6 yasi var.
+// 
 const showAge = (laptop) => {
-    result = (laptop.il - 2024 === -6) ? 6 : laptop.il - 2024
+    let result;
+    if (laptop.il > 2024) {
+        result = laptop.il - 2024
+    } else if (laptop.il < 2024) {
+        result = 2024 - laptop.il
+    } else {
+        console.log('kencjbА')
+    }
     console.log(`Verilen laptopun ${result} yasi var`);
 }
 showAge(laptop)
@@ -383,15 +391,15 @@ isEqual(laptop, laptop3);
 // T9. isSameName(laptop, laptop2) -> bu funksiya 2 obyekt alir, obyektlerin modelleri eynidirse "Bunlar eyni modeldirler", eks halda "bunlar ferqli modeldirler" mesajini console-a cixarsin.
 
 const isSameName = (laptop, laptop2) => {
-    switch (laptop.model, laptop2.model) {
-        case laptop === laptop2:
-            console.log("Bunlar eyni modeldirler");
-            break;
-        default: {
-            console.log("bunlar ferqli modeldirler");
-        }
+
+    if (laptop === laptop2) {
+
+        console.log("Bunlar eyni modeldirler");
+    } else {
+        console.log("bunlar ferqli modeldirler");
     }
 }
+
 isSameName(laptop, laptop2)
 
 //---------------------------------------------------------------------------------------------------------------------------------------
@@ -410,3 +418,7 @@ const isSameOwner = (laptop, laptop3) => {
 isSameOwner(laptop, laptop3);
 
 //---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
