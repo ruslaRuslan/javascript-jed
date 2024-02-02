@@ -110,3 +110,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
+const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// //string-in metodlari
+let netice = ad.lastIndexOf('l') //(hardan basladigini gorsedir) necenci oldugunu gorsedir
+console.log(netice); //10
