@@ -95,7 +95,10 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// // //string-in metodlari
+// let netice = ad.includes('bv') //ancax  olani gorsedir
+// console.log(netice); //false
 
 
 
