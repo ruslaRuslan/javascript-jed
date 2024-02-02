@@ -48,12 +48,22 @@
 */
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
-const ad ='plmnj,lmknjnjnbbbvgvggghhhhhhhhvvvvvvvvvvvvyyyksW'
-console.log(ad[0]);            //p
-console.log(ad[48]);           //W  
-console.log(ad[49 - 1]);       //W      
-console.log(ad.length);        //49     
-console.log(ad.length - 1);    //48     
-console.log(ad[100]);          //undefined  
+
+// const ad ='plmnj,lmknjnjnbbbvgvggghhhhhhhhvvvvvvvvvvvvyyyksW'
+// console.log(ad[0]);            //p
+// console.log(ad[48]);           //W  
+// console.log(ad[49 - 1]);       //W      
+// console.log(ad.length);        //49     
+// console.log(ad.length - 1);    //48     
+// console.log(ad[100]);          //undefined  
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+//string-in metodlari
+for (let i = 0; i < ad.length; i++) {
+    console.log(ad[i]);
+}
 
 
