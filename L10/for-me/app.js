@@ -110,7 +110,17 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
-// //string-in metodlari
-let netice = ad.lastIndexOf('l') //(hardan basladigini gorsedir) necenci oldugunu gorsedir
-console.log(netice); //10
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// // //string-in metodlari
+// let netice = ad.lastIndexOf('l') //(hardan basladigini gorsedir) necenci oldugunu gorsedir
+// console.log(netice); //10
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+const ad = '1'  //01
+// String metodlar
+let netice = ad.padStart(3, '0')
+console.log(netice);
+
+
+
+
