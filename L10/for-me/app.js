@@ -17,10 +17,25 @@
 // console.dir(ad)
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-let name = 'Ruslan';
-console.log(name[0]);
-console.log(name['1']);
-console.log(name[2]);
-console.log(name['3']);
-console.log(name[4]);
-console.log(name[5]);
+// let name = 'Ruslan';
+// console.log(name[0]);
+// console.log(name['1']);
+// console.log(name[2]);
+// console.log(name['3']);
+// console.log(name[4]);
+// console.log(name[5]);
+
+
+
+const ad = 'ali'
+const obj = {
+    ad: 'ferid'
+}
+obj['ad'] = 'intiqam',
+console.log(ad['1']);
+/*
+1. imutable
+2. mutable
+
+*/
+
