@@ -60,10 +60,13 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
-//string-in metodlari
-for (let i = 0; i < ad.length; i++) {
-    console.log(ad[i]);
-}
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// //string-in metodlari
+// for (let i = 0; i < ad.length; i++) {
+//     console.log(ad[i]);
+// }
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// ad.charAt(0) //ve ad.[] eynidirler
