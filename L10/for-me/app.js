@@ -186,5 +186,8 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-
+const ad = 'Ruslan Zeynalov'
+// string metodlar
+let netice = ad.slice(2, 15)
+console.log(netice);   //slan Zeynalov
 
