@@ -81,11 +81,15 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
-// //string-in metodlari
-let netice = ad.endsWith('W')
-console.log(netice); //false
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// // //string-in metodlari
+// let netice = ad.endsWith('W') //ancax sonda olani gorsedir
+// console.log(netice); //false
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
+// const ad = 'plmnj,lmknjnjnbbbvedfeffdjcbdhgchdgghhhhhhhhvvvvvvvvvvvvyyyksW'
+// // //string-in metodlari
+// let netice = ad.startsWith('W') //ancax birinci olani gorsedir
+// console.log(netice); //false
 
