@@ -47,3 +47,13 @@
 
 */
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+const ad ='plmnj,lmknjnjnbbbvgvggghhhhhhhhvvvvvvvvvvvvyyyksW'
+console.log(ad[0]);            //p
+console.log(ad[48]);           //W  
+console.log(ad[49 - 1]);       //W      
+console.log(ad.length);        //49     
+console.log(ad.length - 1);    //48     
+console.log(ad[100]);          //undefined  
+
+
