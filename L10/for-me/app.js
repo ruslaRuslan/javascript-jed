@@ -217,12 +217,17 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
+// const ad = 'Ruslan Zeynalov Mehman'
+// // string metodlar
+// let netice = ad.split(',')
+// console.log(netice);   
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 const ad = 'Ruslan Zeynalov Mehman'
 // string metodlar
-let netice = ad.split(',')
-console.log(netice);   
-
-
-
-
+let netice = ad.toLocaleUpperCase()
+console.log(netice);  // RUSLAN ZEYNALOV MEHMAN
 
