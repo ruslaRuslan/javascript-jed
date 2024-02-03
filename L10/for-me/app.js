@@ -301,13 +301,18 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const birthDate = new Date(2000, 12, 31)
-console.log(birthDate);
-const now = new Date()
-console.log(now);
+// const birthDate = new Date(2000, 12, 31)
+// console.log(birthDate);
+// const now = new Date()
+// console.log(now);
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
+const birthDate = new Date(2000, 12, 31).getTime()
+const indi = Date.now()
+const dayCount = (indi - birthDate) / 1000 / 60 / 60 / 24
+console.log(dayCount);
 
 
 
