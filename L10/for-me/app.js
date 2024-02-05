@@ -13,8 +13,10 @@
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+
 // let ad = new String('Ruslan');
 // console.dir(ad)
+
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 // let name = 'Ruslan';
@@ -32,8 +34,11 @@
 // const obj = {
 //     ad: 'ferid'
 // }
-// obj['ad'] = 'intiqam',
-//     console.log(ad['1']);
+// obj['ad'] = 'intiqam'
+    // console.log(ad['0']);       //a  
+    // console.log(ad['1']);       //l  
+    // console.log(ad[2]);         //i
+
 
 
 // let ad = 'ali';
@@ -51,11 +56,11 @@
 
 // const ad ='plmnj,lmknjnjnbbbvgvggghhhhhhhhvvvvvvvvvvvvyyyksW'
 // console.log(ad[0]);            //p
-// console.log(ad[48]);           //W  
-// console.log(ad[49 - 1]);       //W      
-// console.log(ad.length);        //49     
-// console.log(ad.length - 1);    //48     
-// console.log(ad[100]);          //undefined  
+// console.log(ad[48]);           //W
+// console.log(ad[49 - 1]);       //W
+// console.log(ad.length);        //49
+// console.log(ad.length - 1);    //48
+// console.log(ad[100]);          //undefined
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -116,24 +121,24 @@
 // console.log(netice); //10
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-// const ad = '1'  //01
+// const ad = 'D'
 // // String metodlar
-// let netice = ad.padStart(3, '0')
+// let netice = ad.padStart(5, 3)
 // console.log(netice);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-// const ad = '1'  //01
+// const ad = 'S'  //01
 // // String metodlar
-// let netice = ad.padEnd(3, '0')
+// let netice = ad.padEnd(4, 'C')
 // console.log(netice);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-// const ad = '8'
+// const ad = 'T'
 // // string metodlar
-// let netice = ad.repeat(3)
+// let netice = ad.repeat(5)
 // console.log(netice);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -148,7 +153,7 @@
 
 // const ad = 'ruslan'
 // // string metodlar
-// let netice = ad.replace('ruslan', 'RUSLAN')
+// let netice = ad.replace('usla', '{RUSLAN}')
 // console.log(netice);   //RUSLAN
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -164,17 +169,17 @@
 
 // const ad = 'Ruslan Zeynalov'
 // // string metodlar
-// let netice = ad.replaceAll('l', '[Ali]')
+// let netice = ad.replaceAll('n', '[Ali]')
 // console.log(netice);   //ALI
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-// const ad = 'Ruslan Zeynalov kjbhj bnb lllllllllll bhjbdhiljbdjbb dhu bhibhdibdh vhicb dhjh bjhvhjb '
-// let countLength = ad.length - ad.replaceAll('l', '').length
+// const ad = 'Ruslan Zeynalov Mehman'
+// let countLength = ad.length - ad.replaceAll('a', '').length
 // console.log(countLength);
 // // string metodlar
-// let netice = ad.replace('a', '')
+// let netice = ad.replace()
 // console.log(netice);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -219,8 +224,8 @@
 
 // const ad = 'Ruslan Zeynalov Mehman'
 // // string metodlar
-// let netice = ad.split(',')
-// console.log(netice);   
+// let netice = ad.split('e')
+// console.log(netice);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -238,7 +243,7 @@
 //     console.log(ad.replace(ad[0], ad[0].toUpperCase()));
 // }
 
-// toCapitalCase('Ali');
+// toCapitalCase('ali');
 // toCapitalCase('sada');
 // toCapitalCase('intiqam elizade');
 
@@ -309,10 +314,22 @@
 
 
 
-const birthDate = new Date(2000, 12, 31).getTime()
-const indi = Date.now()
-const dayCount = (indi - birthDate) / 1000 / 60 / 60 / 24
-console.log(dayCount);
+// const birthDate = new Date(2000, 12, 31).getTime()
+// const indi = Date.now()
+// const dayCount = (indi - birthDate) / 1000 / 60 / 60 / 24
+// console.log(dayCount);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
