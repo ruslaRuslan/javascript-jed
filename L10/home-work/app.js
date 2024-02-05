@@ -132,28 +132,59 @@
 // 3. *ADVANCED* Bu gun heftenin hansi gunudur, onun adini avtomatik document-e yazin. (obyektlerden istifade ede bilersiniz)
 
 
-let today = new Date().getDay();
-if (today === 0) {
-    document.write('Bazar')
-} else if (today === 1) {
-    document.write('Bazar ertəsi')
-} else if (today === 2) {
-    document.write('Çərşənbə axşamı')
-} else if (today === 3) {
-    document.write('Çərşənbə')
-} else if (today === 4) {
-    document.write('Cümə axşamı')
-} else if (today === 5) {
-    document.write('Cümə')
-} else if (today === 6) {
-    document.write('Şənbə')
-} else {
-    console.log("")
-}
+// let today = new Date().getDay();
+// if (today === 0) {
+//     document.write('Bazar')
+// } else if (today === 1) {
+//     document.write('Bazar ertəsi')
+// } else if (today === 2) {
+//     document.write('Çərşənbə axşamı')
+// } else if (today === 3) {
+//     document.write('Çərşənbə')
+// } else if (today === 4) {
+//     document.write('Cümə axşamı')
+// } else if (today === 5) {
+//     document.write('Cümə')
+// } else if (today === 6) {
+//     document.write('Şənbə')
+// } else {
+//     document.write("")
+// }
 
 
 
 // 4. *ADVANCED* Bu ay hansi aydir adini document-e yazin. (obyektden istifade ede bilersiniz)
+
+let month = new Date().getMonth() 
+if (month === 0) {
+    document.write('Yanvar')
+} else if (month === 1) {
+    document.write('Fevral')
+} else if (month === 2) {
+    document.write('Mart')
+} else if (month === 3) {
+    document.write('Aprel')
+} else if (month === 4) {
+    document.write('May')
+} else if (month === 5) {
+    document.write('Iyun')
+} else if (month === 6) {
+    document.write('Iyul')
+} else if (month === 7) {
+    document.write('Avqust')
+} else if (month === 8) {
+    document.write('Sentyabr')
+} else if (month === 9) {
+    document.write('Oktyabr')
+} else if (month === 10) {
+    document.write('Noyabr')
+} else if (month === 11) {
+    document.write('Dekabr')
+} else {
+    document.write("")
+}
+
+
 // 5. Ezrail proqrami: user-den yasini sorusun. Ve omrune nece il qalib ona alert-le bildirin. Tutaq ki, insanlar ucun maksimum yas 77 ildir. (meselen, 60 yas yazsa 17 ili qalib 🥺)
 // 6. Userin yasini sorusun. ve bele bir statistika yazin: doguldugu vaxtdan bu gune nece il, ay, gun, saat, deqiqe, saniye kecib. (heresini ayrica) meselen,
 // kecen il sayi: 23,
