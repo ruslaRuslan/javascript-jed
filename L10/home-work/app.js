@@ -31,24 +31,40 @@
 
 // // nameFormat(str) —> Alion GreenHeart-=> Alion G.
 
-const nameFormat = (str) => {
-    const words = str.split(' ');
-        const result = `${words[0]} ${words[1].charAt(0)}`;
-        console.log(result);
-        return result;
-}
+// const nameFormat = (str) => {
+//     const words = str.split(' ');
+//         const result = `${words[0]} ${words[1].charAt(0)}`;
+//         console.log(result);
+//         return result;
+// }
 
-nameFormat('Alion GreenHeart ');
-nameFormat('Ruslan Zeynalov');
-nameFormat('Gahraman Zeynalov');
-nameFormat('John');
+// nameFormat('Alion GreenHeart ');
+// nameFormat('Ruslan Zeynalov');
+// nameFormat('Gahraman Zeynalov');
+// nameFormat('John');
 
 
 // Funksiya yaradin, ilk characterimizi deyisek: ilkHerfiDeyis(soz, ilkHerf)
 // ilkHerfiDeyis('alion', "A") // Alion
 
+// ilkHerfiDeyis = (word, onceWord) => {
+//     const newWord = onceWord + word.slice(1);
+//     console.log(newWord);
+//     return newWord;
+// }
+// ilkHerfiDeyis('ruslan', 'R')
+
+
 // ———————————
 // 1. Write a JavaScript function to split a sentence (JS funksiyasi yazin, cumle verilir, cumledeki sozleri ayirsin).
+
+function splitSentence(sentence) {
+    const wordsArray = sentence.split(' ');
+    console.log(wordsArray);
+    return wordsArray;
+}
+splitSentence('Write a JavaScript function to split a sentence (JS funksiyasi yazin, cumle verilir, cumledeki sozleri ayirsin).');
+
 // 2. Write a JavaScript function to convert a string in abbreviated form. (Alion GreenHeart -> Alion G.)
 // 3. removeCharacterFromString("Alion","A") -> "lion" . bele bir funksiya yazin, sozden character silme. Alion sozu verdik ve A characteri verdik, sozden A-ni sildi.
 // 4. verify gmail address. (gmail addressleri sonu @gmail.com ile bitmelidir, ve ondan evvel en azi 5 simvol olmalidir. abcdf@gmail.com meselen)
