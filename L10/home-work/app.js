@@ -14,14 +14,13 @@
 
 //capitalize(str) -> alion -=> Alion
 
-const capitalize = (str) => {
-    let result = str.charAt(0).toUpperCase() + str.slice(1)
-    console.log(result);
-    return result;
-}
-capitalize('alion');
+// const capitalize = (str) => {
+//     let result = str.charAt(0).toUpperCase() + str.slice(1)
+//     console.log(result);
+//     return result;
+// }
+// capitalize('alion');
 
-// ________________________________________________________________________________________________________________________________________
 
 // ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -31,6 +30,26 @@ capitalize('alion');
 // // snakeToKebab(str) -=> SNAKE_CASE to kebab-case -=> BU_TEST_UCUNDUR -> bu-test-ucundur
 
 // // nameFormat(str) —> Alion GreenHeart-=> Alion G.
+
+const nameFormat = (str) => {
+    const words = str.split(' ');
+
+    if (words.length === 1) {
+        console.log(words[0]);
+        return words[0];
+    } else {
+        const result = `${words[0]} ${words[1].charAt(0)}`;
+        console.log(result);
+        return result;
+    }
+
+}
+
+nameFormat('Alion GreenHeart');
+nameFormat('Ruslan Zeynalov');
+nameFormat('Gahraman Zeynalov');
+nameFormat('John');
+
 // ---------------------
 // // split methodu
 // ---------------------
