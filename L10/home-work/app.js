@@ -41,7 +41,6 @@
 // nameFormat('Alion GreenHeart ');
 // nameFormat('Ruslan Zeynalov');
 // nameFormat('Gahraman Zeynalov');
-// nameFormat('John');
 
 
 // Funksiya yaradin, ilk characterimizi deyisek: ilkHerfiDeyis(soz, ilkHerf)
@@ -58,18 +57,48 @@
 // ———————————
 // 1. Write a JavaScript function to split a sentence (JS funksiyasi yazin, cumle verilir, cumledeki sozleri ayirsin).
 
-function splitSentence(sentence) {
-    const wordsArray = sentence.split(' ');
-    console.log(wordsArray);
-    return wordsArray;
-}
-splitSentence('Write a JavaScript function to split a sentence (JS funksiyasi yazin, cumle verilir, cumledeki sozleri ayirsin).');
+// function splitSentence(sentence) {
+//     const wordsArray = sentence.split(' ');
+//     console.log(wordsArray);
+//     return wordsArray;
+// }
+// splitSentence('Write a JavaScript function to split a sentence (JS funksiyasi yazin, cumle verilir, cumledeki sozleri ayirsin).');
 
 // 2. Write a JavaScript function to convert a string in abbreviated form. (Alion GreenHeart -> Alion G.)
+
+// const nameFormat = (str) => {
+//     let words = str.split(' ');
+//     const result = `${words[0]} ${words[1].charAt(0)}`
+//     console.log(result);
+//     return result;
+// }
+// nameFormat('Alion GreenHeart ');
+// nameFormat('Ruslan Zeynalov');
+// nameFormat('Gahraman Zeynalov');
+
+// -----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 // 3. removeCharacterFromString("Alion","A") -> "lion" . bele bir funksiya yazin, sozden character silme. Alion sozu verdik ve A characteri verdik, sozden A-ni sildi.
+
+
+
+function removeCharacterFromString(word, charToRemove) {
+    const result = word.replace(charToRemove, '');
+    console.log(result);
+    return result;
+}
+removeCharacterFromString('Alion', 'A');
+
+
+
+// -----------------------------------------------------------------------------------------------------------------------------------------
+
 // 4. verify gmail address. (gmail addressleri sonu @gmail.com ile bitmelidir, ve ondan evvel en azi 5 simvol olmalidir. abcdf@gmail.com meselen)
 
-// —————————
+// -----------------------------------------------------------------------------------------------------------------------------------------
+
 // 1. Normalda Bazar ertesinden Cumeye qeder ders olur. Ele bir funksiya qurun ki, bize alert-le desin bu gun derse getmeliyik ya yox.
 // 2. Bu gunki tarixi document.write ile html-e yazin.
 // 3. *ADVANCED* Bu gun heftenin hansi gunudur, onun adini avtomatik document-e yazin. (obyektlerden istifade ede bilersiniz)
