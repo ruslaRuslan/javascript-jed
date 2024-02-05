@@ -98,21 +98,34 @@
 // 4. verify gmail address. (gmail addressleri sonu @gmail.com ile bitmelidir abcdf@gmail.com meselen)
 
 
-let gmail = prompt('Emaili daxil edin')
-if (gmail.endsWith('gmail.com')) {
-    console.log(`${gmail} gmail.com`);
-}
-else {
-    console.log('yalnis!!!! Emaili daxil edin ve 5 simvoldan az daxil etmeyin');
-}
+// let gmail = prompt('Emaili daxil edin')
+// if (gmail.endsWith('gmail.com')) {
+//     console.log(`${gmail} gmail.com`);
+// }
+// else {
+//     console.log('yalnis!!!! Emaili daxil edin ve 5 simvoldan az daxil etmeyin');
+// }
 
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 // 1. Normalda Bazar ertesinden Cumeye qeder ders olur. Ele bir funksiya qurun ki, bize alert-le desin bu gun derse getmeliyik ya yox.
 
+    let today = new Date().getDay();
+    if (today >= 1 && today <= 5) {
+        alert("Bu gün dərsə getməlisiniz")
+    } else {
+        alert("Bu gün dərs yoxdur.")
+    }
+
+// -----------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 2. Bu gunki tarixi document.write ile html-e yazin.
+
+
+
+
 // 3. *ADVANCED* Bu gun heftenin hansi gunudur, onun adini avtomatik document-e yazin. (obyektlerden istifade ede bilersiniz)
 // 4. *ADVANCED* Bu ay hansi aydir adini document-e yazin. (obyektden istifade ede bilersiniz)
 // 5. Ezrail proqrami: user-den yasini sorusun. Ve omrune nece il qalib ona alert-le bildirin. Tutaq ki, insanlar ucun maksimum yas 77 ildir. (meselen, 60 yas yazsa 17 ili qalib 🥺)
