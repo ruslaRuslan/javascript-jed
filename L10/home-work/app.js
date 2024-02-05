@@ -33,28 +33,16 @@
 
 const nameFormat = (str) => {
     const words = str.split(' ');
-
-    if (words.length === 1) {
-        console.log(words[0]);
-        return words[0];
-    } else {
         const result = `${words[0]} ${words[1].charAt(0)}`;
         console.log(result);
         return result;
-    }
-
 }
 
-nameFormat('Alion GreenHeart');
+nameFormat('Alion GreenHeart ');
 nameFormat('Ruslan Zeynalov');
 nameFormat('Gahraman Zeynalov');
 nameFormat('John');
 
-// ---------------------
-// // split methodu
-// ---------------------
-// //  trim funksiya
-// ---------------------
 
 // Funksiya yaradin, ilk characterimizi deyisek: ilkHerfiDeyis(soz, ilkHerf)
 // ilkHerfiDeyis('alion', "A") // Alion
