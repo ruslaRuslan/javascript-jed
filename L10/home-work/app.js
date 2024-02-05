@@ -84,22 +84,34 @@
 
 
 
-function removeCharacterFromString(word, charToRemove) {
-    const result = word.replace(charToRemove, '');
-    console.log(result);
-    return result;
-}
-removeCharacterFromString('Alion', 'A');
+// function removeCharacterFromString(word, charToRemove) {
+//     const result = word.replace(charToRemove, '');
+//     console.log(result);
+//     return result;
+// }
+// removeCharacterFromString('Alion', 'A');
 
 
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
-// 4. verify gmail address. (gmail addressleri sonu @gmail.com ile bitmelidir, ve ondan evvel en azi 5 simvol olmalidir. abcdf@gmail.com meselen)
+// 4. verify gmail address. (gmail addressleri sonu @gmail.com ile bitmelidir abcdf@gmail.com meselen)
+
+
+let gmail = prompt('Emaili daxil edin')
+if (gmail.endsWith('gmail.com')) {
+    console.log(`${gmail} gmail.com`);
+}
+else {
+    console.log('yalnis!!!! Emaili daxil edin ve 5 simvoldan az daxil etmeyin');
+}
+
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 // 1. Normalda Bazar ertesinden Cumeye qeder ders olur. Ele bir funksiya qurun ki, bize alert-le desin bu gun derse getmeliyik ya yox.
+
+
 // 2. Bu gunki tarixi document.write ile html-e yazin.
 // 3. *ADVANCED* Bu gun heftenin hansi gunudur, onun adini avtomatik document-e yazin. (obyektlerden istifade ede bilersiniz)
 // 4. *ADVANCED* Bu ay hansi aydir adini document-e yazin. (obyektden istifade ede bilersiniz)
