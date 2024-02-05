@@ -12,19 +12,14 @@
 
 // ----------------------------------------------------------------------------------------------------------------------------------------
 
-// // capitalize(str) -> alion -=> Alion
-// let name = 'alion'
-// let result = name.toLocaleUpperCase()
-// console.log(result);
-// ________________________________________________________________________________________________________________________________________
+//capitalize(str) -> alion -=> Alion
 
-const capitalize = () => {
-    let name = 'alion';
-    let result = name.toLocaleUpperCase()
+const capitalize = (str) => {
+    let result = str.charAt(0).toUpperCase() + str.slice(1)
     console.log(result);
     return result;
 }
-capitalize();
+capitalize('alion');
 
 // ________________________________________________________________________________________________________________________________________
 
