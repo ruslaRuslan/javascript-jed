@@ -1,16 +1,37 @@
 // // repeatedSymbolCounter('ALIONALI', 'A') // return 2 -> must be done with for loop!!!!
-const repeatedSymbolCounter = (a, b) => {
-    let result = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] === b) {
-            result++
-        }
-    }
-    return result
-}
-console.log(repeatedSymbolCounter('ALIONALI', 'A'));
-// ---------------------
+// const repeatedSymbolCounter = (a, b) => {
+//     let result = 0;
+//     for (let i = 0; i <= a.length; i++) {
+//         if (a[i] === b) {
+//             result++;
+//         }
+//     }
+//     return result;
+// }
+// console.log(repeatedSymbolCounter('ALIONALI', 'A'));
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
 // // capitalize(str) -> alion -=> Alion
+// let name = 'alion'
+// let result = name.toLocaleUpperCase()
+// console.log(result);
+// ________________________________________________________________________________________________________________________________________
+
+const capitalize = () => {
+    let name = 'alion';
+    let result = name.toLocaleUpperCase()
+    console.log(result);
+    return result;
+}
+capitalize();
+
+// ________________________________________________________________________________________________________________________________________
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 // // snakeToKebab(str) -=> SNAKE_CASE to kebab-case -=> BU_TEST_UCUNDUR -> bu-test-ucundur
 
