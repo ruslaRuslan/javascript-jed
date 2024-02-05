@@ -155,39 +155,67 @@
 
 // 4. *ADVANCED* Bu ay hansi aydir adini document-e yazin. (obyektden istifade ede bilersiniz)
 
-let month = new Date().getMonth() 
-if (month === 0) {
-    document.write('Yanvar')
-} else if (month === 1) {
-    document.write('Fevral')
-} else if (month === 2) {
-    document.write('Mart')
-} else if (month === 3) {
-    document.write('Aprel')
-} else if (month === 4) {
-    document.write('May')
-} else if (month === 5) {
-    document.write('Iyun')
-} else if (month === 6) {
-    document.write('Iyul')
-} else if (month === 7) {
-    document.write('Avqust')
-} else if (month === 8) {
-    document.write('Sentyabr')
-} else if (month === 9) {
-    document.write('Oktyabr')
-} else if (month === 10) {
-    document.write('Noyabr')
-} else if (month === 11) {
-    document.write('Dekabr')
-} else {
-    document.write("")
-}
+// let month = new Date().getMonth() 
+// if (month === 0) {
+//     document.write('Yanvar')
+// } else if (month === 1) {
+//     document.write('Fevral')
+// } else if (month === 2) {
+//     document.write('Mart')
+// } else if (month === 3) {
+//     document.write('Aprel')
+// } else if (month === 4) {
+//     document.write('May')
+// } else if (month === 5) {
+//     document.write('Iyun')
+// } else if (month === 6) {
+//     document.write('Iyul')
+// } else if (month === 7) {
+//     document.write('Avqust')
+// } else if (month === 8) {
+//     document.write('Sentyabr')
+// } else if (month === 9) {
+//     document.write('Oktyabr')
+// } else if (month === 10) {
+//     document.write('Noyabr')
+// } else if (month === 11) {
+//     document.write('Dekabr')
+// } else {
+//     document.write("")
+// }
 
 
 // 5. Ezrail proqrami: user-den yasini sorusun. Ve omrune nece il qalib ona alert-le bildirin. Tutaq ki, insanlar ucun maksimum yas 77 ildir. (meselen, 60 yas yazsa 17 ili qalib 🥺)
+
+// let Ezrail = prompt("yasinizi yazin zehmet olmasa")
+// result = 77 - Ezrail
+// console.log(`${result} ili qalib 🥺`);
+
 // 6. Userin yasini sorusun. ve bele bir statistika yazin: doguldugu vaxtdan bu gune nece il, ay, gun, saat, deqiqe, saniye kecib. (heresini ayrica) meselen,
 // kecen il sayi: 23,
 // kecen ay sayi: 234
 // kecen gun sayi: 6974
 // ve s.
+
+
+const userBirthDateString = prompt("Введите свою дату рождения в формате YYYY-MM-DD:");
+const userBirthDate = new Date(userBirthDateString);
+if (isNaN(userBirthDate.getTime())) {
+    console.error("Некорректная дата рождения. Пожалуйста, введите дату в правильном формате.");
+} else {
+    const currentDate = new Date();
+    const timeDifference = currentDate - userBirthDate;
+    const years = Math.floor(timeDifference / (365.25 * 24 * 60 * 60 * 1000));
+    const months = Math.floor((timeDifference % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
+    const days = Math.floor((timeDifference % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+    const hours = Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+    const minutes = Math.floor((timeDifference % (60 * 60 * 1000)) / (60 * 1000));
+    const seconds = Math.floor((timeDifference % (60 * 1000)) / 1000);
+    console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
+}
+
+
+
+
+
+
