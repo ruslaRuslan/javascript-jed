@@ -111,22 +111,48 @@
 
 // 1. Normalda Bazar ertesinden Cumeye qeder ders olur. Ele bir funksiya qurun ki, bize alert-le desin bu gun derse getmeliyik ya yox.
 
-    let today = new Date().getDay();
-    if (today >= 1 && today <= 5) {
-        alert("Bu gün dərsə getməlisiniz")
-    } else {
-        alert("Bu gün dərs yoxdur.")
-    }
+// let today = new Date().getDay();
+// if (today >= 1 && today <= 5) {
+//     alert("Bu gün dərsə getməlisiniz")
+// } else {
+//     alert("Bu gün dərs yoxdur.")
+// }
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 2. Bu gunki tarixi document.write ile html-e yazin.
 
+// let today = new Date();
+// document.write(today);
 
+// -----------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 3. *ADVANCED* Bu gun heftenin hansi gunudur, onun adini avtomatik document-e yazin. (obyektlerden istifade ede bilersiniz)
+
+
+let today = new Date().getDay();
+if (today === 0) {
+    document.write('Bazar')
+} else if (today === 1) {
+    document.write('Bazar ertəsi')
+} else if (today === 2) {
+    document.write('Çərşənbə axşamı')
+} else if (today === 3) {
+    document.write('Çərşənbə')
+} else if (today === 4) {
+    document.write('Cümə axşamı')
+} else if (today === 5) {
+    document.write('Cümə')
+} else if (today === 6) {
+    document.write('Şənbə')
+} else {
+    console.log("")
+}
+
+
+
 // 4. *ADVANCED* Bu ay hansi aydir adini document-e yazin. (obyektden istifade ede bilersiniz)
 // 5. Ezrail proqrami: user-den yasini sorusun. Ve omrune nece il qalib ona alert-le bildirin. Tutaq ki, insanlar ucun maksimum yas 77 ildir. (meselen, 60 yas yazsa 17 ili qalib 🥺)
 // 6. Userin yasini sorusun. ve bele bir statistika yazin: doguldugu vaxtdan bu gune nece il, ay, gun, saat, deqiqe, saniye kecib. (heresini ayrica) meselen,
