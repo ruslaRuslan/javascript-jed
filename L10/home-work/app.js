@@ -10,9 +10,11 @@
 // }
 // console.log(repeatedSymbolCounter('ALIONALI', 'A'));
 
+//-------------------- bunu ele yazmaliyam ki balacada 'a' olsun
+
 // ----------------------------------------------------------------------------------------------------------------------------------------
 
-//capitalize(str) -> alion -=> Alion
+// capitalize(str) -> alion -=> Alion
 
 // const capitalize = (str) => {
 //     let result = str.charAt(0).toUpperCase() + str.slice(1)
@@ -27,21 +29,22 @@
 
 
 
-// // snakeToKebab(str) -=> SNAKE_CASE to kebab-case -=> BU_TEST_UCUNDUR -> bu-test-ucundur
+// // snakeToKebab(str) -=> SNAKE_CASE to kebab-case -=> BU_TEST_UCUNDUR -> bu-test-ucundur      YARIMCIX IS!!!!!!
 
-// // nameFormat(str) —> Alion GreenHeart-=> Alion G.
+// nameFormat(str) —> Alion GreenHeart-=> Alion G.
 
 // const nameFormat = (str) => {
 //     const words = str.split(' ');
-//         const result = `${words[0]} ${words[1].charAt(0)}`;
-//         console.log(result);
-//         return result;
+//     const result = `${words[0]} ${words[1].charAt(0)}`;
+//     console.log(result);
+//     return result;
 // }
-
 // nameFormat('Alion GreenHeart ');
-// nameFormat('Ruslan Zeynalov');
-// nameFormat('Gahraman Zeynalov');
+// nameFormat('Ruslan Zeynalov ');
+// nameFormat('Gahraman Zeynalov ');
 
+
+// _------------------------------------------------------------
 
 // Funksiya yaradin, ilk characterimizi deyisek: ilkHerfiDeyis(soz, ilkHerf)
 // ilkHerfiDeyis('alion', "A") // Alion
@@ -51,7 +54,7 @@
 //     console.log(newWord);
 //     return newWord;
 // }
-// ilkHerfiDeyis('ruslan', 'R')
+// ilkHerfiDeyis('alion', 'A')
 
 
 // ———————————
@@ -89,7 +92,7 @@
 //     console.log(result);
 //     return result;
 // }
-// removeCharacterFromString('Alion', 'A');
+// removeCharacterFromString('Alion', 'l');
 
 
 
@@ -103,7 +106,7 @@
 //     console.log(`${gmail} gmail.com`);
 // }
 // else {
-//     console.log('yalnis!!!! Emaili daxil edin ve 5 simvoldan az daxil etmeyin');
+//     console.log('yalnis!!!! Emaili daxil edin !');
 // }
 
 
@@ -155,7 +158,7 @@
 
 // 4. *ADVANCED* Bu ay hansi aydir adini document-e yazin. (obyektden istifade ede bilersiniz)
 
-// let month = new Date().getMonth() 
+// let month = new Date().getMonth()
 // if (month === 0) {
 //     document.write('Yanvar')
 // } else if (month === 1) {
@@ -181,41 +184,79 @@
 // } else if (month === 11) {
 //     document.write('Dekabr')
 // } else {
-//     document.write("")
+//     document.write("Yalnis ay!")
 // }
 
 
 // 5. Ezrail proqrami: user-den yasini sorusun. Ve omrune nece il qalib ona alert-le bildirin. Tutaq ki, insanlar ucun maksimum yas 77 ildir. (meselen, 60 yas yazsa 17 ili qalib 🥺)
-
+//
 // let Ezrail = prompt("yasinizi yazin zehmet olmasa")
-// result = 77 - Ezrail
+// let result = 77 - Ezrail
 // console.log(`${result} ili qalib 🥺`);
 
 // 6. Userin yasini sorusun. ve bele bir statistika yazin: doguldugu vaxtdan bu gune nece il, ay, gun, saat, deqiqe, saniye kecib. (heresini ayrica) meselen,
 // kecen il sayi: 23,
 // kecen ay sayi: 234
-// kecen gun sayi: 6974
+// kecen gun sayi: 6974sdt 
 // ve s.
 
 
-const userBirthDateString = prompt("Введите свою дату рождения в формате YYYY-MM-DD:");
-const userBirthDate = new Date(userBirthDateString);
-if (isNaN(userBirthDate.getTime())) {
-    console.error("Некорректная дата рождения. Пожалуйста, введите дату в правильном формате.");
-} else {
-    const currentDate = new Date();
-    const timeDifference = currentDate - userBirthDate;
-    const years = Math.floor(timeDifference / (365.25 * 24 * 60 * 60 * 1000));
-    const months = Math.floor((timeDifference % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
-    const days = Math.floor((timeDifference % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
-    const hours = Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-    const minutes = Math.floor((timeDifference % (60 * 60 * 1000)) / (60 * 1000));
-    const seconds = Math.floor((timeDifference % (60 * 1000)) / 1000);
-    console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
-}
+// const userBirthDateString = prompt("Введите свою дату рождения в формате YYYY-MM-DD:");
+// const userBirthDate = new Date(userBirthDateString);
+// if (isNaN(userBirthDate.getTime())) {
+//     console.error("Некорректная дата рождения. Пожалуйста, введите дату в правильном формате.");
+// } else {
+//     const currentDate = new Date();
+//     const timeDifference = currentDate - userBirthDate;
+//     const years = Math.floor(timeDifference / (365.25 * 24 * 60 * 60 * 1000));
+//     const months = Math.floor((timeDifference % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
+//     const days = Math.floor((timeDifference % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+//     const hours = Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+//     const minutes = Math.floor((timeDifference % (60 * 60 * 1000)) / (60 * 1000));
+//     const seconds = Math.floor((timeDifference % (60 * 1000)) / 1000);
+//     console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
+// }
+// ________________________________________________________________
+
+// 6. Userin yasini sorusun. ve bele bir statistika yazin: doguldugu vaxtdan bu gune nece il, ay, gun, saat, deqiqe, saniye kecib. (heresini ayrica) meselen,
+// kecen il sayi: 23,
+// kecen ay sayi: 234
+// kecen gun sayi: 6974sdt 
+// ve s.
+
+// const userBirthDateString = prompt('Doguldugunuz tarixi teyin edin');
+// const userBirthDate = new Date(userBirthDateString);
+// if (isNaN(userBirthDate.getTime())) {
+//     console.error('Dogum tarixini duzgun teyin edin')
+// } else {
+//     const currentDate = new Date();
+//     const timeDifference = currentDate - userBirthDate;
+//     console.log(timeDifference);
+//     const seconds = parseInt(timeDifference / 1000);
+//     const minutes = parseInt(seconds / 60);
+//     const hours = parseInt(minutes / 60 + 1);
+//     const days = parseInt(hours / 24 );
+//     const months = parseInt(days / 30);
+//     const years = parseInt(days / 365.25);
+//     console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
+// }
 
 
-
-
+// const userBirthDateString = prompt('Doguldugunuz tarixi teyin edin');
+// const userBirthDate = new Date(userBirthDateString);
+// if (isNaN(userBirthDate.getTime())) {
+//     console.error('Dogum tarixini duzgun teyin edin')
+// } else {
+//     const currentDate = new Date();
+//     const timeDifference = currentDate - userBirthDate;
+//     console.log(timeDifference);
+//     const seconds = parseInt(timeDifference / 1000);
+//     const minutes = parseInt(seconds / 60);
+//     const hours = parseInt(minutes / 60);
+//     const days = parseInt(hours / 24 - 1);
+//     const years = parseInt(days / 365.25);
+//     const months = parseInt(years * 12 + 1);
+//     console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
+// }
 
 
