@@ -278,16 +278,33 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-firstLastUpper = (name) => {
-    let first = name[0].toUpperCase();
-    last = name[name.length - 1].toUpperCase();
-    let middle = name.slice(1, -1)
-    result = first + middle + last;
+// firstLastUpperV1 = (name) => {
+//     let first = name[0].toUpperCase();
+//     last = name[name.length - 1].toUpperCase();
+//     let middle = name.slice(1, -1)
+//     result = first + middle + last;
+//     return result;
+// }
+// console.log(firstLastUpperV1('renat'));
+// console.log(firstLastUpperV1('ali'));
+// console.log(firstLastUpperV1('isabala'));
+// console.log(firstLastUpperV1('ramin'));
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+firstLastUpperV2 = (name) => {
+    let upper = name.toUpperCase()
+    let middle = upper.slice(1, -1)
+    let result = upper.replace(middle, middle.toLowerCase())
     return result;
 }
-console.log(firstLastUpper('renat'));
-console.log(firstLastUpper('ali'));
-console.log(firstLastUpper('isabala'));
+
+console.log(firstLastUpperV2('renat'));
+console.log(firstLastUpperV2('ali')); ;
+console.log(firstLastUpperV2('isabala')); ;
+console.log(firstLastUpperV2('ramin')); ;
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
