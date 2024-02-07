@@ -281,7 +281,7 @@
 // firstLastUpperV1 = (name) => {
 //     let first = name[0].toUpperCase();
 //     last = name[name.length - 1].toUpperCase();
-//     let middle = name.slice(1, -1)
+//     let middle = name.slice(1, -1).toLowerCase()
 //     result = first + middle + last;
 //     return result;
 // }
@@ -292,20 +292,44 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-firstLastUpperV2 = (name) => {
-    let upper = name.toUpperCase()
-    let middle = upper.slice(1, -1)
-    let result = upper.replace(middle, middle.toLowerCase())
-    return result;
-}
-
-console.log(firstLastUpperV2('renat'));
-console.log(firstLastUpperV2('ali')); ;
-console.log(firstLastUpperV2('isabala')); ;
-console.log(firstLastUpperV2('ramin')); ;
+// firstLastUpperV2 = (name) => {
+//     let upper = name.toUpperCase();
+//     let middle = upper.slice(1, -1);
+//     let result = upper.replace(middle, middle.toLowerCase());
+//     return result;
+// }
+// console.log(firstLastUpperV2('reNat'));
+// console.log(firstLastUpperV2('ali'));
+// console.log(firstLastUpperV2('isABAla')); 
+// console.log(firstLastUpperV2('ramin')); 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+// symbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)" "a" )
+// 10. Cunki 10 eded 'a' var.
+
+// symbolCounterV1 = (text, symbol) => {
+//     result = 0;
+//     for (let i = 0; i <= text.length; i++) {
+//         if (text[i] === symbol) {
+//             result++
+//         }
+//     }
+//     return result
+// }
+// console.log(symbolCounterV1("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"));
 
 
+// symbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)" "a" )
+// 10. Cunki 10 eded 'a' var.
 
 
+symbolCounterV1 = (text, symbol) => {
+    result = 0;
+    for (const key of text) {
+        if (key === symbol) {
+            result++
+        }
+    }
+    return result
+}
+console.log(symbolCounterV1("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"));
