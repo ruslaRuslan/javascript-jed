@@ -365,40 +365,47 @@ sayitFunction('Hello my friend. How are you?')
 
 // Task2. Cumlede her sozun ilk herfini boyuden funksiya yaz. (salam abi necesen -> Salam Abi Necesen)
 
-const boyukHerf = (big) => {
-    let words = big.split(' ')
-    let result = `${words[0].charAt(0).toUpperCase() + words[0].slice(1)} ${words[1].charAt(0).toUpperCase() + words[1].slice(1)} ${words[2].charAt(0).toUpperCase() + words[2].slice(1)}`
-    console.log(result);
-    return result
-}
-boyukHerf('zeynalov ruslan mehman')
+// const boyukHerf = (big) => {
+//     let words = big.split(' ')
+//     let result = `${words[0].charAt(0).toUpperCase() + words[0].slice(1)} ${words[1].charAt(0).toUpperCase() + words[1].slice(1)} ${words[2].charAt(0).toUpperCase() + words[2].slice(1)}`
+//     console.log(result);
+//     return result
+// }
+// boyukHerf('zeynalov ruslan mehman')
 
 
 
 // Task3. Cumlede sozlerin sayini tapan funksiya yazin. (heyy necesen -> 2 )
 
-const CumledeSozlerinSayi = (str) => {
-    let words = str.split(' ')
-    let result = words.length;
-    console.log(result);
-    return result;
-}
-CumledeSozlerinSayi('Salam melim senin cox uzun saclarin var ')
+// const CumledeSozlerinSayi = (str) => {
+//     let words = str.split(' ')
+//     let result = words.length;
+//     console.log(result);
+//     return result;
+// }
+// CumledeSozlerinSayi('Salam melim senin cox uzun saclarin var ')
 
 // Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin.
 
-const SozdeEded = (number) => {
-    for (let i = 0; i < number.length; i++) {
-        if (number[i] >= '0' && number[i] <= '9') {
-            return 'Bu sozde eded var'
-        }
-    }
-    return 'Bu sozde eded yoxdur'
-}
-console.log(SozdeEded('Salam nece yasin var?'));
-console.log(SozdeEded(' 15 yasim var'));
+// const SozdeEded = (number) => {
+//     for (let i = 0; i < number.length; i++) {
+//         if (number[i] >= '0' && number[i] <= '9') {
+//             return 'Bu sozde eded var'
+//         }
+//     }
+//     return 'Bu sozde eded yoxdur'
+// }
+// console.log(SozdeEded('Salam nece yasin var?'));
+// console.log(SozdeEded(' 15 yasim var'));
 
 
 
 
 // Task5. Cumledeki butun bosluqlari silin. (salam abi necesen -> salamabinecesen)
+
+const CumledekiButunBosluqlar = (str) => {
+    let result = str.split(' ').join('')
+        console.log(result);
+    return result
+}
+CumledekiButunBosluqlar('salam abi necesen')
