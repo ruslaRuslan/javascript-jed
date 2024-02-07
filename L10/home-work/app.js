@@ -346,20 +346,20 @@
 
 // Task1. Sozde saitlerin sayini tapan funksiya yaz (saitler: a,e,i,o,u)
 
-// const sayitFunction = (text) => {
-//     const vowels = 'aeiouAEIOU';
-//     let result = 0;
+const sayitFunction = (text) => {
+    const vowels = 'aeiouAEIOU';
+    let result = 0;
 
-//     for (let i = 0; i < text.length; i++) {
-//         if (vowels.includes(text[i])) {
-//             result++
-//         }
-//     }
-//     console.log(result);
-//     return result;
-// }
+    for (let i = 0; i < text.length; i++) {
+        if (vowels.includes(text[i])) {
+            result++
+        }
+    }
+    console.log(result);
+    return result;
+}
 
-// sayitFunction('Hello my friend. How are you?')
+sayitFunction('Hello my friend. How are you?')
 
 
 
@@ -367,25 +367,23 @@
 
 const boyukHerf = (big) => {
     let words = big.split(' ')
-    let result = `${words[0].charAt(0).toUpperCase() + words[0].slice(1) } ${words[1].charAt(0).toUpperCase() + words[1].slice(1)} ${words[2].charAt(0).toUpperCase() + words[2].slice(1)}`
+    let result = `${words[0].charAt(0).toUpperCase() + words[0].slice(1)} ${words[1].charAt(0).toUpperCase() + words[1].slice(1)} ${words[2].charAt(0).toUpperCase() + words[2].slice(1)}`
     console.log(result);
     return result
 }
 boyukHerf('zeynalov ruslan mehman')
 
-// _______________________________
-// const nameFormat = (str) => {
-//     let words = str.split(' ');
-//     const result = `${words[0]} ${words[1].charAt(0)}`
-//     console.log(result);
-//     return result;
-// }
-// nameFormat('Alion GreenHeart ');
-// nameFormat('Ruslan Zeynalov');
-// nameFormat('Gahraman Zeynalov');
+
 
 // Task3. Cumlede sozlerin sayini tapan funksiya yazin. (heyy necesen -> 2 )
 
+const CumledeSozlerinSayi = (str) => {
+    let words = str.split(' ')
+    let result = words.length;
+    console.log(result);
+    return result;
+}
+CumledeSozlerinSayi('Salam melim senin cox uzun saclarin var ')
 
 // Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin.
 
