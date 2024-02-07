@@ -395,23 +395,9 @@ const SozdeEded = (number) => {
     }
     return 'Bu sozde eded yoxdur'
 }
-console.log(SozdeEded('fvjnfkbvhjfbhfbv'));
+console.log(SozdeEded('Salam nece yasin var?'));
+console.log(SozdeEded(' 15 yasim var'));
 
-
-// const sayitFunction = (text) => {
-//     const vowels = 'aeiouAEIOU';
-//     let result = 0;
-
-//     for (let i = 0; i < text.length; i++) {
-//         if (vowels.includes(text[i])) {
-//             result++
-//         }
-//     }
-//     console.log(result);
-//     return result;
-// }
-
-// sayitFunction('Hello my friend. How are you?')
 
 
 
