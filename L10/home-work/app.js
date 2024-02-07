@@ -387,5 +387,32 @@ CumledeSozlerinSayi('Salam melim senin cox uzun saclarin var ')
 
 // Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin.
 
+const SozdeEded = (number) => {
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] >= '0' && number[i] <= '9') {
+            return 'Bu sozde eded var'
+        }
+    }
+    return 'Bu sozde eded yoxdur'
+}
+console.log(SozdeEded('fvjnfkbvhjfbhfbv'));
+
+
+// const sayitFunction = (text) => {
+//     const vowels = 'aeiouAEIOU';
+//     let result = 0;
+
+//     for (let i = 0; i < text.length; i++) {
+//         if (vowels.includes(text[i])) {
+//             result++
+//         }
+//     }
+//     console.log(result);
+//     return result;
+// }
+
+// sayitFunction('Hello my friend. How are you?')
+
+
 
 // Task5. Cumledeki butun bosluqlari silin. (salam abi necesen -> salamabinecesen)
