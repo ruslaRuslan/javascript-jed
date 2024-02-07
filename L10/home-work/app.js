@@ -337,7 +337,38 @@
 // }
 // console.log(symbolCounterV1("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"));
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// const SymbolCounter = (text, symbol) => text.length - text.replaceAll(symbol, '').length;
+// console.log(SymbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"))
 
 
-const SymbolCounter = (text, symbol) => text.length - text.replaceAll(symbol, '').length;
-console.log(SymbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"))
+
+// Task1. Sozde saitlerin sayini tapan funksiya yaz (saitler: a,e,i,o,u)
+
+const sayitFunction = (text) => {
+    const vowels = 'aeiouAEIOU';
+    let result = 0;
+
+    for (let i = 0; i < text.length; i++) {
+        if (vowels.includes(text[i])) {
+            result++
+        }
+    }
+    console.log(result);
+    return result;
+}
+
+sayitFunction('Hello my friend. How are you?')
+
+
+
+// Task2. Cumlede her sozun ilk herfini boyuden funksiya yaz. (salam abi necesen -> Salam Abi Necesen)
+
+// Task3. Cumlede sozlerin sayini tapan funksiya yazin. (heyy necesen -> 2 )
+
+
+// Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin.
+
+
+// Task5. Cumledeki butun bosluqlari silin. (salam abi necesen -> salamabinecesen)
