@@ -267,67 +267,28 @@
 // Task. Funksiya yarat. Ona argument olaraq ad gonderecem, onun ilk ve son herfini boyudub, return etsin. 
 // firstLastUpper("alion") // AlioN
 
-function firstLastUpper(name) {
-    let result = name.charAt(0).toUpperCase() + name.slice(1, -1) + name.slice(-1).toUpperCase()
-    console.log(result);
-    return result
-}
-firstLastUpper('alion')
-firstLastUpper('ruslan')
-firstLastUpper('ahmad')
+// function firstLastUpper(name) {
+//     let result = name.charAt(0).toUpperCase() + name.slice(1, -1) + name.slice(-1).toUpperCase()
+//     console.log(result);
+//     return result
+// }
+// firstLastUpper('alion')
+// firstLastUpper('ruslan')
+// firstLastUpper('ahmad')
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-// // funksiya yarat.Ona argument olaraq ad gonderecem, onun ilk ve son herfini boyudub, return etsin.
-// //firstLastUpper("alion") // AlioN
-
-// // function declaration
-// function firstLastUpperV1(ad) { // reNat
-//     let first = ad[0].toUpperCase() // R
-//     let last = ad[ad.length - 1].toUpperCase() // T
-//     let middle = ad.slice(1, -1).toLowerCase() // eNa
-//     return first + middle + last // ReNaT
-// }
-// function firstLastUpperV2(ad) {
-//     let upper = ad.toUpperCase() // RENAT
-//     let middle = upper.slice(1, -1) // ENA
-//     let result = upper.replace(middle, middle.toLowerCase())
-//     return result;
-// }
-
-// console.log(firstLastUpperV2("reNat"))
-// console.log(firstLastUpperV2("ali"))
-// console.log(firstLastUpperV2("ramin"))
-// console.log(firstLastUpperV2("isabala"))
-// // const firstLastUpper = (ad) => { } // arrow function
-
-// -----------------------------------------------
-
-
-
-function symbolCounterV1(text, symbol) {
-    let counter = 0
-    for (let i = 0; i < text.length; i++) {
-        if (text[i] === symbol) {
-            counter++
-        }
-    }
-    return counter
+firstLastUpper = (name) => {
+    let first = name[0].toUpperCase();
+    last = name[name.length - 1].toUpperCase();
+    let middle = name.slice(1, -1)
+    result = first + middle + last;
+    return result;
 }
-function symbolCounterV2(text, symbol) {
-    let counter = 0;
-    for (const letter of text) {
-        if (letter === symbol) {
-            counter++
-        }
-    }
-    return counter
-}
-const symbolCounterV3 = (text, symbol) => text.length - text.replaceAll(symbol, '').length
+console.log(firstLastUpper('renat'));
+console.log(firstLastUpper('ali'));
+console.log(firstLastUpper('isabala'));
 
-console.log(symbolCounterV3("sAlam menim adim renatdir, men javascripte nifret edirem, zarafat etdim, o benim tek askim :)", "a")) // 9  cunki, 9 eded a var. 
 
-// "isabala" -> 7
-// "isbl" -> 4
 
 
