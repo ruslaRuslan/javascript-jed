@@ -197,7 +197,7 @@
 // 6. Userin yasini sorusun. ve bele bir statistika yazin: doguldugu vaxtdan bu gune nece il, ay, gun, saat, deqiqe, saniye kecib. (heresini ayrica) meselen,
 // kecen il sayi: 23,
 // kecen ay sayi: 234
-// kecen gun sayi: 6974sdt 
+// kecen gun sayi: 6974sdt
 // ve s.
 
 
@@ -216,12 +216,13 @@
 //     const seconds = Math.floor((timeDifference % (60 * 1000)) / 1000);
 //     console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
 // }
-// ________________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 6. Userin yasini sorusun. ve bele bir statistika yazin: doguldugu vaxtdan bu gune nece il, ay, gun, saat, deqiqe, saniye kecib. (heresini ayrica) meselen,
 // kecen il sayi: 23,
 // kecen ay sayi: 234
-// kecen gun sayi: 6974sdt 
+// kecen gun sayi: 6974sdt
 // ve s.
 
 // const userBirthDateString = prompt('Doguldugunuz tarixi teyin edin');
@@ -241,6 +242,7 @@
 //     console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
 // }
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // const userBirthDateString = prompt('Doguldugunuz tarixi teyin edin');
 // const userBirthDate = new Date(userBirthDateString);
@@ -258,5 +260,22 @@
 //     const months = parseInt(years * 12 + 1);
 //     console.log(`Прошло ${years} лет, ${months} месяцев, ${days} дней, ${hours} часов, ${minutes} минут, ${seconds} секунд.`);
 // }
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Task. Funksiya yarat. Ona argument olaraq ad gonderecem, onun ilk ve son herfini boyudub, return etsin. 
+// firstLastUpper("alion") // AlioN
+
+function firstLastUpper(name) {
+let result = name.charAt(0).toUpperCase() + name.slice(1, -1) + name.slice(-1).toUpperCase()
+    console.log(result);
+    return result
+}
+firstLastUpper('alion')
+firstLastUpper('ruslan')
+firstLastUpper('ahmad')
+
+
 
 
