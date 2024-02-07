@@ -278,7 +278,7 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-// firstLastUpperV1 = (name) => {
+// const firstLastUpperV1 = (name) => {
 //     let first = name[0].toUpperCase();
 //     last = name[name.length - 1].toUpperCase();
 //     let middle = name.slice(1, -1).toLowerCase()
@@ -292,7 +292,7 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-// firstLastUpperV2 = (name) => {
+// const firstLastUpperV2 = (name) => {
 //     let upper = name.toUpperCase();
 //     let middle = upper.slice(1, -1);
 //     let result = upper.replace(middle, middle.toLowerCase());
@@ -307,7 +307,7 @@
 // symbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)" "a" )
 // 10. Cunki 10 eded 'a' var.
 
-// symbolCounterV1 = (text, symbol) => {
+// const symbolCounterV1 = (text, symbol) => {
 //     result = 0;
 //     for (let i = 0; i <= text.length; i++) {
 //         if (text[i] === symbol) {
@@ -319,17 +319,25 @@
 // console.log(symbolCounterV1("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"));
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 // symbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)" "a" )
 // 10. Cunki 10 eded 'a' var.
 
 
-symbolCounterV1 = (text, symbol) => {
-    result = 0;
-    for (const key of text) {
-        if (key === symbol) {
-            result++
-        }
-    }
-    return result
-}
-console.log(symbolCounterV1("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"));
+// const symbolCounterV1 = (text, symbol) => {
+//     result = 0;
+//     for (const herf of text) {
+//         if (herf === symbol) {
+//             result++
+//         }
+//     }
+//     return result
+// }
+// console.log(symbolCounterV1("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"));
+
+
+
+const SymbolCounter = (text, symbol) => text.length - text.replaceAll(symbol, '').length;
+console.log(SymbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)", "a"))
