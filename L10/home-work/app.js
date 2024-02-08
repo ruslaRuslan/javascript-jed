@@ -280,8 +280,11 @@
 
 // const firstLastUpperV1 = (name) => {
 //     let first = name[0].toUpperCase();
-//     last = name[name.length - 1].toUpperCase();
+//     console.log(first);
+//     let last = name[name.length - 1].toUpperCase();
+//     console.log(last);
 //     let middle = name.slice(1, -1).toLowerCase()
+//     console.log(middle);
 //     result = first + middle + last;
 //     return result;
 // }
@@ -294,7 +297,9 @@
 
 // const firstLastUpperV2 = (name) => {
 //     let upper = name.toUpperCase();
+//     console.log(upper);
 //     let middle = upper.slice(1, -1);
+//     console.log(middle);
 //     let result = upper.replace(middle, middle.toLowerCase());
 //     return result;
 // }
@@ -309,7 +314,7 @@
 
 // const symbolCounterV1 = (text, symbol) => {
 //     result = 0;
-//     for (let i = 0; i <= text.length; i++) {
+//     for (let i = 0; i < text.length; i++) {
 //         if (text[i] === symbol) {
 //             result++
 //         }
@@ -349,7 +354,6 @@
 // const sayitFunction = (text) => {
 //     const vowels = 'aeiouAEIOU';
 //     let result = 0;
-
 //     for (let i = 0; i < text.length; i++) {
 //         if (vowels.includes(text[i])) {
 //             result++
@@ -393,7 +397,7 @@
 
 
 // Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin.
-
+// task-01 kimidir onun formasindada yazmaliyam!!!!!! yarimcix is!!!
 // const SozdeEded = (number) => {
 //     for (let i = 0; i < number.length; i++) {
 //         if (number[i] >= '0' && number[i] <= '9') {
@@ -403,7 +407,7 @@
 //     return 'Bu sozde eded yoxdur'
 // }
 // console.log(SozdeEded('Salam nece yasin var?'));
-// console.log(SozdeEded(' 15 yasim var'));
+// console.log(SozdeEded(' 16 yasim var'));
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -413,22 +417,26 @@
 
 // const CumledekiButunBosluqlar = (str) => {
 //     let result = str.split(' ').join('')
-//         console.log(result);
+//     console.log(result);
 //     return result
 // }
 // CumledekiButunBosluqlar('salam abi necesen')
 
-
-const CumledekiButunBosluqlar = (str) => {
-    let result = str.replaceAll(' ', '')
-    console.log(result);
-    return result
-}
-CumledekiButunBosluqlar('salam abi necesen')
+// Task5. Cumledeki butun bosluqlari silin. (salam abi necesen -> salamabinecesen)
 
 
+// const CumledekiButunBosluqlar = (str) => {
+//     let result = str.replaceAll(' ', '')
+//     console.log(result);
+//     return result
+// }
+// CumledekiButunBosluqlar('salam abi necesen')
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
