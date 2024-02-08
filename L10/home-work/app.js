@@ -264,7 +264,7 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-// Task. Funksiya yarat. Ona argument olaraq ad gonderecem, onun ilk ve son herfini boyudub, return etsin. 
+// Task. Funksiya yarat. Ona argument olaraq ad gonderecem, onun ilk ve son herfini boyudub, return etsin.
 // firstLastUpper("alion") // AlioN
 
 // function firstLastUpper(name) {
@@ -300,8 +300,8 @@
 // }
 // console.log(firstLastUpperV2('reNat'));
 // console.log(firstLastUpperV2('ali'));
-// console.log(firstLastUpperV2('isABAla')); 
-// console.log(firstLastUpperV2('ramin')); 
+// console.log(firstLastUpperV2('isABAla'));
+// console.log(firstLastUpperV2('ramin'));
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 // symbolCounter("sAlam menim adim renatdir, men javascriptde nifret edirem, zarafat edirem o benim tek askimdi :)" "a" )
@@ -346,20 +346,22 @@
 
 // Task1. Sozde saitlerin sayini tapan funksiya yaz (saitler: a,e,i,o,u)
 
-const sayitFunction = (text) => {
-    const vowels = 'aeiouAEIOU';
-    let result = 0;
+// const sayitFunction = (text) => {
+//     const vowels = 'aeiouAEIOU';
+//     let result = 0;
 
-    for (let i = 0; i < text.length; i++) {
-        if (vowels.includes(text[i])) {
-            result++
-        }
-    }
-    console.log(result);
-    return result;
-}
+//     for (let i = 0; i < text.length; i++) {
+//         if (vowels.includes(text[i])) {
+//             result++
+//         }
+//     }
+//     console.log(result);
+//     return result;
+// }
 
-sayitFunction('Hello my friend. How are you?')
+// sayitFunction('Hello my friend. How are you?')
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -373,6 +375,7 @@ sayitFunction('Hello my friend. How are you?')
 // }
 // boyukHerf('zeynalov ruslan mehman')
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task3. Cumlede sozlerin sayini tapan funksiya yazin. (heyy necesen -> 2 )
@@ -384,6 +387,10 @@ sayitFunction('Hello my friend. How are you?')
 //     return result;
 // }
 // CumledeSozlerinSayi('Salam melim senin cox uzun saclarin var ')
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin.
 
@@ -398,14 +405,31 @@ sayitFunction('Hello my friend. How are you?')
 // console.log(SozdeEded('Salam nece yasin var?'));
 // console.log(SozdeEded(' 15 yasim var'));
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 // Task5. Cumledeki butun bosluqlari silin. (salam abi necesen -> salamabinecesen)
 
+// const CumledekiButunBosluqlar = (str) => {
+//     let result = str.split(' ').join('')
+//         console.log(result);
+//     return result
+// }
+// CumledekiButunBosluqlar('salam abi necesen')
+
+
 const CumledekiButunBosluqlar = (str) => {
-    let result = str.split(' ').join('')
-        console.log(result);
+    let result = str.replaceAll(' ', '')
+    console.log(result);
     return result
 }
 CumledekiButunBosluqlar('salam abi necesen')
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
