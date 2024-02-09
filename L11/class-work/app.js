@@ -174,24 +174,41 @@
 // }
 // console.log(massiv);
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 // 2. Funksiya yazin ki, massivde olan butun elementlerin hasilini ekrana cixarsin.
 
+// let massiv = [1, 2, 3, 4, 5, 6, 7];
+// function hasilHesablama() {
+//     result = 1;
+//     for (let i = 0; i < massiv.length; i++) {
+//         result *= massiv[i];
+//     }
+//     console.log(result);
+//     return result;
+// }
+// hasilHesablama();
+// __________________________________________________
+
 let massiv = [1, 2, 3, 4, 5, 6, 7];
 function hasilHesablama() {
     result = 1;
-    for (let i = 0; i < massiv.length; i++) {
-        result *= massiv[i];
+    for (let i of massiv) {
+        result *= i;
     }
     console.log(result);
     return result;
 }
 hasilHesablama();
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 3. multiply(a,b,c) funksiyasi yaradin. Men ona istediyim sayda argument versem bele islemelidir, hasilini geri qaytarmalidir.
+
+
 
 
 
