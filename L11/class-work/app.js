@@ -128,10 +128,38 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 // Bunlar obyekte islemir
+
+// const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+// for (const element of friends) {
+//     console.log(element.toLocaleUpperCase());
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
-for (let elem of friends) {
-    console.log(elem.toLocaleUpperCase());
-}
+
+// sondan elave etmek -> push()
+// friends.push('test')
+// console.log(friends);
+
+// ___________________________________
+
+// evvelden elave etmek -> unshift()
+// friends.unshift('MIMI')
+// console.log(friends);
+
+// ___________________________________
+
+// sondan simek olar -> pop()
+// friends.pop()
+// console.log(friends);
+// ___________________________________
+
+// evvelden silmek olar -> shift()
+
+// friends.shift()
+// console.log(friends);
+
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
