@@ -105,5 +105,26 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
+// massiv ( cox element )
+let arr =[]
+// 1.novbe  Queue -> 🍖 sada ali intiqam RIFO -> First in First Out
 
+// sondan elemnt elave etmek: push()
+// evvelden cixarmaq: shift()
+arr.push('ali')
+arr.push('sada')
+arr.shift()  //ilk elementi cixart
+arr.shift()
+arr.unshift('intiqam')
+arr.unshift('ferid')
+arr.pop()
+
+console.log(arr);
+
+// 2.yigin Stack -> last in first out
+
+
+// sada
+// ali
+// intiqam
 
