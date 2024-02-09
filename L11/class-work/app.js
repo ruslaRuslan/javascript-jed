@@ -192,24 +192,56 @@
 // hasilHesablama();
 // __________________________________________________
 
-let massiv = [1, 2, 3, 4, 5, 6, 7];
-function hasilHesablama() {
-    result = 1;
-    for (let i of massiv) {
-        result *= i;
-    }
-    console.log(result);
-    return result;
-}
-hasilHesablama();
+// let massiv = [1, 2, 3, 4, 5, 6, 7];
+// function hasilHesablama() {
+//     result = 1;
+//     for (let i of massiv) {
+//         result *= i;
+//     }
+//     console.log(result);
+//     return result;
+// }
+// hasilHesablama();
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 3. multiply(a,b,c) funksiyasi yaradin. Men ona istediyim sayda argument versem bele islemelidir, hasilini geri qaytarmalidir.
 
+// const multiply = (...numbers) => {
+//     if (numbers.length === 0) {
+//         return 0;
+//     }
 
+//     let result = 1;
+//     for (let number of numbers) {
+//         result *= number;
+//     }
+//     return result;
 
+// }
+// console.log(multiply(1, 2, 3, 4, 5, 6, 7, 8));
+// console.log(multiply(5, 6, 7, 8));
+// console.log(multiply(2));
+// console.log(multiply());
+
+// ___________________________________________
+// const multiply = (...numbers) => {
+//     if (numbers.length === 0) {
+//         return 0;
+//     }
+
+//     let result = 1;
+//     for (let i = 0; i < numbers.length; i++) {
+//         result *= numbers[i];
+//     }
+//     return result;
+
+// }
+// console.log(multiply(1, 2, 3, 4, 5, 6, 7, 8));
+// console.log(multiply(5, 6, 7, 8));
+// console.log(multiply(2));
+// console.log(multiply());
 
 
 
