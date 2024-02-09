@@ -106,20 +106,20 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 // massiv ( cox element )
-let arr =[]
+// let arr =[]
 // 1.novbe  Queue -> 🍖 sada ali intiqam RIFO -> First in First Out
 
 // sondan elemnt elave etmek: push()
 // evvelden cixarmaq: shift()
-arr.push('ali')
-arr.push('sada')
-arr.shift()  //ilk elementi cixart
-arr.shift()
-arr.unshift('intiqam')
-arr.unshift('ferid')
-arr.pop()
+// arr.push('ali')
+// arr.push('sada')
+// arr.shift()  //ilk elementi cixart
+// arr.shift()
+// arr.unshift('intiqam')
+// arr.unshift('ferid')
+// arr.pop()
 
-console.log(arr);
+// console.log(arr);
 
 // 2.yigin Stack -> last in first out
 
@@ -128,3 +128,9 @@ console.log(arr);
 // ali
 // intiqam
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9],]
+
+console.log(matrix[1][1])
