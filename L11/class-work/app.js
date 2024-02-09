@@ -225,7 +225,8 @@
 // console.log(multiply(2));
 // console.log(multiply());
 
-// ___________________________________________
+// __________________________________________________________
+
 // const multiply = (...numbers) => {
 //     if (numbers.length === 0) {
 //         return 0;
@@ -242,11 +243,3 @@
 // console.log(multiply(5, 6, 7, 8));
 // console.log(multiply(2));
 // console.log(multiply());
-
-
-
-
-
-
-
-
