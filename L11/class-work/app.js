@@ -120,11 +120,20 @@
 
 
 // itarable -> uzerinden loop ede bileceyimiz (string, array)
-const name = 'alineymet';
-for (let herf of name) {
-    console.log(herf);
+// const name = 'alineymet';
+// for (let herf of name) {
+//     console.log(herf);
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// Bunlar obyekte islemir
+const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+for (let elem of friends) {
+    console.log(elem.toLocaleUpperCase());
 }
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
