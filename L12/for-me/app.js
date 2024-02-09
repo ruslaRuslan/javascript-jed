@@ -57,17 +57,28 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-let fe10 = ['AMIL', 'intiqam', 'ferid', 'ali']
-fe10[0] = 'amil';
-console.log(fe10);
+// let fe10 = ['AMIL', 'intiqam', 'ferid', 'ali']
+// fe10[0] = 'amil';
+// console.log(fe10);
 // massiv mutable!
 
 // dynamic 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
+// let fe10 = ['AMIL', 'intiqam', 'ferid', 'ali']
 
+// for (let key of fe10) {
+//     console.log(key);
+// }
+// for(1. interval 2. in (index array) 3.of (valuerlari))
+// of ancax itarable ile isleyir (sstring, array)
+// __________________________________________
 
+// let fe11 = ['AMIL', 'intiqam', 'ferid', 'ali']
 
+// for (let key in fe11) {
+//     console.log(fe11[key]);
+// }
 
-
+// for(1. interval 2. in (index array) 3.of (valuerlari))
