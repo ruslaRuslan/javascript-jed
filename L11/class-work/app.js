@@ -136,7 +136,7 @@
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
-const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+// const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 
 // sondan elave etmek -> push()
 // friends.push('test')
@@ -169,7 +169,7 @@ const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 
 // let massiv = [];
 // for (let i = 1; i <= 5; i++) {
-//     let number = parseFloat(prompt('Massivin ' + (i) + '. elementlerini daxil edin:'))
+//     let number = prompt('Massivin ' + (i) + '. elementlerini daxil edin:')
 //     massiv.push(number)
 // }
 // console.log(massiv);
@@ -179,6 +179,16 @@ const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 
 // 2. Funksiya yazin ki, massivde olan butun elementlerin hasilini ekrana cixarsin.
 
+let massiv = [1, 2, 3, 4, 5, 6, 7];
+function hasilHesablama() {
+    result = 1;
+    for (let i = 0; i < massiv.length; i++) {
+        result *= massiv[i];
+    }
+    console.log(result);
+    return result;
+}
+hasilHesablama();
 
 
 // 3. multiply(a,b,c) funksiyasi yaradin. Men ona istediyim sayda argument versem bele islemelidir, hasilini geri qaytarmalidir.
