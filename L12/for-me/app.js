@@ -48,7 +48,13 @@
 
 
 
+let fe10 = ['AMIL', 'intiqam', 'ferid', 'ali', true, false, 12, 0, NaN, function (ad) {
+    console.log(ad);
+}]
 
+fe10[fe10.length - 1]('ali')
+
+// dynamic 
 
 
 
