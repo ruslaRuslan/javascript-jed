@@ -43,6 +43,7 @@
 
 // T2. 'idris' elementi bu massive daxildirse, ekrana "Idris bizim dostumuzdur" cumlesini cixar. Yoxdursa, "Idris abi burda yoxdur" cixart.
 
+
 // function findFriends(name) {
 //     const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 //     if (name === (friends[4])) {
@@ -74,8 +75,36 @@
 
 
 // T5. bu massivle verilen massivi birlesdir (concat vasitesile)
-const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris'];
-const enemies = ['alion', 'greenheart', 'javascript', 'react'];
-let result = friends.concat(enemies)
-console.log(result);
+// const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris'];
+// const enemies = ['alion', 'greenheart', 'javascript', 'react'];
+// let result = friends.concat(enemies)
+// console.log(result);
+
+
+
+// const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+// console.log(friends.length)
+
+
+
+// 1. Massiv yaradin.  olcusunu 5e menimsedin ve prompt-la massivi number-lerle doldurun. 
+
+
+
+
+
+
+// 2. Funksiya yazin ki, massivde olan butun elementlerin hasilini ekrana cixarsin.
+
+
+
+// 3. multiply(a,b,c) funksiyasi yaradin. Men ona istediyim sayda argument versem bele islemelidir, hasilini geri qaytarmalidir.
+
+
+
+
+
+
+
+
 

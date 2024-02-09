@@ -29,7 +29,29 @@
 
 
 
-// // snakeToKebab(str) -=> SNAKE_CASE to kebab-case -=> BU_TEST_UCUNDUR -> bu-test-ucundur      YARIMCIX IS!!!!!!
+// // snakeToKebab(str) -=> SNAKE_CASE to kebab-case -=> BU_TEST_UCUNDUR -> bu-test-ucundur      
+
+// function snakeToKebab(str) {
+//     let kebab = str.toLowerCase().split('_');
+//     let result = kebab[0];
+//     for (let i = 0; i < kebab.length; i++) {
+//         result += '-' + kebab[i];
+//     }
+//     return result;
+// }
+// console.log(snakeToKebab("BU_TEST_UCUNDUR")); 
+
+// // snakeToKebab(str) -=> SNAKE_CASE to kebab-case -=> BU_TEST_UCUNDUR -> bu-test-ucundur      
+
+// function snakeToKebab(str) {
+//     let kebab = str.toLowerCase().replaceAll('_', '-');
+//     let result = kebab
+//     console.log(result)
+//     return result
+// }
+// snakeToKebab("BU_TEST_UCUNDUR");
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
 
 // nameFormat(str) —> Alion GreenHeart-=> Alion G.
 
@@ -397,7 +419,7 @@
 
 
 // Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin.
-// task-01 kimidir onun formasindada yazmaliyam!!!!!! yarimcix is!!!
+
 // const SozdeEded = (number) => {
 //     for (let i = 0; i < number.length; i++) {
 //         if (number[i] >= '0' && number[i] <= '9') {
@@ -410,7 +432,18 @@
 // console.log(SozdeEded(' 16 yasim var'));
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+// Task4. Verilen sozde eded varsa "Bu sozde eded var", yoxdursa "Bu sozde eded yoxdur" geri qaytarsin
 
+// const repeatedSymbolCounter = (string) => {
+//     for (let i = 0; i < string.length; i++) {
+//         if ('0123456789'.includes(string[i])) {
+//             return 'Bu sozde eded var'
+//         }
+//     }
+//     return 'Bu sozde eded yoxdur';
+// }
+// console.log(repeatedSymbolCounter('Salam nece yasin var?'));
+// console.log(repeatedSymbolCounter('16 yasim var'));
 
 
 // Task5. Cumledeki butun bosluqlari silin. (salam abi necesen -> salamabinecesen)
