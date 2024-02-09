@@ -48,16 +48,23 @@
 
 
 
-let fe10 = ['AMIL', 'intiqam', 'ferid', 'ali', true, false, 12, 0, NaN, function (ad) {
-    console.log(ad);
-}]
+// let fe10 = ['AMIL', 'intiqam', 'ferid', 'ali', true, false, 12, 0, NaN, function (ad) {
+//     console.log(ad);
+// }]
+// fe10[fe10.length - 1]('ali')
+// dynamic 
 
-fe10[fe10.length - 1]('ali')
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+let fe10 = ['AMIL', 'intiqam', 'ferid', 'ali']
+fe10[0] = 'amil';
+console.log(fe10);
+// massiv mutable!
 
 // dynamic 
 
-
-
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
