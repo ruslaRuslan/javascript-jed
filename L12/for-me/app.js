@@ -1,29 +1,31 @@
 // #task object
 
-const calculator = {
-    read: function () {
-        const num1 = +prompt('eded1-i daxil edin:')
-        const num2 = +prompt('eded2-i daxil edin:')
-        calculator.num1 = num1
-        calculator.num2 = num2
+// const calculator = {
+//     read: function () {
+//         const num1 = +prompt('eded1-i daxil edin:')
+//         const num2 = +prompt('eded2-i daxil edin:')
+//         calculator.num1 = num1
+//         calculator.num2 = num2
 
-    },
-    sum: function () {
-        calculator['read']()
-        console.log(calculator['num1'] + calculator['num2']);
-    },
-    multyply: function () {
+//     },
+//     sum: function () {
+//         calculator['read']()
+//         console.log(calculator['num1'] + calculator['num2']);
+//     },
+//     multyply: function () {
 
-    },
-    divide: function () {
+//     },
+//     divide: function () {
 
-    },
-    subtract: function () {
+//     },
+//     subtract: function () {
 
-    },
+//     },
 
-}
-calculator.sum()
+// }
+// calculator.sum()
+
+
 
 // Calculyator obyekti yaradin. 5 metodu olsun: read(), sum(),multiply(),divide(),subtract()
 
@@ -35,6 +37,24 @@ calculator.sum()
 
 
 // istifade edeceyiniz seylerden biri de [] dynamic property - dir, ya da this.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// let fe10 = new Array(['AMIL', 'intiqam', 'ferid', 'ali'])
+// console.dir(fe10[0]);
+// literal qayda
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
