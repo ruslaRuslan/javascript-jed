@@ -103,6 +103,16 @@
 
 // }
 
+const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+
+const name = 'alineymet'
+for (let i = 0; i < friends.length; i++) {
+
+    console.log(friends[i]); //massivde olan butun adlari verecek 
+
+    console.log(friends[i][0].toUpperCase()) //massivde olan butun adlarin birinci herifini boyudup verir
+}
+
 
 // 1. Massiv yaradin.  olcusunu 5e menimsedin ve prompt-la massivi number-lerle doldurun.
 
