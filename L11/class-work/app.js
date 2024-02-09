@@ -8,11 +8,11 @@
 // console.log(friends[5].ad); //test
 
 
-// _____________________________________________________________
 // const friends = ['ali', 'ruslan', 'renat']
 // friends[0] = 'ahmad'
 // console.log(friends[0]); //ahmad
-// _____________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // const car = {
 //     ad: 'ali'
@@ -23,7 +23,8 @@
 // massiv ozude bir obyektdit
 // string metodlarinin coxu massivde var
 
-// _____________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
@@ -39,7 +40,8 @@
 //     return index
 // }
 // findFriends('renat')
-// _____________________________________________________________
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // T2. 'idris' elementi bu massive daxildirse, ekrana "Idris bizim dostumuzdur" cumlesini cixar. Yoxdursa, "Idris abi burda yoxdur" cixart.
 
@@ -55,6 +57,7 @@
 // console.log(findFriends('ali'));
 // console.log(findFriends('idris'));
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // T3. concat funksiyasi vasitesile bura yeni dostlar elave et: samil, sada Bunu yeni massive menimset -> friends2
 
@@ -66,12 +69,14 @@
 // }
 // findFriends2();
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // T4. massivden ortadaki 2 elementi gotur (slice ile) (renat ve ramin elementlerini)
 
 // const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 // let result = friends.slice(2, 4);
 // console.log(result);
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // T5. bu massivle verilen massivi birlesdir (concat vasitesile)
@@ -80,16 +85,33 @@
 // let result = friends.concat(enemies)
 // console.log(result);
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 // console.log(friends.length)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+
+// const name = 'alineymet'
+// for (let i = 0; i < name.length; i++) {
+//     // console.log(i);
+//     // console.log(name[0]);
+//     console.log(name[i]);
+
+// }
 
 
-// 1. Massiv yaradin.  olcusunu 5e menimsedin ve prompt-la massivi number-lerle doldurun. 
+// 1. Massiv yaradin.  olcusunu 5e menimsedin ve prompt-la massivi number-lerle doldurun.
 
-
+// let massiv = [];
+// for (let i = 1; i <= 5; i++) {
+//     let number = parseFloat(prompt('Massivin ' + (i) + '. elementlerini daxil edin:'))
+//     massiv.push(number)
+// }
+// console.log(massiv);
 
 
 
