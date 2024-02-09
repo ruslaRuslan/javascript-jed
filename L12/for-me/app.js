@@ -131,6 +131,43 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9],]
+// let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9],]
+// console.log(matrix[1][1])
 
-console.log(matrix[1][1])
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// Bunun yaradicisi var 
+// function sum(arr) {
+//     let result = 0;
+//     for (let eded of arr) {
+//         result += eded
+//     }
+//     console.log(result);
+// }
+// // isdifadecisi var
+// sum([9, 9, 9, 5, 5, 95, 5664, 99, 63])
+
+// _____________________________________________________
+
+// yaradicisi var 
+// function sum(...arr) {   //... ->  rest sadece funcsiyaya verilen butun obyektleri yigir array-in icerisine
+//     let result = 0;
+//     for (let eded of arr) {
+//         result += eded
+//     }
+//     console.log(result);
+// }
+// // isdifadecisi var
+// sum(9, 9, 9, 5, 5, 95, 5664, 99, 63)
+
+
+
+// //... -> spread 
+// let obj = {
+//     ad: 'ali',
+//     age: 12
+// }
+// let obj2 = { ...obj }  //spread kopyalayir
+
+// let result = Math.max(12, 23, 96, 4151, 12, 96, 52, 201, 320, 326, 95, 45) // -> rest mentiqi ile isleyir
+// console.log(result);
