@@ -322,7 +322,13 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // ___________________________________________________
 
+// let ededler = [12, 2, 45, 67, 75, 24]
+// let newArr = ededler.map((eded) => eded % 2 === 0 ? 'cut' : 'tek')
+// console.log(newArr);
+
+// ___________________________________________________
+
 let ededler = [12, 2, 45, 67, 75, 24]
-let newArr = ededler.map((eded) => eded % 2 === 0 ? 'cut' : 'tek')
-console.log(newArr);
+ededler.filter((eded) => eded % 2 === 0).sort((a, b) => a - b).forEach((eded) => console.log(eded))
+
 
