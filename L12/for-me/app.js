@@ -255,4 +255,59 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // ___________________________________________________
 
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+
+// let humans = [
+//     {
+//         name: 'ali',
+//         age: 23,
+//     },
+//     {
+//         name: 'alion',
+//         age: 29,
+//     }, {
+//         name: 'kali',
+//         age: 98,
+//     },
+//     {
+//         name: 'bali',
+//         age: 27,
+//     },
+// ]
+
+// let adlar = humans.map((human) => human.name)
+// console.log(adlar); //   ['ali', 'alion', 'kali', 'bali']
+
+// let yaslar = humans.map((human) => human.age)
+// console.log(yaslar); //  [23, 29, 98, 27]
+
+// ___________________________________________________
+
+
+
+let arr = ['ali', 'sada', 'sah', 'ferid']
+
+let humans = [
+    {
+        name: 'ali',
+        age: 23,
+    },
+    {
+        name: 'alion',
+        age: 29,
+    }, {
+        name: 'kali',
+        age: 98,
+    },
+    {
+        name: 'bali',
+        age: 27,
+    },
+]
+
+let adlar = humans.map((ureyimIsdediyi) => ureyimIsdediyi.name + ureyimIsdediyi.age)
+console.log(adlar); // ['ali23', 'alion29', 'kali98', 'bali27']
+
+
+
 
