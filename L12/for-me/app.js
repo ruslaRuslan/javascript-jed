@@ -58,9 +58,30 @@
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 
-const ad = 'ali, muxtar, sada, sah, ferid'
-const adlar = ad.split(', ').join('')
-console.log(adlar);
+// const ad = 'ali, muxtar, sada, sah, ferid'
+// const adlar = ad.split(', ').join('')
+// console.log(adlar);
 
 //----------------------------------------------------------------------------------------------------------------------------------------
+
+/*
+
+1. arrayin ES6 (esmascript 2015) methods
+forEach, filter, find, findIndex, map, every, some, reduce*
+
+2. hamsi: eyni arqument alir:(reduce xaric) eyni arqument alir:
+(ArraydekiElement, ElementIndex, MassiveReferanse)=>{}
+arr.forEach(elem, index, arr) =>  )
+3. lopp uzerinden isleyir:
+calllback butun elementler ucun isdifade olunur.
+4. original massivi deyismir yeni massivi geri gonderir.
+arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
+*/
+
+// 1. arr.forEach((elem, index, arr)=>)
+// Massivin uzerinden loop etmek:
+let arr = ['ali', 'sada', 'sah', 'ferid']
+arr.forEach((ad, index, arr) => {
+    console.log(ad, index, arr);
+})
 
