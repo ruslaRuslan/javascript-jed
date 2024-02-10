@@ -237,4 +237,14 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // console.log(element);     //['ali']
 // ___________________________________________________
 
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.findIndex((ad) => ad[1] === 'e')
+// console.log(element);    //3
 
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.findIndex((ad) => ad[0] === 'f')
+// console.log(element);     //3
+
+// ___________________________________________________
