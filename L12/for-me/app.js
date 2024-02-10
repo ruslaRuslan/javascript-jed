@@ -125,7 +125,43 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // ___________________________________________________
 
 
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.every((ad) => ad.length < 5)
+// console.log(netice);          // false
 
-let arr = ['ali', 'sada', 'sah', 'ferid']
-let netice = arr.every((ad) => ad.length < 5)
-console.log(netice);          // false
+// ___________________________________________________
+
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.every((ad) => ad.length < false)
+// console.log(netice);    // false 
+
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.every((ad) => ad.length < true)
+// console.log(netice);     //false
+
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.every((ad) => ad[0] == 's')
+// console.log(netice);               //false
+// ___________________________________________________
+
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.every((ad) => true)
+// console.log(netice);     //true
+
+// ___________________________________________________
+
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.every((ad) => false)
+// console.log(netice);             //false
+
+// ___________________________________________________
+
+
+// ___________________________________________________
