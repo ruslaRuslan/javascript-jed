@@ -37,14 +37,21 @@
 //----------------------------------------------------------------------------------------------------------------------------------------
 
 
-let sairler = [
-    { name: 'Ali', year: 1990 },
-    { name: 'Ferid', year: 2010 },
-    { name: 'Sada', year: 1890 },
-]
-sairler.sort((a, b) => a.year - b.year)
-console.log(sairler);
+// let sairler = [
+//     { name: 'Ali', year: 1990 },
+//     { name: 'Ferid', year: 2010 },
+//     { name: 'Sada', year: 1890 },
+// ]
+// sairler.sort((a, b) => a.year - b.year)
+// console.log(sairler);
 
 //----------------------------------------------------------------------------------------------------------------------------------------
 
+let sairler = [
+    { name: 'Ali', year: 1990 },
+    { name: 'Sada', year: 1890 },
+    { name: 'Ferid', year: 2010 },
+]
+sairler.sort((a, b) => a.name > b.name ? 1 : -1)
+console.log(sairler);
 
