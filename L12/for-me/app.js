@@ -83,7 +83,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // let arr = ['ali', 'sada', 'sah', 'ferid']
 // arr.forEach((ad, index, arr) => {
 //     console.log(ad, index, arr); })// console-nin cavabi asagida 
-                                           //     ↓
+//     ↓
 
 //     ali 0 (4) ['ali', 'sada', 'sah', 'ferid']
 // app.js:85 sada 1 (4) ['ali', 'sada', 'sah', 'ferid']0: "ali"1: "sada"2: "sah"3: "ferid"length: 4[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
@@ -95,17 +95,29 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // arr.forEach((ad, index, arr) => {
 //     console.log(ad, index,arr);  // ↓
 // })
-                                   //ali 0
-                                   //sada 1
-                                   //sah 2
-                                   //ferid 3
+//ali 0
+//sada 1
+//sah 2
+//ferid 3
 
 // Bunun ozu loop uzerinden isleyir
 // forEach massiv uzerinden loop edir
 // ___________________________________________________
 
 
+
 // let arr = ['ali', 'sada', 'sah', 'ferid']
 // arr.forEach((value) => {
-//     console.log(`~~~${value}~~~`);  //      ↓
-// })
+//     console.log(`~~~${value}~~~`);   //        ↓
+// })                                       // ~~~ali~~~
+// ~~~sada~~~
+// ~~~sah~~~
+// ~~~ferid~~~
+
+// bu callcack void callback-di return olunmur
+
+// ___________________________________________________
+
+let arr = ['ali', 'sada', 'sah', 'ferid']
+let netice = arr.every((ad) => ad.length <= 5)
+console.log(netice);          // true
