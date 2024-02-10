@@ -163,5 +163,23 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // ___________________________________________________
 
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.some((ad) => ad[0] === 'a')
+// console.log(netice);           //true
 
 // ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.some((ad) => ad.length === 3)
+// console.log(netice);           //true
+
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.some((ad) => ad.length === 6)
+// console.log(netice);          //false
+
+// ___________________________________________________
+
+// Sherte gore elementlerin tapilmasi
+
