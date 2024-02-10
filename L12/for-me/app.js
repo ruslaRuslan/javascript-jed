@@ -285,29 +285,42 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 
 
-let arr = ['ali', 'sada', 'sah', 'ferid']
+// let arr = ['ali', 'sada', 'sah', 'ferid']
 
-let humans = [
-    {
-        name: 'ali',
-        age: 23,
-    },
-    {
-        name: 'alion',
-        age: 29,
-    }, {
-        name: 'kali',
-        age: 98,
-    },
-    {
-        name: 'bali',
-        age: 27,
-    },
-]
+// let humans = [
+//     {
+//         name: 'ali',
+//         age: 23,
+//     },
+//     {
+//         name: 'alion',
+//         age: 29,
+//     }, {
+//         name: 'kali',
+//         age: 98,
+//     },
+//     {
+//         name: 'bali',
+//         age: 27,
+//     },
+// ]
 
-let adlar = humans.map((ureyimIsdediyi) => ureyimIsdediyi.name + ureyimIsdediyi.age)
-console.log(adlar); // ['ali23', 'alion29', 'kali98', 'bali27']
+// let adlar = humans.map((ureyimIsdediyi) => ureyimIsdediyi.name + ureyimIsdediyi.age)
+// console.log(adlar); // ['ali23', 'alion29', 'kali98', 'bali27']
 
+// ___________________________________________________
+
+// let ededler = [12, 2, 45, 67, 75, 24]
+// let newArr = ededler.map((eded) => {
+//     if (eded % 2 === 0) {
+//         return 'cut'
+//     } else {
+//         return 'tek'
+//     }
+// })
+// console.log(newArr);
+
+// ___________________________________________________
 
 
 
