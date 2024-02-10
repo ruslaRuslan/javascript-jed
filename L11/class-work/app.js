@@ -48,7 +48,7 @@
 
 // function findFriends(name) {
 //     const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
-//     if (name === (friends[4])) {
+//     if (name === friends[4]) {
 //         return `${friends[4]} bizim dostumuzdur`;
 //     }
 //     return `${friends[4]} abi burda yoxdur`
@@ -61,13 +61,13 @@
 
 // T3. concat funksiyasi vasitesile bura yeni dostlar elave et: samil, sada Bunu yeni massive menimset -> friends2
 
-// function findFriends2() {
+// function findFriends2(ad) {
 //     let name = 'samil';
-//     let result = name.concat('sada');
+//     let result = name.concat(ad);
 //     console.log(result);
 //     return result;
 // }
-// findFriends2();
+// findFriends2('sada');
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -110,7 +110,7 @@
 // const name = 'alineymet'
 // for (let i = 0; i < friends.length; i++) {
 
-//     console.log(friends[i]); //massivde olan butun adlari verecek 
+//     console.log(friends[i]); //massivde olan butun adlari verecek
 
 //     console.log(friends[i][0].toUpperCase()) //massivde olan butun adlarin birinci herifini boyudup verir
 // }
@@ -138,7 +138,7 @@
 
 // const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 
-// sondan elave etmek -> push()
+// // sondan elave etmek -> push()
 // friends.push('test')
 // console.log(friends);
 
@@ -170,7 +170,7 @@
 // let massiv = [];
 // for (let i = 1; i <= 5; i++) {
 //     let number = prompt('Massivin ' + (i) + '. elementlerini daxil edin:')
-//     massiv.push(number)
+//     massiv.unshift(number)
 // }
 // console.log(massiv);
 
@@ -195,8 +195,8 @@
 // let massiv = [1, 2, 3, 4, 5, 6, 7];
 // function hasilHesablama() {
 //     result = 1;
-//     for (let i of massiv) {
-//         result *= i;
+//     for (let numbers of massiv) {
+//         result *= numbers;
 //     }
 //     console.log(result);
 //     return result;
@@ -212,7 +212,6 @@
 //     if (numbers.length === 0) {
 //         return 0;
 //     }
-
 //     let result = 1;
 //     for (let number of numbers) {
 //         result *= number;
@@ -243,3 +242,6 @@
 // console.log(multiply(5, 6, 7, 8));
 // console.log(multiply(2));
 // console.log(multiply());
+
+
+
