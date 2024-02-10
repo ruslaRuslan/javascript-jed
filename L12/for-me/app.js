@@ -248,3 +248,11 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // console.log(element);     //3
 
 // ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let netice = arr.map((ad, index) => ad[0].toLocaleUpperCase() )
+// console.log(netice);   // ['A', 'S', 'S', 'F']
+
+// ___________________________________________________
+
+
