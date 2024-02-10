@@ -221,6 +221,20 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // ___________________________________________________
 
 
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.filter((ad, index) => true)
+// console.log(element);     //['ali', 'sada', 'sah', 'ferid']
 
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.filter((ad, index) => ad[0] === 's')
+// console.log(element);       // ['sada', 'sah']
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.filter((ad, index) => !index)
+// console.log(element);     //['ali']
+// ___________________________________________________
 
 
