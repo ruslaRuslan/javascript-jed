@@ -182,4 +182,45 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // ___________________________________________________
 
 // Sherte gore elementlerin tapilmasi
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.find((ad, index) => ad[0] === 'a')
+// console.log(element);       //ali
+
+// ___________________________________________________
+
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.find((ad, index) => index === 3)
+// console.log(element);     //ferid
+
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.find((ad, index) => ad.length === 4)
+// console.log(element);          //sada
+
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.find((ad, index) => true)
+// console.log(element);      //ali 
+
+// ___________________________________________________
+
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.find((ad, index) => true)
+// console.log(element);         //undefined
+
+// ___________________________________________________
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// let element = arr.find((ad, index) => index)
+// console.log(element);    //sada
+
+// ___________________________________________________
+
+
+
+
 
