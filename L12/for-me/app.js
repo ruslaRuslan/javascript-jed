@@ -72,8 +72,8 @@ forEach, filter, find, findIndex, map, every, some, reduce*
 2. hamsi: eyni arqument alir:(reduce xaric) eyni arqument alir:
 (ArraydekiElement, ElementIndex, MassiveReferanse)=>{}
 arr.forEach(elem, index, arr) =>  )
-3. lopp uzerinden isleyir:
-calllback butun elementler ucun isdifade olunur.
+3. loop uzerinden isleyir:
+callback butun elementler ucun isdifade olunur.
 4. original massivi deyismir yeni massivi geri gonderir.
 arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 */
@@ -91,11 +91,21 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // app.js:85 ferid 3 (4) ['ali', 'sada', 'sah', 'ferid']
 
 // ___________________________________________________
-let arr = ['ali', 'sada', 'sah', 'ferid']
-arr.forEach((ad, index, arr) => {
-    console.log(ad, index);  //      ↓
-})
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// arr.forEach((ad, index, arr) => {
+//     console.log(ad, index,arr);  // ↓
+// })
                                    //ali 0
                                    //sada 1
                                    //sah 2
                                    //ferid 3
+
+// Bunun ozu loop uzerinden isleyir
+// forEach massiv uzerinden loop edir
+// ___________________________________________________
+
+
+// let arr = ['ali', 'sada', 'sah', 'ferid']
+// arr.forEach((value) => {
+//     console.log(`~~~${value}~~~`);  //      ↓
+// })
