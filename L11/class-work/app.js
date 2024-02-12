@@ -61,13 +61,17 @@
 
 // T3. concat funksiyasi vasitesile bura yeni dostlar elave et: samil, sada Bunu yeni massive menimset -> friends2
 
-// function findFriends2(ad) {
-//     let name = 'samil';
-//     let result = name.concat(ad);
-//     console.log(result);
-//     return result;
-// }
-// findFriends2('sada');
+function findFriends2() {
+    const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+    let friends2 = ['samil', 'sada']
+    let result = friends.concat(friends2);
+    console.log(result);
+    return result;
+}
+findFriends2();
+
+
+
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
