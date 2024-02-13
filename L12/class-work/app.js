@@ -11,7 +11,17 @@
 
 // ________________________________________________________
 
+const fe10 = ['ali', 'muhtar', { ad: 'sada' }, 'sabina']
+// JED.Fronted.fe10.forEach((ad, index, arr) => { })
+fe10.forEach((ad, i, array) => {
+    console.log(`${i + 1}. ${ad}`);
+    if (i === 2) {
+        ad.ad = 'hamza'
+        console.log(array);
 
+    }
+});
+console.log(fe10);
 
 /*
 1. arrayin ES6 (esmascript 2015) methods
