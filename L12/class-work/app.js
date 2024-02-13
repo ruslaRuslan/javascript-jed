@@ -255,3 +255,10 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // console.log(startsWithAli) 
 
 // _______________________________________________________________________________________________________________________________________
+
+const fe10 = ['ali', 'aslan', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+
+const startsWithAli = fe10.filter((elem) => elem.slice(0, 3) === 'ali')
+console.log(startsWithAli)
+
+// _______________________________________________________________________________________________________________________________________
