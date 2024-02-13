@@ -263,7 +263,17 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // _______________________________________________________________________________________________________________________________________
 
-const fe10 = ['ali', 'aslan', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+// const fe10 = ['ali', 'aslan', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
-const startsWithAli = fe10.filter((elem) => elem.slice(0, 3).toLocaleLowerCase() === 'ali')
+// const startsWithAli = fe10.filter((elem) => elem.slice(0, 3).toLocaleLowerCase() === 'ali')
+// console.log(startsWithAli)
+
+// _______________________________________________________________________________________________________________________________________
+
+
+const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+
+const startsWithAli = fe10.filter((elem) => elem.includes('ali'))
 console.log(startsWithAli)
+
+
