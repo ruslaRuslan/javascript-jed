@@ -26,9 +26,12 @@
 // ________________________________________________________
 
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
-fe10.reverse()
-console.log(fe10);
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
+// fe10.reverse()
+// console.log(fe10);
+
+// ________________________________________________________
+
 
 /*
 1. arrayin ES6 (esmascript 2015) methods
@@ -45,7 +48,18 @@ callback butun elementler ucun isdifade olunur.
 arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 */
 
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
 
+// forEach -> sadece sede loop etmekdir.
+
+fe10.forEach((elem, index)=>{
+    document.write(`${index + 1}-ci element. ${elem} <br/>`)
+})
+// document.write ↓
+// 1-ci element. ali
+// 2-ci element. muhtar
+// 3-ci element. sada
+// 4-ci element. sabina
 
 
 
