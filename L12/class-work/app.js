@@ -168,6 +168,27 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // _______________________________________________________________________________________________________________________________________
 
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.find((elem) => elem.length > 2)
+// console.log(user); //ali
+
+// _______________________________________________________________________________________________________________________________________
+
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.find((elem, index) => index)
+// console.log(user)   //muhtar
+// 'ali' falsy-di deye 'muhtar' goturdu, cunki 0-falsy-di
+
+// _______________________________________________________________________________________________________________________________________
+
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.find((elem, index) => index - 1)
+// console.log(user) //ali
+// cunki 1-den 1 cixdix ve 0-ci adi cixardi
+
+// _______________________________________________________________________________________________________________________________________
+
+
 const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
-const user = fe10.find((elem) => elem.length > 2)
-console.log(user); //ali
+const user = fe10.find((elem, index) => 0)
+console.log(user)  //undefined
