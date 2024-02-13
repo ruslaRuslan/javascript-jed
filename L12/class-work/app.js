@@ -52,15 +52,20 @@ const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
 
 // forEach -> sadece sede loop etmekdir.
 
-fe10.forEach((elem, index)=>{
-    document.write(`${index + 1}-ci element. ${elem} <br/>`)
-})
+// fe10.forEach((elem, index)=>{
+//     document.write(`${index + 1}-ci element. ${elem} <br/>`)
+// })
 // document.write ↓
 // 1-ci element. ali
 // 2-ci element. muhtar
 // 3-ci element. sada
 // 4-ci element. sabina
+// _________________________________________________________
 
+// const a = fe10.forEach((elem, index)=>{
+//     document.write(`${index + 1}-ci element. ${elem} <br/>`)
+// })
+// console.log(a);  // undefined
 
 
 
