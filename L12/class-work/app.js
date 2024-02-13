@@ -81,7 +81,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 //     const shert = elem.length < 20
 //     return shert;
 // })
-// console.log(result);
+// console.log(result);  //true
 
 // _______________________________________________________________________________________________________________________________________
 
@@ -91,15 +91,24 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 //     const shert = elem.length < 6
 //     return shert;
 // })
-// console.log(result);
+// console.log(result);  //false
 
 // _______________________________________________________________________________________________________________________________________
 
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
 // const result = fe10.every((elem, ind) => elem.length < 6)
-// console.log(result);
+// console.log(result);  //false
 // _______________________________________________________________________________________________________________________________________
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
-const result = fe10.every((elem, ind) => true)
-console.log(result);
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
+// const result = fe10.every((elem, ind) => true)
+// console.log(result);   //true
+
+// _______________________________________________________________________________________________________________________________________
+
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
+// const result = fe10.every((elem, ind) => elem)
+// console.log(result);   //true
+
+// _______________________________________________________________________________________________________________________________________
+ 
