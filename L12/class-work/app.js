@@ -208,7 +208,14 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // findIndex
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
-const user = fe10.findIndex((elem, index) => elem.length > 3)
-console.log(user)
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.findIndex((elem, index) => elem.length > 5)
+// console.log(user)
 
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// filter
+
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+const user = fe10.filter((elem, index) => elem.length > 5)
+console.log(user)
