@@ -22,7 +22,7 @@
 //----------------------------------------------------------------------------------------------------------------------------------------
 
 
-// let arr = [12, 2, 22]
+// let arr = [12, 22, 2]
 // arr.sort()  
 // console.log(arr); //[12, 2, 22]
 
@@ -95,10 +95,10 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // arr.forEach((ad, index, arr) => {
 //     console.log(ad, index,arr);  // ↓
 // })
-//ali 0
-//sada 1
-//sah 2
-//ferid 3
+// ali 0
+// sada 1
+// sah 2
+// ferid 3
 
 // Bunun ozu loop uzerinden isleyir
 // forEach massiv uzerinden loop edir
@@ -145,9 +145,10 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // ___________________________________________________
 
 // let arr = ['ali', 'sada', 'sah', 'ferid']
-// let netice = arr.every((ad) => ad[0] == 's')
+// let netice = arr.every((ad) => ad[0] === 's')
 // console.log(netice);               //false
 // ___________________________________________________
+
 
 
 // let arr = ['ali', 'sada', 'sah', 'ferid']
@@ -203,14 +204,14 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // let arr = ['ali', 'sada', 'sah', 'ferid']
 // let element = arr.find((ad, index) => true)
-// console.log(element);      //ali 
+// console.log(element);      
 
 // ___________________________________________________
 
 
 // let arr = ['ali', 'sada', 'sah', 'ferid']
 // let element = arr.find((ad, index) => true)
-// console.log(element);         //undefined
+// console.log(element);         //ali 
 
 // ___________________________________________________
 
@@ -250,7 +251,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // ___________________________________________________
 
 // let arr = ['ali', 'sada', 'sah', 'ferid']
-// let netice = arr.map((ad, index) => ad[0].toLocaleUpperCase() )
+// let netice = arr.map((ad, index) => ad[0].toLocaleUpperCase())
 // console.log(netice);   // ['A', 'S', 'S', 'F']
 
 // ___________________________________________________
@@ -304,6 +305,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 //         age: 27,
 //     },
 // ]
+
 
 // let adlar = humans.map((ureyimIsdediyi) => ureyimIsdediyi.name + ureyimIsdediyi.age)
 // console.log(adlar); // ['ali23', 'alion29', 'kali98', 'bali27']

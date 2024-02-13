@@ -44,7 +44,7 @@
 
 
 // T2. 'idris' elementi bu massive daxildirse, ekrana "Idris bizim dostumuzdur" cumlesini cixar. Yoxdursa, "Idris abi burda yoxdur" cixart.
-
+// Yarimcix is includes() ile yazmaliyam
 
 // function findFriends(name) {
 //     const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
@@ -61,14 +61,14 @@
 
 // T3. concat funksiyasi vasitesile bura yeni dostlar elave et: samil, sada Bunu yeni massive menimset -> friends2
 
-function findFriends2() {
-    const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
-    let friends2 = ['samil', 'sada']
-    let result = friends.concat(friends2);
-    console.log(result);
-    return result;
-}
-findFriends2();
+// function findFriends2() {
+//     const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
+//     let friends2 = ['samil', 'sada']
+//     let result = friends.concat(friends2);
+//     console.log(result);
+//     return result;
+// }
+// findFriends2();
 
 
 
@@ -103,7 +103,7 @@ findFriends2();
 // for (let i = 0; i < name.length; i++) {
 //     // console.log(i);
 //     // console.log(name[0]);
-//     console.log(name[i]);
+//     // console.log(name[i]);
 
 // }
 
@@ -134,7 +134,7 @@ findFriends2();
 // Bunlar obyekte islemir
 
 // const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
-// for (const element of friends) {
+// for (let element of  friends ) {
 //     console.log(element.toLocaleUpperCase());
 // }
 
@@ -142,7 +142,7 @@ findFriends2();
 
 // const friends = ['ali', 'ruslan', 'renat', 'ramin', 'idris']
 
-// // sondan elave etmek -> push()
+// sondan elave etmek -> push()
 // friends.push('test')
 // console.log(friends);
 
@@ -173,7 +173,7 @@ findFriends2();
 
 // let massiv = [];
 // for (let i = 1; i <= 5; i++) {
-//     let number = prompt('Massivin ' + (i) + '. elementlerini daxil edin:')
+//     let number = +prompt('Massivin ' + (i) + '. elementlerini daxil edin:')
 //     massiv.unshift(number)
 // }
 // console.log(massiv);
@@ -199,8 +199,8 @@ findFriends2();
 // let massiv = [1, 2, 3, 4, 5, 6, 7];
 // function hasilHesablama() {
 //     result = 1;
-//     for (let numbers of massiv) {
-//         result *= numbers;
+//     for (let number of massiv) {
+//         result *= number;
 //     }
 //     console.log(result);
 //     return result;
