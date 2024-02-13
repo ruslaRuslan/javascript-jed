@@ -95,7 +95,11 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // _______________________________________________________________________________________________________________________________________
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
-const result = fe10.every((elem, ind) => elem.length < 6)
-console.log(result);
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
+// const result = fe10.every((elem, ind) => elem.length < 6)
+// console.log(result);
 // _______________________________________________________________________________________________________________________________________
+
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
+const result = fe10.every((elem, ind) => true)
+console.log(result);
