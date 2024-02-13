@@ -35,7 +35,7 @@
 
 /*
 1. arrayin ES6 (esmascript 2015) methods
-forEach, filter, find, findIndex, map, every, some, reduce*
+forEach+, filter, find, findIndex, map, every+, some+, reduce*
 
 2. hamsi: eyni arqument olaraq function yeni, callback alir:
 (ArraydekiElement, ElementIndex, MassiveReferanse)=>{}
@@ -152,6 +152,22 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // _______________________________________________________________________________________________________________________________________
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
-const result = fe10.some((elem, index) => 0)
-console.log(result)  //false
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
+// const result = fe10.some((elem, index) => 0)
+// console.log(result)  //false
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// find
+
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.find((elem) => elem[0] === 's')
+// console.log(user);
+
+// _______________________________________________________________________________________________________________________________________
+
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+const user = fe10.find((elem) => elem.length > 2)
+console.log(user); //ali
