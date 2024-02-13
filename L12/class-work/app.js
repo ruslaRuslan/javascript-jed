@@ -73,7 +73,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-// every, some
+// every
 
 
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
@@ -115,14 +115,37 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // falsy 0, Nan, '', false, undefined, null
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
-// const result = fe10.every((elem, ind) => 2)
-// console.log(result); 
+// const result = fe10.every((elem, index) => 2)
+// console.log(result);  //true
 
 // _______________________________________________________________________________________________________________________________________
 
 
 // falsy 0, Nan, '', false, undefined, null
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
-const result = fe10.every((elem, ind) => elem)
-console.log(result);
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const result = fe10.every((elem, index) => elem)
+// console.log(result);  //false
 
+// _______________________________________________________________________________________________________________________________________
+
+// // falsy 0, Nan, '', false, undefined, null
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
+// const result = fe10.every((elem, index) => index)
+// console.log(result);  //false
+
+// cunki birinci 0-dan baslayir, 0-da falsy-di
+
+// _______________________________________________________________________________________________________________________________________
+
+// falsy 0, Nan, '', false, undefined, null
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
+// const result = fe10.every((elem, index) => index)
+// console.log(result); 
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// some
+
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
+const result = fe10.some((elem, index) => index)
+console.log(result)
