@@ -210,12 +210,48 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
 // const user = fe10.findIndex((elem, index) => elem.length > 5)
-// console.log(user)
+// console.log(user) //1
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 // filter
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
-const user = fe10.filter((elem, index) => elem.length > 5)
-console.log(user)
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.filter((elem, index) => elem.length > 5)
+// console.log(user) //['muhtar', 'sabina']
+
+// _______________________________________________________________________________________________________________________________________
+
+// const suCen = ['s', 'q','s','q','s' , 'q','s','q','s', 'q','s','q','s']
+// const caydan = suCen.filter((molekul) => molekul === 's')
+// console.log(caydan) //['s', 's', 's', 's', 's', 's', 's']
+
+// _______________________________________________________________________________________________________________________________________
+
+
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.filter((elem, index) => elem[0] === 'm')
+// console.log(user)   //['muhtar']
+// _______________________________________________________________________________________________________________________________________
+
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.filter((elem, index) => elem[0] === 's')
+// console.log(user) //['sada', 'sabina']
+
+// _______________________________________________________________________________________________________________________________________
+
+
+
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', 'aliabbas','alineymet', 'alisahib', 'alidadas', 'behruz']
+// const user = fe10.filter((elem, index) => elem[0] === 'a')
+// console.log(user) 
+
+// _______________________________________________________________________________________________________________________________________
+
+
+// const fe10 = ['ali', 'aslan','muhtar', 'sada', 'sabina', 'aliabbas','alineymet', 'alisahib', 'alidadas', 'behruz']
+
+// const startsWithAli = fe10.filter((elem) => elem.toLocaleLowerCase().startsWith('ali'))
+// console.log(startsWithAli) 
+
+// _______________________________________________________________________________________________________________________________________
