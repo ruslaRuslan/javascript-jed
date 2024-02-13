@@ -189,6 +189,18 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // _______________________________________________________________________________________________________________________________________
 
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
-const user = fe10.find((elem, index) => 0)
-console.log(user)  //undefined
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.find((elem, index) => 0)
+// console.log(user)  //undefined
+// cunki 0 falsy-di
+
+
+// _______________________________________________________________________________________________________________________________________
+
+// const fe10 = [null, 'ali', 'muhtar', 'sada', 'sabina', '']
+// const user = fe10.find((elem, index) => 1)
+// console.log(user) //null 
+ //0-dan basqa ve -0-dan basqa hansi reqem ve ededi  yazsaq null verecek, 0 ve -0-da ise undefined verecek
+
+ 
+
