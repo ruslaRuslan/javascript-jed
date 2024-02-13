@@ -76,16 +76,19 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // every, some
 
 
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
-const result = fe10.every((elem, ind) => {
-    const shert = elem.length < 20
-    return shert;
-})
-console.log(result);
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
+// const result = fe10.every((elem, ind) => {
+//     const shert = elem.length < 20
+//     return shert;
+// })
+// console.log(result);
 
 // _______________________________________________________________________________________________________________________________________
 
 
-
-
-
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
+const result = fe10.every((elem, ind) => {
+    const shert = elem.length < 6
+    return shert;
+})
+console.log(result);
