@@ -146,6 +146,12 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // some
 
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
+// const result = fe10.some((elem, index) => index)
+// console.log(result)   //true
+
+// _______________________________________________________________________________________________________________________________________
+
 const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
-const result = fe10.some((elem, index) => index)
-console.log(result)
+const result = fe10.some((elem, index) => 0)
+console.log(result)  //false
