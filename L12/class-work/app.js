@@ -200,7 +200,15 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // const fe10 = [null, 'ali', 'muhtar', 'sada', 'sabina', '']
 // const user = fe10.find((elem, index) => 1)
 // console.log(user) //null 
- //0-dan basqa ve -0-dan basqa hansi reqem ve ededi  yazsaq null verecek, 0 ve -0-da ise undefined verecek
+//0-dan basqa ve -0-dan basqa hansi reqem ve ededi  yazsaq null verecek, 0 ve -0-da ise undefined verecek
 
- 
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+// findIndex
+
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+const user = fe10.findIndex((elem, index) => elem.length > 3)
+console.log(user)
 
