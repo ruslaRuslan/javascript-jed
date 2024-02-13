@@ -114,6 +114,15 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 
 // falsy 0, Nan, '', false, undefined, null
-const fe10 = ['ali', 'muhtar', 'sada', 'sabina', ' ']
-const result = fe10.every((elem, ind) => 2)
-console.log(result); 
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const result = fe10.every((elem, ind) => 2)
+// console.log(result); 
+
+// _______________________________________________________________________________________________________________________________________
+
+
+// falsy 0, Nan, '', false, undefined, null
+const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+const result = fe10.every((elem, ind) => elem)
+console.log(result);
+
