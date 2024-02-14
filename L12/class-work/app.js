@@ -1093,23 +1093,38 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // _______________________________________________________________________________________________________________________________________
 
 
-const fe10 = ['ali', 'muhtar', 'sada', 'theCodeFather085', 'sabina', 'RAMIN']
+// const fe10 = ['ali', 'muhtar', 'sada', 'theCodeFather085', 'sabina', 'RAMIN']
 
-let enUzunAd = fe10[0];
+// let enUzunAd = fe10[0];
 
-for (let i = 1; i < fe10.length; i++) {
-    if (fe10[i].length > enUzunAd.length) {
-        enUzunAd = fe10[i]
-    } else {
-        continue;
-    }
-}
-console.log(enUzunAd);
+// for (let i = 1; i < fe10.length; i++) {
+//     if (fe10[i].length > enUzunAd.length) {
+//         enUzunAd = fe10[i]
+//     } else {
+//         continue;
+//     }
+// }
+// console.log(enUzunAd);
 
 // _______________________________________________________________________________________________________________________________________
 
 
 
 
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// // reduce-deki callback-den return edilen a-nin novbeti iterasiyasindaki qiymetidir!
+
+// const netice = numbers.reduce((a, b) => {
+//     console.log(a, b);
+//     return a + b
+// },0)
+
+// _______________________________________________________________________________________________________________________________________
+
+
+
+;
 
 
