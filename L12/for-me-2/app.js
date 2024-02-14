@@ -203,12 +203,24 @@
 
 // let arr = ['ali', 'reza', 'aliriza', 'muhammad', 'cosqun', 'eles']
 
+// let uzunAd = arr.reduce((a, b) => a.length > b.length ? a : b)
+
+// console.log(uzunAd);
+
+// _______________________________________________________________________________________________________________________________________
+
+
+// let arr = ['ali', 'reza', 'aliriza', 'muhammad', 'cosqun', 'eles']
+
+// let uzunAd = arr.reduce((a, b) => a.length < b.length ? b : a)
+
+// console.log(uzunAd);
 
 // _______________________________________________________________________________________________________________________________________
 
 // sade numune gosdermek ucun
-let numbers = [1, 4, 7, 8, 3, 5, 0, 2, 4, 6, 12, 15, 18, 46, 45, 48, 97, 84]
-numbers.reduce((a, b) => {
-    console.log(a, b);
-    return a + b;
-}, 0)
+// let numbers = [1, 4, 7, 8, 3, 5, 0, 2, 4, 6, 12, 15, 18, 46, 45, 48, 97, 84]
+// numbers.reduce((a, b) => {
+//     console.log(a, b);
+//     return a + b;
+// }, 0)
