@@ -41,14 +41,30 @@
 // findLongestName(arr); // 'muhammad'
 
 
-let arr = ['ali', 'reza', 'aliriza', 'muhammad', 'cosqun', 'eles']
+// let arr = ['ali', 'reza', 'aliriza', 'muhammad', 'cosqun', 'eles']
 
-const findLongestName = (massiv) => {
-    massiv.sort((a, b) => b.length - a.length)
-    return massiv[0];
-}
-console.log(findLongestName(arr))
+// const findLongestName = (massiv) => {
+//     massiv.sort((a, b) => b.length - a.length)
+//     return massiv[0];
+// }
+// console.log(findLongestName(arr))
 
 
 // _______________________________________________________________________________________________________________________________________
 
+let arr = ['ali', 'reza', 'aliriza', 'muhammad', 'cosqun', 'eles']
+
+const findLongestName = (massiv) => {
+
+    let result_Uzun_ad = ''
+    massiv.forEach((name) => {
+        if (name.length > result_Uzun_ad.length) {
+            result_Uzun_ad = name
+        }
+    });
+
+    return result_Uzun_ad;
+}
+console.log(findLongestName(arr))
+
+// _______________________________________________________________________________________________________________________________________
