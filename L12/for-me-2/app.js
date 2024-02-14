@@ -142,14 +142,20 @@
 
 // 6. A herfi ile baslayan orijinal massivdeki elemenlerden ibaret yeni massiv yaradin: let names = ['Sam','Alan', 'Bill', 'Adam', 'Anna', 'George'] // ['Alan', 'Adam', 'Anna']
 
+// let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
+
+// const result = names.filter((element) => {
+//     return element[0] === 'A'
+// })
+// console.log(result); //['Alan', 'Adam', 'Anna']
+
+// _______________________________________________________________________________________________________________________________________
+
+
 let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
 
-const result = names.filter((element) => {
-    return element[0] === 'A'
-})
+const result = names.filter((element) => element[0] === 'A'
+)
 console.log(result); //['Alan', 'Adam', 'Anna']
-
-
-
 
 
