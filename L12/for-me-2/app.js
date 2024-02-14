@@ -97,12 +97,31 @@
 // kebabToSnake('ali-greenheart'); //ALI_GREENHEART
 // SnakeToKebab('JAVASCRIPT_IS_HELL') //javascript-is-hell
 
-const kebabToSnake = (str) => str.replaceAll('-', '_').toLocaleUpperCase()
+// const kebabToSnake = (string) => string.replaceAll('-', '_').toLocaleUpperCase()
 
-console.log(kebabToSnake('ali-greenheart')); //ALI_GREENHEART
+// console.log(kebabToSnake('ali-greenheart')); //ALI_GREENHEART
 
 // _______________________________________________________________________________________________________________________________________
 
-const SnakeToKebab = (str) => str.replaceAll('-', '_').toLocaleUpperCase()
+// const SnakeToKebab = (string) => string.replaceAll('_', '-').toLowerCase()
 
-console.log(SnakeToKebab('JAVASCRIPT_IS_HELL')); //javascript-is-hell
+// console.log(SnakeToKebab('JAVASCRIPT_IS_HELL')); //javascript-is-hell
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// 5.let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+// Reqemler massivi verilmisdir. Asagidaki kimi deyerlendirilen orijinal massivin elementlerinden ibaret yeni massiv yaradin:
+// - menfi ededler musbet oluplar;
+// musbet ededler ikiqat artirilip.
+
+// let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+// const result = numbers.map((element) => {
+//     if (element < 0) {
+//         return element * (-1)
+//     } else {
+//         return element * 2
+//     }
+// })
+
+// _______________________________________________________________________________________________________________________________________
+
