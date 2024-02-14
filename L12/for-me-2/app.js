@@ -80,13 +80,29 @@
 // _______________________________________________________________________________________________________________________________________
 
 
-const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"]
-const printWithIndex =   (name, index) => {
-    console.log(`${index} - ${name}`);
-}
+// const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"]
+// const printWithIndex =   (name, index) => {
+//     console.log(`${index} - ${name}`);
+// }
 
-const printWithDashes =   (name) => {
-    console.log(` --- ${name} --- `);
-}
+// const printWithDashes =   (name) => {
+//     console.log(` --- ${name} --- `);
+// }
 
-names.forEach(printWithDashes)
+// names.forEach(printWithDashes)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+// 4. Asagidaki funksiyalari yazin:
+// kebabToSnake('ali-greenheart'); //ALI_GREENHEART
+// SnakeToKebab('JAVASCRIPT_IS_HELL') //javascript-is-hell
+
+const kebabToSnake = (str) => str.replaceAll('-', '_').toLocaleUpperCase()
+
+console.log(kebabToSnake('ali-greenheart')); //ALI_GREENHEART
+
+// _______________________________________________________________________________________________________________________________________
+
+const SnakeToKebab = (str) => str.replaceAll('-', '_').toLocaleUpperCase()
+
+console.log(SnakeToKebab('JAVASCRIPT_IS_HELL')); //javascript-is-hell
