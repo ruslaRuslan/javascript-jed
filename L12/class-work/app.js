@@ -1125,14 +1125,26 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 
 
+// const fe10 = ['ali', 'muhtar', 'sada', 'theCodeFather085', 'sabina', 'RAMIN']
+// const _enUzunAd = fe10.reduce((a, b) => {
+//     if (a.length > b.length){
+//         return a;
+//     }
+//     return b;
+// })
+
+// console.log(_enUzunAd)
+
+// _______________________________________________________________________________________________________________________________________
+
+
+
 const fe10 = ['ali', 'muhtar', 'sada', 'theCodeFather085', 'sabina', 'RAMIN']
-const _enUzunAd = fe10.reduce((a, b) => {
-    if (a.length > b.length){
-        return a;
-    }
-    return b;
-})
+const _enUzunAd = fe10.reduce((a, b) => a.length > b.length ? a : b
+
+
+
+)
 
 console.log(_enUzunAd)
-
 
