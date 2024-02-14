@@ -134,11 +134,21 @@
 
 
 
-let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
-const result = numbers.map((eded) => eded < 0 ? Math.abs(eded) : eded * 2)
-console.log(result);
+// let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+// const result = numbers.map((eded) => eded < 0 ? Math.abs(eded) : eded * 2)
+// console.log(result);
 
 // _______________________________________________________________________________________________________________________________________
+
+// 6. A herfi ile baslayan orijinal massivdeki elemenlerden ibaret yeni massiv yaradin: let names = ['Sam','Alan', 'Bill', 'Adam', 'Anna', 'George'] // ['Alan', 'Adam', 'Anna']
+
+let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
+
+const result = names.filter((element) => {
+    return element[0] === 'A'
+})
+console.log(result); //['Alan', 'Adam', 'Anna']
+
 
 
 
