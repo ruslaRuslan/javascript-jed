@@ -296,16 +296,26 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // T2. sonu i ile ve uzunlugu 4-e beraber olan ilk elementi tapin; [find]
 
-const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+// const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
-const task1 = fe10.find((name) => name.endsWith('i') && name.length === 4)
-console.log(task1);
+// const task1 = fe10.find((name) => name.endsWith('i') && name.length === 4)
+// console.log(task1);
 
 
 
 // T3. Butun adlar-da a herfi varmi? [every]
 
-// T4. Alman turist: Sizin adlarinizda z herfi isdifafe olunurmu&[some]
+// const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+
+// const task3 = fe10.every((name) => name.includes('a'))
+// console.log(task3);
+
+// T4. Alman turist: Sizin adlarinizda z herfi isdifafe olunurmu[some]
+
+const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+
+const task4 = fe10.some((name) => name.includes('z'))
+console.log(task4);
 
 
 
