@@ -285,17 +285,21 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // T1. uzunlugu 5,6 ve ya 7-ye beraber olan yeni massive yigin; [filter]
 
-const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+// const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
-const task1 = fe10.filter((name) => name.length >= 5 && name.length <= 7)
-console.log(task1);
+// const task1 = fe10.filter((name) => name.length >= 5 && name.length <= 7)
+// console.log(task1);
+
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // T2. sonu i ile ve uzunlugu 4-e beraber olan ilk elementi tapin; [find]
 
+const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
+const task1 = fe10.find((name) => name.endsWith('i') && name.length === 4)
+console.log(task1);
 
 
 
