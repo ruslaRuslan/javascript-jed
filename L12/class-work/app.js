@@ -336,14 +336,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 
 
-const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
-// bashHerifler = ['a', 'a', 'r', 'm', 's', 'b']
-// mapper
-// map
-
-const yeniArr = fe10.map((element, i) => element[0].toUpperCase() )
-console.log(yeniArr);
 
 
 
