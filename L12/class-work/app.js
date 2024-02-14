@@ -244,7 +244,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina', 'aliabbas','alineymet', 'alisahib', 'alidadas', 'behruz']
 // const user = fe10.filter((elem, index) => elem[0] === 'a')
-// console.log(user) 
+// console.log(user)  //['ali', 'aliabbas', 'alineymet', 'alisahib', 'alidadas']
 
 // _______________________________________________________________________________________________________________________________________
 
@@ -252,28 +252,67 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // const fe10 = ['ali', 'aslan','muhtar', 'sada', 'sabina', 'aliabbas','alineymet', 'alisahib', 'alidadas', 'behruz']
 
 // const startsWithAli = fe10.filter((elem) => elem.toLocaleLowerCase().startsWith('ali'))
-// console.log(startsWithAli) 
+// console.log(startsWithAli) //['ali', 'aliabbas', 'alineymet', 'alisahib', 'alidadas']
+// En yaxsi metod bu metotdur
 
 // _______________________________________________________________________________________________________________________________________
 
 // const fe10 = ['ali', 'aslan', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
 // const startsWithAli = fe10.filter((elem) => elem.slice(0, 3) === 'ali')
-// console.log(startsWithAli)
+// console.log(startsWithAli) //['ali', 'aliabbas', 'alineymet', 'alisahib', 'alidadas']
 
 // _______________________________________________________________________________________________________________________________________
 
 // const fe10 = ['ali', 'aslan', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
 // const startsWithAli = fe10.filter((elem) => elem.slice(0, 3).toLocaleLowerCase() === 'ali')
-// console.log(startsWithAli)
+// console.log(startsWithAli) //['ali', 'aliabbas', 'alineymet', 'alisahib', 'alidadas']
 
 // _______________________________________________________________________________________________________________________________________
 
 
+// const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
+
+// const startsWithAli = fe10.filter((elem) => elem.includes('ali'))
+// console.log(startsWithAli) //['ali', 'bali', 'aliabbas', 'alineymet', 'alisahib', 'alidadas']
+
+// _______________________________________________________________________________________________________________________________________
+
+
+
+
+
+// T1. uzunlugu 5,6 ve ya 7-ye beraber olan yeni massive yigin; [filter]
+
 const fe10 = ['ali', 'aslan', 'bali', 'muhtar', 'sada', 'sabina', 'aliabbas', 'alineymet', 'alisahib', 'alidadas', 'behruz']
 
-const startsWithAli = fe10.filter((elem) => elem.includes('ali'))
-console.log(startsWithAli)
+const task1 = fe10.filter((name) => name.length >= 5 && name.length <= 7)
+console.log(task1);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+// T2. sonu i ile ve uzunlugu 4-e beraber olan ilk elementi tapin; [find]
+
+
+
+
+
+// T3. Butun adlar-da a herfi varmi? [every]
+
+// T4. Alman turist: Sizin adlarinizda z herfi isdifafe olunurmu&[some]
+
+
+
+
+
+
+
+
+
+
+
+
 
 
