@@ -379,8 +379,20 @@ const users = [
 // }
 // console.log(arrayOfUsersWhoseNameStarts(users));
 
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // Task10. Get an array of users whose email contains the string 'org'.
 
+// const usersWithEmailContainingOrg = (users) => {
+//     let result = users.filter((user) => {
+//         return user.email.includes('org')
+//     })
+//     return result
+// }
+// console.log(usersWithEmailContainingOrg(users));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task11. Get an array of users whose phone number starts with the area code '1-770'.
