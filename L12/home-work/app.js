@@ -330,19 +330,29 @@ const users = [
 
 // Task6. Get the sum of all user IDs.
 
-const sumOfAllUserIDs = (users) => {
-    let result = 0;
-    users.forEach((user) => {
-        result += user.id
-    })
-    return result
-}
-console.log(sumOfAllUserIDs(users));
+// const sumOfAllUserIDs = (users) => {
+//     let result = 0;
+//     users.forEach((user) => {
+//         result += user.id
+//     })
+//     return result
+// }
+// console.log(sumOfAllUserIDs(users));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task7. Get the user with the highest ID.
+
+// userWithTheHighestID = (users) => {
+//     users.sort((user, user2) => {
+//         return user2.id - user.id
+//     })
+//     return users[0]
+// }
+// console.log(userWithTheHighestID(users));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task8. Get an array of all user names sorted in alphabetical order.
