@@ -765,14 +765,21 @@
 // _______________________________________________________________________________________________________________________________________
 
 // 2-ci varianti
-// const getUseByStreetName = (street) => {
-//     const foundObj = arr.find((user) => {
-//         return user.address.street === street
-//     })
+const getUseByStreetName = (street) => {
+    const foundObj = arr.find((user) => {
+        return user.address.street === street
+    })
 
-//     console.log(foundObj);
-// }
-// getUseByStreetName("Ellsworth Summit")
+    console.log(foundObj);
+}
+const getUseByStreetNameV2 = (street) => {
+    for (let i = 0; i < arr.length; i++) {
+        if ( arr[i].address.street===street){
+            return arr[i]
+        }
+    }
+}
+console.log(getUseByStreetNameV2("Ellsworth Summit"))
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
