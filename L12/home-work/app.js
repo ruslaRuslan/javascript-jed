@@ -278,8 +278,13 @@ const users = [
 
 // Task2. Get all users whose email ends with '.net'.
 
-
-
+// const usersWhoseEmailEndsWith = (users) => {
+//     let result = users.filter((element) => {
+//        return element.email.endsWith('.net')
+//     })
+//     return result
+// }
+// console.log(usersWhoseEmailEndsWith(users));
 
 // Task3. Get an array of objects containing only the name and email of users whose name starts with 'C'.
 
