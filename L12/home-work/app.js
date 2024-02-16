@@ -357,6 +357,17 @@ const users = [
 
 // Task8. Get an array of all user names sorted in alphabetical order.
 
+// let result = users.sort((a, b) => a.username.localeCompare(b.username))
+// console.log(result);
+
+// __________________________________________________________________________________________________________________________________________
+
+let result = users.sort((a, b) => {
+    return a.username < b.username ? -1 : 1;
+})
+console.log(result);
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task9. Get an array of users whose name starts with the letter 'P'.
 
