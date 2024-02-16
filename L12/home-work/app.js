@@ -1,3 +1,36 @@
+// 1. let arr = ['c', 'a', 't', ' ', 'd', 'o', 'g', ' ', 'a', 'p', 'p', 'l', 'e', ' ', 'f', 'i', 'n', 'e']
+// yeni array yaradin ki, soz tersine duzulsun. // ['f','i','n','e', ' ','a','p','p','l','e',' ','d','o','g',' ','c','a','t']
+// sozler arasinda bosluq var.
+
+
+// let arr = ['c', 'a', 't', ' ', 'd', 'o', 'g', ' ', 'a', 'p', 'p', 'l', 'e', ' ', 'f', 'i', 'n', 'e'];
+// let reversedArr = arr.join('').split(' ').reverse().join(' ').split('')
+// console.log(reversedArr);
+// __________________________________________________________________________________________________________________________________________
+
+// let arr = ['c', 'a', 't', ' ', 'd', 'o', 'g', ' ', 'a', 'p', 'p', 'l', 'e', ' ', 'f', 'i', 'n', 'e'];
+// let reversedArr = []
+
+// arr.join('').split(' ').reverse().join(' ').split('').forEach(letter => reversedArr.push(letter))
+
+// console.log(reversedArr);
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// 2. let arr = [1, 4, 7, 2, 0, -4, -6, -3, 0, -8, -2, 8, 0, 0, 3, 0, 1, 2, -5] arrayi verilib.Sifirlari en axira duzun.
+
+
+// let arr = [1, 4, 7, 2, 0, -4, -6, -3, 0, -8, -2, 8, 0, 0, 3, 0, 1, 2, -5];
+
+// let zeros = arr.filter((element, index, array) => element === 0)
+// let NonZeros = arr.filter((element) => element !== 0)
+// let result = NonZeros.concat(zeros)
+// console.log(result);
+
+// _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 const users = [
     {
         "id": 1,
@@ -231,68 +264,68 @@ const users = [
     }
 ]
 
-
-// forEach, some, every, find, filter, map, reduce*
-
-
-// 1. hamisi callback alir. 
-// 2. hamisi elementlerin uzerinde hemin callback-i loop edir. 
-// 3. original massivi deyismir! yeni massiv geriye return edir. 
-
-// forEach -> sade loop. hec ne return etmir!
-// Eger bir isi massivin butun elementlerinin uzerinde gormek istesen forEach istifade et!
-// const yeniMassiv = users.forEach((element, index, array) => {
-//     console.log(element.address.street)
-// })
-// console.log(yeniMassiv)
-// ---------------------------------------
+// Task1. Get all users whose zip code is less than or equal to 50000.
 
 
-// filter -> Massivde filtr-lamaq ucun istifade olunur. Sert verirsen, hansi element-de true-dursa, hemin element-lerden ibaret yeni massiv yaradir!
-const newArray = users.filter((element, index, array) => {
-    // return element.name.startsWith('L')
-    // return element.name.length > 18
-    // return element.email.endsWith('.biz')
-    return index
-})
-console.log(newArray)
-// ---------------------------------------
+// const getUsersWithPostalCodeLessThan50000 = (users) => {
+//     return users.filter((user) => user.address.zipcode <= 50000)
 
-// // find -> Massiv-den elementi tapmaq ucun istifade olunur. Geriye tapilan ilk elementi qaytarir.
-// const elem = users.find((element, index, array) => {
-//         return element.email.endsWith('.biz')
-// })
+// }
+// console.log(getUsersWithPostalCodeLessThan50000(users));
 
-// console.log(elem)
-
-// ---------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// const hansisaElementBizIleBitirmi = users.some((element, index, array) => {
-//     return element.email.endsWith('.biz')
-// })
-
-// console.log(hansisaElementBizIleBitirmi)
-
-// ---------------------------------------
+// Task2. Get all users whose email ends with '.net'.
 
 
 
-// const butunElementlerinEmailBizIleBitirmi = users.every((element, index, array) => {
-//     // return element.email.endsWith('.biz')
-//     return element.name.length > 8
-// })
 
-// console.log(butunElementlerinEmailBizIleBitirmi)
-
-// ---------------------------------------
+// Task3. Get an array of objects containing only the name and email of users whose name starts with 'C'.
 
 
+// Task4. Get an array of all user names in uppercase.
 
-// map -> callback-den return edilen deyer-lerden ibaret yeni massiv yaradir!
 
-// const userEmails = users.map((element, index, array) => {
-//     return element.name[0].toUpperCase()
-// })
-// console.log(userEmails)
+// Task5. Get the total number of users in the array.
+
+
+// Task6. Get the sum of all user IDs.
+
+
+// Task7. Get the user with the highest ID.
+
+
+// Task8. Get an array of all user names sorted in alphabetical order.
+
+
+// Task9. Get an array of users whose name starts with the letter 'P'.
+
+
+// Task10. Get an array of users whose email contains the string 'org'.
+
+
+// Task11. Get an array of users whose phone number starts with the area code '1-770'.
+
+
+// Task12. Get an array of all user addresses as strings.
+
+
+// Task13. Get an array of all user cities.
+
+
+// Task14. Get an array of all user names in lowercase.
+
+
+// Task15. Get the average length of all user names.
+
+
+// Task16. Get an array of all user IDs multiplied by 2.
+
+
+// Task17. Get the total number of characters in all user names.
+
+
+
+
 
