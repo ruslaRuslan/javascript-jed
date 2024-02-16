@@ -319,16 +319,27 @@ const users = [
 
 // Task5. Get the total number of users in the array.
 
-const totalNumberOfUsers = (users) => {
-    return users.length
-}
-console.log(totalNumberOfUsers(users));
+// const totalNumberOfUsers = (users) => {
+//     return users.length
+// }
+// console.log(totalNumberOfUsers(users));
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task6. Get the sum of all user IDs.
+
+const sumOfAllUserIDs = (users) => {
+    let result = 0;
+    users.forEach((user) => {
+        result += user.id
+    })
+    return result
+}
+console.log(sumOfAllUserIDs(users));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task7. Get the user with the highest ID.
