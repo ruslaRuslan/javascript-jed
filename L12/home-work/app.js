@@ -286,7 +286,23 @@ const users = [
 // }
 // console.log(usersWhoseEmailEndsWith(users));
 
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // Task3. Get an array of objects containing only the name and email of users whose name starts with 'C'.
+
+const arrayOfObjectsContaining = (users) => {
+    return users.filter((user) => {
+        return user.name.startsWith('C');
+    }).map((user) => {
+        return { name: user.name, email: user.email }
+    })
+}
+console.log(arrayOfObjectsContaining(users));
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task4. Get an array of all user names in uppercase.
