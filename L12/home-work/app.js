@@ -397,8 +397,20 @@ const users = [
 
 // Task11. Get an array of users whose phone number starts with the area code '1-770'.
 
+// const arrayOfUsersPhoneNumberStarts = (users) => {
+//     let result = users.filter((user) => {
+//         return user.phone.startsWith('1-770')
+//     })
+//     return result
+// }
+// console.log(arrayOfUsersPhoneNumberStarts(users));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task12. Get an array of all user addresses as strings.
+
+
 
 
 // Task13. Get an array of all user cities.
