@@ -362,17 +362,25 @@ const users = [
 
 // __________________________________________________________________________________________________________________________________________
 
-let result = users.sort((a, b) => {
-    return a.username < b.username ? -1 : 1;
-})
-console.log(result);
+// let result = users.sort((a, b) => {
+//     return a.username < b.username ? -1 : 1;
+// })
+// console.log(result);
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task9. Get an array of users whose name starts with the letter 'P'.
 
+// const arrayOfUsersWhoseNameStarts = (users, index) => {
+//     return users.filter((user) => {
+//         return user.name.startsWith('P')
+//     })
+
+// }
+// console.log(arrayOfUsersWhoseNameStarts(users));
 
 // Task10. Get an array of users whose email contains the string 'org'.
+
 
 
 // Task11. Get an array of users whose phone number starts with the area code '1-770'.
