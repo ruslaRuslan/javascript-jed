@@ -307,17 +307,25 @@ const users = [
 
 // Task4. Get an array of all user names in uppercase.
 
-const arrayOfAllUserNames = (users) => {
-    return users.map((user) => {
-       return user.name
-    })
+// const arrayOfAllUserNames = (users) => {
+//     return users.map((user) => {
+//        return user.name
+//     })
 
-}
-console.log(arrayOfAllUserNames(users));
+// }
+// console.log(arrayOfAllUserNames(users));
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task5. Get the total number of users in the array.
+
+const totalNumberOfUsers = (users) => {
+    return users.length
+}
+console.log(totalNumberOfUsers(users));
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task6. Get the sum of all user IDs.
