@@ -423,15 +423,24 @@ const users = [
 
 // Task13. Get an array of all user cities.
 
-const allUserCities = (users) => {
-    return users.map((user) => {
-        return user.address.city
-    })
-}
-console.log(allUserCities(users));
+// const allUserCities = (users) => {
+//     return users.map((user) => {
+//         return user.address.city
+//     })
+// }
+// console.log(allUserCities(users));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task14. Get an array of all user names in lowercase.
 
+const userNamesInLowercase = (users) => {
+    return users.map((user) => {
+        return user.name.toLowerCase()
+    })
+}
+console.log(userNamesInLowercase(users));
 
 // Task15. Get the average length of all user names.
 
