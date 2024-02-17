@@ -410,16 +410,25 @@ const users = [
 
 // Task12. Get an array of all user addresses as strings.
 
-const userAddressesAsStrings = (users) => {
-    let result = users.map((user) => {
-        return user.address
-    })
-    return result
-}
-console.log(userAddressesAsStrings(users));
+// const userAddressesAsStrings = (users) => {
+//     let result = users.map((user) => {
+//         return user.address
+//     })
+//     return result
+// }
+// console.log(userAddressesAsStrings(users));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task13. Get an array of all user cities.
 
+const allUserCities = (users) => {
+    return users.map((user) => {
+        return user.address.city
+    })
+}
+console.log(allUserCities(users));
 
 // Task14. Get an array of all user names in lowercase.
 
