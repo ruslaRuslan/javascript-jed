@@ -72,11 +72,11 @@
 // ### Verilən mətn tip dəyərdəki vergülləri nöqtəli vergüllə əvəz edin. '32, 31, 34, 36, 31' mətni verilmişdir, İçindəki vergülləri nöqtəli vergüllə əvəz edin.(Massivden istifade ederek)
 
 
-function birVergulBirVergulNoqte(...user) {
-    result = user.map((element) => element.replaceAll(',', ';'))
-    console.log(result);
-    return result
-}
-birVergulBirVergulNoqte('32, 31, 34, 36, 31')
+// function birVergulBirVergulNoqte(...user) {
+//     result = user.map((element) => element.replaceAll(',', ';'))
+//     console.log(result);
+//     return result
+// }
+// birVergulBirVergulNoqte('32, 31, 34, 36, 31')
 
 
