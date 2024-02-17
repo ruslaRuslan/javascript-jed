@@ -21,20 +21,37 @@
 
 // ** Şirkətin 10 işçisi haqqında məlumat olan massiv verilib.development massivi yaradın, hansıki proqramlaşma şöbəsinin işçilərini, və s.texniki işçiləri özündə saxlayacaq, yəni department özəlliyinin dəyəri «development» olan işçiləri.**
 
+
 //     ```javascript
-// let employees = [
-//   ["Jaylee Macy", "marketing"],
-//   ["John Smith", "management"],
-//   ["Blossom Hartley", "design"],
-//   ["Austin Carpenter", "marketing"],
-//   ["Joan Knowles", "development"],
-//   ["Sally Nunez", "management"],
-//   ["Laurel Ward", "development"],
-//   ["Lark Simon", "marketing"],
-//   ["Jane Stone", "management"],
-//   ["Courtney Olson", "development"],
-// ];
+
+
+let employees = [
+    ["Jaylee Macy", "marketing"],
+    ["John Smith", "management"],
+    ["Blossom Hartley", "design"],
+    ["Austin Carpenter", "marketing"],
+    ["Joan Knowles", "development"],
+    ["Sally Nunez", "management"],
+    ["Laurel Ward", "development"],
+    ["Lark Simon", "marketing"],
+    ["Jane Stone", "management"],
+    ["Courtney Olson", "development"],
+];
+
+const developmentOlanIşçiləri = (employees) => {
+    return employees.filter((element) => {
+        return element[1] === 'development'
+    })
+}
+console.log(developmentOlanIşçiləri(employees));
+
+
+
 // ```
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // ## Task 3
 
