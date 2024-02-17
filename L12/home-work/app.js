@@ -471,7 +471,19 @@ const users = [
 // }
 // console.log(allUserIDsMultipliedBy2(users));
 
-// Task17. Get the total number of characters in all user names.
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Task17. Get the total number of characters in all user names. 
+// const numberOfCharactersInAllUserNames = (users) => {
+//     let result = 0;
+//     users.forEach((user) => {
+//         result += user.username.length
+//     })
+//     return result
+// }
+// console.log(numberOfCharactersInAllUserNames(users));
 
 
 
