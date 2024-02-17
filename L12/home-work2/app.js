@@ -12,6 +12,13 @@
 
 // ### Üç addan ibarət massiv yaradın.Massivin ikinci elementinin dəyərini “Classified” ilə əvəz edin.Massivi konsola çıxarın.
 
+let massiv = ['ali', 'ruslan', 'qahraman']
+massiv[1] = 'Classified'
+console.log(massiv);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 // ## Task 3
 
 // ### 5 rəqəmdən ibarət massiv yaradın.Orijinal massivin surətini çıxarın və yeni massivin bütün elementlərini ikiqat artırın.Orijinal massivin dəyişmədiyini yoxlayın.
