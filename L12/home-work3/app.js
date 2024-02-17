@@ -79,6 +79,25 @@
 
 // ### Rəqəmlər massivini parametr kimi qəbul edən və əgər həmin massivdə mənfi ədədlər varsa onları massiv şəklində geri qaytaran, yoxdursa uyğun mesajı geri funksiya yazın.
 
+
+
+const uyğunMesaj = (...array) => {
+    let neqativeNumber = array.filter(num => num < 0);
+    if (neqativeNumber.length > 0) {
+        return neqativeNumber;
+    } else {
+        return 'Massivdə mənfi ədəd yoxdur.'
+    }
+
+
+}
+
+console.log(uyğunMesaj(-9, -5, -32, 25, 96, 5, 12, 21, 21, -6, - 9, -5, -32, 25, 96, 5,));
+console.log(uyğunMesaj(25, 96, 5, 12, 21, 21, 6, 9, 5, 32, 25, 96, 5,));
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 // ## Task 5
 
 // ### Callback(geri çağırış) funksiyalarını yazın: printWithDashes, printWithHearts, printWithIndex.
