@@ -44,12 +44,11 @@
 //     - //Episode 5: The Empire strikes back
 //     - //Episode 6: Return of the Jdi
 
-let arr = ['New Hope', 'The Empire Strikes Back', 'Return of the Jdi'];
+// let arr = ['New Hope', 'The Empire Strikes Back', 'Return of the Jdi'];
 
-arr.forEach((element, index) => {
-    console.log(`Episode ${index + 4}: ${element}`);
-})
-
+// arr.forEach((element, index) => {
+//     console.log(`Episode ${index + 4}: ${element}`);
+// })
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -57,10 +56,12 @@ arr.forEach((element, index) => {
 
 // ## Task 5
 
-// ### İstifadəçidən vergüllə ayrılmış beş ədədi daxil etməyi xahiş edin və onları massivdə saxlayın.İstifadəçidən beş ədəd elementi daxil etməyi tələb edən, onları massilə yazan və ən kiçik ədədi konsola çıxaran proqram yazın.
+// ### İstifadəçidən vergüllə ayrılmış beş ədədi daxil etməyi xahiş edin və onları massivdə saxlayın.İstifadəçidən beş ədəd elementi daxil etməyi tələb edən, onları massivə yazan və ən kiçik ədədi konsola çıxaran proqram yazın.
 
-
-
+let user = prompt('vergüllə ayrılmış beş ədəd daxil edin')
+let numbers = user.split(',').map(Number)
+numbers.sort((a, b) => a - b)
+console.log('kiçik ədəd:', numbers[0]);
 
 
 
