@@ -405,7 +405,7 @@ const users = [
 // }
 // console.log(arrayOfUsersPhoneNumberStarts(users));
 
-// ------------------------------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task12. Get an array of all user addresses as strings.
@@ -418,7 +418,7 @@ const users = [
 // }
 // console.log(userAddressesAsStrings(users));
 
-// ------------------------------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task13. Get an array of all user cities.
@@ -430,23 +430,46 @@ const users = [
 // }
 // console.log(allUserCities(users));
 
-// ------------------------------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // Task14. Get an array of all user names in lowercase.
 
-const userNamesInLowercase = (users) => {
-    return users.map((user) => {
-        return user.name.toLowerCase()
-    })
-}
-console.log(userNamesInLowercase(users));
+// const userNamesInLowercase = (users) => {
+//     return users.map((user) => {
+//         return user.name.toLowerCase()
+//     })
+// }
+// console.log(userNamesInLowercase(users));
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task15. Get the average length of all user names.
 
 
+
+// const sumOfAllUserIDs = (users) => {
+//     let result = 0;
+//     users.forEach((user) => {
+//         result += user.username.length / 10
+//     })
+//     return result
+// }
+// console.log(sumOfAllUserIDs(users));
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 // Task16. Get an array of all user IDs multiplied by 2.
 
+// const allUserIDsMultipliedBy2 = (users) => {
+//     return users.map((user) => {
+//         return user.id * 2
+//     })
+
+// }
+// console.log(allUserIDsMultipliedBy2(users));
 
 // Task17. Get the total number of characters in all user names.
 
