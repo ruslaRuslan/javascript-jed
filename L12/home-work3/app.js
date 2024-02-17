@@ -25,29 +25,31 @@
 //     ```javascript
 
 
-let employees = [
-    ["Jaylee Macy", "marketing"],
-    ["John Smith", "management"],
-    ["Blossom Hartley", "design"],
-    ["Austin Carpenter", "marketing"],
-    ["Joan Knowles", "development"],
-    ["Sally Nunez", "management"],
-    ["Laurel Ward", "development"],
-    ["Lark Simon", "marketing"],
-    ["Jane Stone", "management"],
-    ["Courtney Olson", "development"],
-];
-
-const developmentOlanIşçiləri = (employees) => {
-    return employees.filter((element) => {
-        return element[1] === 'development'
-    })
-}
-console.log(developmentOlanIşçiləri(employees));
-
-
+// let employees = [
+//     ["Jaylee Macy", "marketing"],
+//     ["John Smith", "management"],
+//     ["Blossom Hartley", "design"],
+//     ["Austin Carpenter", "marketing"],
+//     ["Joan Knowles", "development"],
+//     ["Sally Nunez", "management"],
+//     ["Laurel Ward", "development"],
+//     ["Lark Simon", "marketing"],
+//     ["Jane Stone", "management"],
+//     ["Courtney Olson", "development"],
+// ];
 
 // ```
+
+// const developmentOlanIşçiləri = (employees) => {
+//     return employees.filter((element) => {
+//         return element[1] === 'development'
+//     })
+// }
+// console.log(developmentOlanIşçiləri(employees));
+
+
+
+
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -59,9 +61,19 @@ console.log(developmentOlanIşçiləri(employees));
 
 // ```javascript
 // let array = [
-//   1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22,
+//     1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22,
 // ];
-// ```
+// // ```
+
+// const massiviGeriQaytaran = (array) => {
+//     result = array.sort((a, b) => a - b)
+//     return result
+// }
+// console.log(massiviGeriQaytaran(array));
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // ## Task 4
 
