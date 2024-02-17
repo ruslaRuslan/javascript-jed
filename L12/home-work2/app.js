@@ -58,12 +58,10 @@
 
 // ### İstifadəçidən vergüllə ayrılmış beş ədədi daxil etməyi xahiş edin və onları massivdə saxlayın.İstifadəçidən beş ədəd elementi daxil etməyi tələb edən, onları massivə yazan və ən kiçik ədədi konsola çıxaran proqram yazın.
 
-let user = prompt('vergüllə ayrılmış beş ədəd daxil edin')
-let numbers = user.split(',').map(Number)
-numbers.sort((a, b) => a - b)
-console.log('kiçik ədəd:', numbers[0]);
-
-
+// let user = prompt('vergüllə ayrılmış beş ədəd daxil edin')
+// let numbers = user.split(',').map(Number)
+// numbers.sort((a, b) => a - b)
+// console.log('kiçik ədəd:', numbers[0]);
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -71,4 +69,14 @@ console.log('kiçik ədəd:', numbers[0]);
 
 // ## Task 6
 
-// ### Verilən mətn tip dəyərdəki vergülləri nöqtəli vergüllə əvəz edin. '32, 31, 34, 36, 31' mətni verilmişdir, İçindəki vergülləri nöqtəli vergüllə əvəz edin.(Massivden sitifade ederek)
+// ### Verilən mətn tip dəyərdəki vergülləri nöqtəli vergüllə əvəz edin. '32, 31, 34, 36, 31' mətni verilmişdir, İçindəki vergülləri nöqtəli vergüllə əvəz edin.(Massivden istifade ederek)
+
+
+function birVergulBirVergulNoqte(...user) {
+    result = user.map((element) => element.replaceAll(',', ';'))
+    console.log(result);
+    return result
+}
+birVergulBirVergulNoqte('32, 31, 34, 36, 31')
+
+
