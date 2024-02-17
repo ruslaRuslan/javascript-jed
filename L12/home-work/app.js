@@ -410,8 +410,13 @@ const users = [
 
 // Task12. Get an array of all user addresses as strings.
 
-
-
+const userAddressesAsStrings = (users) => {
+    let result = users.map((user) => {
+        return user.address
+    })
+    return result
+}
+console.log(userAddressesAsStrings(users));
 
 // Task13. Get an array of all user cities.
 
