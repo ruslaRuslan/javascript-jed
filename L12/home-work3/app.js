@@ -220,14 +220,18 @@
 
 // Output: [2, 10, 7, 6, 9, 8, 6, 4]
 
-const modifyNumbers = (...array) => {
-    return array.map((number) => number < 0 ? Math.abs(number) : number * 2)
-}
-console.log(modifyNumbers(1, 5, -7, 3, -9, 4, -6, 2));
 // ```
 
 
+// const modifyNumbers = (...array) => {
+//     return array.map((number) => number < 0 ? Math.abs(number) : number * 2)
+// }
+// console.log(modifyNumbers(1, 5, -7, 3, -9, 4, -6, 2));
 
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // ## Task 8
@@ -235,19 +239,27 @@ console.log(modifyNumbers(1, 5, -7, 3, -9, 4, -6, 2));
 // ### Adlar massivi verilib.Bir funksiya yazın, hansı ki parametr olaraq massiv qəbul edir.Həmin massivdə "A" hərfi ilə başlayan elementlərdən ibarət yeni massiv yaradıb, elə bir dəyər tapılmasa uyğun mesajı geri qaytarmalıdır.
 
 // ```javascript
-// let namesArray = [
-//   "Alice",
-//   "Bob",
-//   "Catherine",
-//   "David",
-//   "Eva",
-//   "Andrew",
-//   "Frank",
-//   "Anna",
-//   "George",
-//   "Alex",
-// ];
+
+let namesArray = [
+    "Alice",
+    "Bob",
+    "Catherine",
+    "David",
+    "Eva",
+    "Andrew",
+    "Frank",
+    "Anna",
+    "George",
+    "Alex",
+];
 // ```
+
+let result = namesArray.filter((name) => {
+   return name.startsWith('A')
+})
+console.log(result);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // ## Task 9
 
