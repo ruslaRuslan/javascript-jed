@@ -23,11 +23,12 @@
 
 // ### 5 rəqəmdən ibarət massiv yaradın.Orijinal massivin surətini çıxarın və yeni massivin bütün elementlərini ikiqat artırın.Orijinal massivin dəyişmədiyini yoxlayın.
 
-let massiv = [5, 9, 6, 3, 1];
-let copiedMassiv = [...massiv];
-let newMassiv = copiedMassiv.map((element) => element * 2)
-console.log("Orijinal massiv", massiv);
-console.log("Yeni massiv", newMassiv);
+// let massiv = [5, 9, 6, 3, 1];
+// let copiedMassiv = [...massiv];
+// let newMassiv = copiedMassiv.map((element) => element * 2)
+// console.log("Orijinal massiv", massiv);
+// console.log("Yeni massiv", newMassiv);
+
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
@@ -39,13 +40,33 @@ console.log("Yeni massiv", newMassiv);
 
 // let arr = ['New Hope', 'The Empire Strikes Back', 'Return of the Jdi'];
 
-// - //Episode 4: New Hope
-//     - //Episode 5: Empire strikes back
+//     - //Episode 4: New Hope
+//     - //Episode 5: The Empire strikes back
 //     - //Episode 6: Return of the Jdi
+
+let arr = ['New Hope', 'The Empire Strikes Back', 'Return of the Jdi'];
+
+arr.forEach((element, index) => {
+    console.log(`Episode ${index + 4}: ${element}`);
+})
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // ## Task 5
 
 // ### İstifadəçidən vergüllə ayrılmış beş ədədi daxil etməyi xahiş edin və onları massivdə saxlayın.İstifadəçidən beş ədəd elementi daxil etməyi tələb edən, onları massilə yazan və ən kiçik ədədi konsola çıxaran proqram yazın.
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // ## Task 6
 
