@@ -160,32 +160,30 @@
 // 4 - Jimmy
 // ```
 
-const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+// const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
 
-const printWithDashes = (name) => {
-    console.log(name);
-    console.log('------------------');
-}
-printWithDashes(name)
-names.forEach(printWithDashes)
+// const printWithDashes = (name) => {
+//     console.log(name);
+//     console.log('------------------');
+// }
+// printWithDashes(name)
+// names.forEach(printWithDashes)
 
-// ________________
+// // ________________
 
-const printWithHearts = (name) => {
-    console.log(`<3<3<3<3 ${name} <3<3<3<3`);
-}
+// const printWithHearts = (name) => {
+//     console.log(`<3<3<3<3 ${name} <3<3<3<3`);
+// }
 
-names.forEach(printWithHearts)
+// names.forEach(printWithHearts)
 
-// ________________
+// // ________________
 
-const printWithIndex = (name, index) => {
-    console.log(index + ' - ' + name);
-}
+// const printWithIndex = (name, index) => {
+//     console.log(index + ' - ' + name);
+// }
 
-names.forEach(printWithIndex)
-
-
+// names.forEach(printWithIndex)
 
 
 
@@ -203,6 +201,11 @@ names.forEach(printWithIndex)
 // OUTPUT: FIRST_USER;
 // ```
 
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 // ## Task 7
 
 // ### Orijinal massivin elementlərindən ibarət yeni massiv yaradın.
@@ -216,7 +219,16 @@ names.forEach(printWithIndex)
 // Input:  [1, 5, -7, 3, -9, 4, -6, 2];
 
 // Output: [2, 10, 7, 6, 9, 8, 6, 4]
+
+const modifyNumbers = (...array) => {
+    return array.map((number) => number < 0 ? Math.abs(number) : number * 2)
+}
+console.log(modifyNumbers(1, 5, -7, 3, -9, 4, -6, 2));
 // ```
+
+
+
+
 
 // ## Task 8
 
