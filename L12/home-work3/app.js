@@ -81,19 +81,19 @@
 
 
 
-const uyğunMesaj = (...array) => {
-    let neqativeNumber = array.filter(num => num < 0);
-    if (neqativeNumber.length > 0) {
-        return neqativeNumber;
-    } else {
-        return 'Massivdə mənfi ədəd yoxdur.'
-    }
+// const uyğunMesaj = (...array) => {
+//     let neqativeNumber = array.filter(num => num < 0);
+//     if (neqativeNumber.length > 0) {
+//         return neqativeNumber;
+//     } else {
+//         return 'Massivdə mənfi ədəd yoxdur.'
+//     }
 
 
-}
+// }
 
-console.log(uyğunMesaj(-9, -5, -32, 25, 96, 5, 12, 21, 21, -6, - 9, -5, -32, 25, 96, 5,));
-console.log(uyğunMesaj(25, 96, 5, 12, 21, 21, 6, 9, 5, 32, 25, 96, 5,));
+// console.log(uyğunMesaj(-9, -5, -32, 25, 96, 5, 12, 21, 21, -6, - 9, -5, -32, 25, 96, 5,));
+// console.log(uyğunMesaj(25, 96, 5, 12, 21, 21, 6, 9, 5, 32, 25, 96, 5,));
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -159,6 +159,39 @@ console.log(uyğunMesaj(25, 96, 5, 12, 21, 21, 6, 9, 5, 32, 25, 96, 5,));
 // 3 - Lamar
 // 4 - Jimmy
 // ```
+
+const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+
+const printWithDashes = (name) => {
+    console.log(name);
+    console.log('------------------');
+}
+printWithDashes(name)
+names.forEach(printWithDashes)
+
+// ________________
+
+const printWithHearts = (name) => {
+    console.log(`<3<3<3<3 ${name} <3<3<3<3`);
+}
+
+names.forEach(printWithHearts)
+
+// ________________
+
+const printWithIndex = (name, index) => {
+    console.log(index + ' - ' + name);
+}
+
+names.forEach(printWithIndex)
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // ## Task 6
 
