@@ -240,24 +240,24 @@
 
 // ```javascript
 
-let namesArray = [
-    "Alice",
-    "Bob",
-    "Catherine",
-    "David",
-    "Eva",
-    "Andrew",
-    "Frank",
-    "Anna",
-    "George",
-    "Alex",
-];
+// let namesArray = [
+//     "Alice",
+//     "Bob",
+//     "Catherine",
+//     "David",
+//     "Eva",
+//     "Andrew",
+//     "Frank",
+//     "Anna",
+//     "George",
+//     "Alex",
+// ];
 // ```
 
-let result = namesArray.filter((name) => {
-   return name.startsWith('A')
-})
-console.log(result);
+// let result = namesArray.filter((name) => {
+//     return name.startsWith('A')
+// })
+// console.log(result);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -272,6 +272,13 @@ console.log(result);
 
 // Output:
 // ```
+const pricesArray = [12.99, 24.95, 9.99, 34.50, 19.99, 42.75, 8.49, 15.00, 28.75, 10.99];
+
+const addTax = (pricesArray) => pricesArray.map((price) => parseFloat((price + (price * 20 / 100)).toFixed(2)))
+console.log(addTax(pricesArray));
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // ## Task 10
 
