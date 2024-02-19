@@ -919,5 +919,5 @@ const users = [
 
 // 3-ci versiya
 
-const lazimlilar = users.map(({ id, name, username, email }) => ({ id, name, username, email }))
-console.log(lazimlilar);
+// const lazimlilar = users.map(({ id, name, username, email }) => ({ id, name, username, email }))
+// console.log(lazimlilar);
