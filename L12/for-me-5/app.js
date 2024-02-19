@@ -40,14 +40,26 @@
 // task02
 // 1-ci versiya
 
-const ilkHerifDeyis = (string, symbol) => symbol.concat(string.slice(1, string.length))
-console.log(ilkHerifDeyis('aLIONALI', 'A'));
+// const ilkHerifDeyis = (string, symbol) => symbol.concat(string.slice(1, string.length))
+// console.log(ilkHerifDeyis('aLIONALI', 'A'));
 
 // _______________________________________________________________________________________________________________________________________
 
 
 // 2-ci versiya
-const ilkHerifDeyisV1 = (string, symbol) => string.replace(string[0], symbol);
-console.log(ilkHerifDeyisV1('aLIONALI', 'A'));
+// const ilkHerifDeyisV1 = (string, symbol) => string.replace(string[0], symbol);
+// console.log(ilkHerifDeyisV1('aLIONALI', 'A'));
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
+
+// task03
+// verify gmail addres. (gmail addresleri sonu @gmail.com ile bitmelidir, ve ondan evvel en azi 5 simvol olmalidir. abcdfgnail.com meselen)
+
+const validateGmail = (gmail) => gmail.endsWith('@gmail.com') && gmail.length >= 15
+
+console.log(validateGmail('ali@gmail.com'))
+console.log(validateGmail('ruslan@gmail.com'));
+
+
+
+
