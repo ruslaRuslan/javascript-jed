@@ -272,10 +272,10 @@
 
 // Output:
 // ```
-const pricesArray = [12.99, 24.95, 9.99, 34.50, 19.99, 42.75, 8.49, 15.00, 28.75, 10.99];
+// const pricesArray = [12.99, 24.95, 9.99, 34.50, 19.99, 42.75, 8.49, 15.00, 28.75, 10.99];
 
-const addTax = (pricesArray) => pricesArray.map((price) => parseFloat((price + (price * 20 / 100)).toFixed(2)))
-console.log(addTax(pricesArray));
+// const addTax = (pricesArray) => pricesArray.map((price) => parseFloat((price + (price * 20 / 100)).toFixed(2)))
+// console.log(addTax(pricesArray));
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -285,15 +285,20 @@ console.log(addTax(pricesArray));
 // ### Şöbə işçilərinin əmək haqqını təhlil etmək üçün proqram tərtib edin.
 
 // ** Şöbədə müxtəlif maaşlarla 10 nəfər çalışır.Şöbə işçilərinin əmək haqlarını təhlil etmək üçün proqram tərtib edin.**
-
+// -----------------------------
 //     - Bütün bir departamentin bir il üçün ümumi maaşlarının cəmini qaytaran bir funksiya yazın. < br >
 //   ** salary massivi əsasında il ərzində bütün işçilərin maaşlarının cəmini qaytaran getAnnualSalary() funksiyasını yazın.**
-
+// -----------------------------
 //     - Ay nömrəsinə görə işçilərin aylıq maaşlarını massiv halında almaq üçün funksiya yazın.< br >
 //   ** Ayın nömrəsini parametr kimi qəbul edən və salary massivindən həmin ay üçün işçi maaşlarını massiv halında qaytaran getMonthlySalary() funksiyasını yazın.**
 
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 //     - Rüb ərzində maaşların ümumi cəmini qaytaran funksiya yazın.< br >
 //   ** Parametr kimi rübün rəqəmini(1, 2, 3 və ya 4) qəbul edən və salary massivi əsasında həmin rüb üçün şöbənin bütün işçilərinin maaşlarının cəmini qaytaran getQuarterSalary() funksiyasını yazın.Rüb - 3 aylıq bir müddətdir.**
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // #### Qeyd 1: Ayın nömrəsi elementin indeks nömrəsi ilə eyni deyil.
 
@@ -313,3 +318,61 @@ console.log(addTax(pricesArray));
 //   [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
 // ];
 // ```
+
+
+let salary = [
+    [60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+    [75, 75, 75, 75, 75, 75, 70, 77, 75, 75, 70, 75],
+    [150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 180],
+    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+    [80, 80, 80, 80, 80, 80, 80, 105, 105, 105, 105, 105],
+    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+    [80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 120],
+    [65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65, 65],
+    [80, 80, 80, 80, 80, 80, 80, 90, 90, 90, 90, 90],
+    [75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 70, 75],
+];
+
+function getAnnualSalary(salary) {
+    result = 0
+    salary.forEach((month) => {
+        month.forEach((useMounth) => {
+            result += useMounth
+        })
+    });
+    return result
+}
+
+console.log(getAnnualSalary(salary)) // 97772
+
+const getMonthlySalary = (salary) => {
+    let result = [];
+    salary.forEach((everyWorked) => {
+        let sum = 0
+        everyWorked.forEach((amount) => {
+            sum += amount
+        })
+        result.push(sum)
+    })
+    return result
+}
+console.log(getMonthlySalary(salary))
+
+
+const getQuarterSalary = (quarter, salaryData) => {
+    let startMonth = (quarter - 1) * 3;
+    let endMonth = startMonth + 3;
+    let totalSalary = 0;
+
+    for (let i = startMonth; i < endMonth; i++) {
+        salaryData[i].forEach(amount => totalSalary += amount)
+    }
+    return totalSalary
+}
+
+let quarter = 3;
+let totalSalary = getQuarterSalary(quarter, salary)
+console.log(`Seçdiyiniz rüb üçün maaşların cəmi: ${totalSalary}`);
+
+
+
