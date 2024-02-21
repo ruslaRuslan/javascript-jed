@@ -82,19 +82,21 @@
 // bu riyazi əməliyyatın nəticəsini qaytaran calc funksiyasını yazın.
 //     Məsələn, calc(4, 6, '+');  //  10 qaytaracaq
 
-const calculator = (number1, number2, operator) => {
-    switch (operator) {
-        case '+': {
-            console.log(`${number1 + number2}`);
-        }
-            break;
-        default: {
-            console.log(`YALNIS!`);
-        }
-    }
-    return operator
-}
-calculator(4, 6, '+')
+// const calculator = (number1, number2, operator) => {
+//     switch (operator) {
+//         case '+': {
+//             console.log(`${number1 + number2}`);
+//         }
+//             break;
+//         default: {
+//             console.log(`YALNIS!`);
+//         }
+//     }
+//     return operator
+// }
+// calculator(4, 6, '+')    //10
+// calculator(94, 21, '-')  //YALNIS!
+
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -105,6 +107,23 @@ calculator(4, 6, '+')
 // olduğunu yoxlayan isLucky funksiyasını yazın.
 // Bilet uğurlu olarsa, funksiya true, uğursuz olarsa, false qaytarmalıdır.
 //     Məsələn, isLucky(234801);  // true qaytaracaq
+
+
+const isLucky = (number) => {
+    let numberString = number.toString()
+    if (numberString.length === 6 && numberString.slice(0, 3) === numberString.slice(3, 7)) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+
+
+}
+isLucky(223223)
+isLucky(234801)
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // Task-07
 // Bir ədədi parametr kimi qəbul edən və cüt olduqda true,
