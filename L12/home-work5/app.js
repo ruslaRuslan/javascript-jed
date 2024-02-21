@@ -109,18 +109,18 @@
 //     Məsələn, isLucky(234801);  // true qaytaracaq
 
 
-const isLucky = (number) => {
-    let numberString = number.toString()
-    if (numberString.length === 6 && numberString.slice(0, 3) === numberString.slice(3, 7)) {
-        console.log(true);
-    } else {
-        console.log(false);
-    }
+// const isLucky = (number) => {
+//     let numberString = number.toString()
+//     if (numberString.length === 6 && numberString.slice(0, 3) === numberString.slice(3, 7)) {
+//         console.log(true);
+//     } else {
+//         console.log(false);
+//     }
 
 
-}
-isLucky(223223)
-isLucky(234801)
+// }
+// isLucky(223223)
+// isLucky(234801)
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
@@ -129,9 +129,41 @@ isLucky(234801)
 // Bir ədədi parametr kimi qəbul edən və cüt olduqda true,
 //     tək olduqda isə false qaytaran isEven() funksiyasını yazın.
 
+// const isEven = (number) => {
+//     if (number % 2 === 0) {
+//         return true;
+//     } else if (number % 2 !== 0) {
+//         return false;
+//     } 
+// }
+// console.log(isEven(5));
+// console.log(isEven(120));
+
+
+// _________________________________________________________________________________________________________________________________________
+
+// ozum ucun bele yazdim tapsiriqdan elave olaraq
+// const isEvenV2 = (...numbers) => {
+//     return numbers.map((number) => number % 2 === 0)
+// }
+// console.log(isEvenV2(3, 5, 2));
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //         Task - 8
 // Mətni parametri kimi qəbul edən və bu mətndəki herflerin sayını qaytaran numCounter funksiyasını yazın.
+
+// const numCounter = (string) => {
+
+//     let result = string.replace(/[^a-zA-Z]/g, '').length
+//     console.log(result);
+// }
+// numCounter('Ruslan Zeynalov Mehman')
+// numCounter(' Ruslan_57 ')
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 //     Task -09
