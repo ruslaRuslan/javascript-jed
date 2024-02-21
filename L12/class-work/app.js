@@ -1,22 +1,22 @@
 // array's ESA methods
 
+// JED.Fronted.fe10.forEach((ad, index, arr) => { })
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
-// // JED.Fronted.fe10.forEach((ad, index, arr) => { })
-// fe10.forEach((ad, i, array) => {
-//     console.log(`${i + 1}. ${ad} `);
-//     array.push(ad.concat('elave edildi.'))
-//     console.log('this is array', array);
+// fe10.forEach((ad, index, array) => {
+// console.log(`${index + 1}. ${ad} `);
+// array.push(ad.concat(' elave edildi.'))
+// console.log('this is array', array);
 // })
 // console.log(fe10);
 
 // _______________________________________________________________________________________________________________________________________
 
+// JED.Fronted.fe10.forEach((ad, index, arr) => { })
 // const fe10 = ['ali', 'muhtar', { ad: 'sada' }, 'sabina']
-// // JED.Fronted.fe10.forEach((ad, index, arr) => { })
-// fe10.forEach((ad, i, array) => {
-//     console.log(`${i + 1}. ${ad}`);
-//     if (i === 2) {
-//         ad.ad = 'hamza'
+// fe10.forEach((name, index, array) => {
+//     // console.log(`${index + 1}. ${name}`);
+//     if (index === 2) {
+//         name.ad = 'hamza'
 //         console.log(array);
 
 //     }
@@ -50,7 +50,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
 
-// forEach -> sadece sede loop etmekdir.
+// // forEach -> sadece sede loop etmekdir.
 
 // fe10.forEach((elem, index)=>{
 //     document.write(`${index + 1}-ci element. ${elem} <br/>`)
@@ -64,9 +64,9 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
 
-// forEach -> sadece sede loop etmekdir.
+// // forEach -> sadece sede loop etmekdir.
 
-// const a = fe10.forEach((elem, index)=>{
+// const a = fe10.forEach((elem, index) => {
 //     document.write(`${index + 1}-ci element. ${elem} <br/>`)
 // })
 // console.log(a);  // undefined
@@ -77,8 +77,8 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 
 // const fe10 = ['ali', 'muhtar', 'sada', 'sabina']
-// const result = fe10.every((elem, ind) => {
-//     const shert = elem.length < 20
+// const result = fe10.every((element, ind) => {
+//     const shert = element.length < 20
 //     return shert;
 // })
 // console.log(result);  //true
@@ -126,6 +126,8 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // const result = fe10.every((elem, index) => elem)
 // console.log(result);  //false
 
+
+
 // _______________________________________________________________________________________________________________________________________
 
 // // falsy 0, Nan, '', false, undefined, null
@@ -138,9 +140,9 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 // _______________________________________________________________________________________________________________________________________
 
 // falsy 0, Nan, '', false, undefined, null
-// const fe10 = ['ali', 'muhtar', 'sada', 'sabina','']
+// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
 // const result = fe10.every((elem, index) => index)
-// console.log(result); 
+// console.log(result);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -199,7 +201,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // const fe10 = [null, 'ali', 'muhtar', 'sada', 'sabina', '']
 // const user = fe10.find((elem, index) => 1)
-// console.log(user) //null 
+// console.log(user) //null
 //0-dan basqa ve -0-dan basqa hansi reqem ve ededi  yazsaq null verecek, 0 ve -0-da ise undefined verecek
 
 
@@ -208,9 +210,9 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // findIndex
 
-// const fe10 = ['ali', 'muhtar', 'sada', 'sabina', '']
+// const fe10 = ['ali',  'sada', 'muhtar','sabina', '']
 // const user = fe10.findIndex((elem, index) => elem.length > 5)
-// console.log(user) //1
+// console.log(user) //2
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -268,6 +270,7 @@ arr = arr.map((elem, index, arr)=>) arrayi deyismek ucun bele etmelisen!
 
 // const startsWithAli = fe10.filter((elem) => elem.slice(0, 3).toLocaleLowerCase() === 'ali')
 // console.log(startsWithAli) //['ali', 'aliabbas', 'alineymet', 'alisahib', 'alidadas']
+
 
 // _______________________________________________________________________________________________________________________________________
 
