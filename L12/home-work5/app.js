@@ -202,6 +202,22 @@
 // Task - 11
 // İstifadəçidən bir ədəd daxil etməsini tələb edən və rəqəmin mükəmməl və ya mükəmməl olmadığını bildirən bir proqram yazın. (if-else ilə)
 
+function users(user) {
+    let result = 0;
+    for (let i = 1; i < user; i++) {
+        if (user % i === 0) {
+            result += i
+        }
+    }
+    return user === result ? true : false
+}
+console.log(users(28));
+console.log(users(6));
+console.log(users(8));
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task - 12
 // İstifadəçidən bir ay adı daxil etməsini tələb edən və həmin ayın neçə gün çəkdiyini göstərən bir proqram yazın. (switch-case ilə)
