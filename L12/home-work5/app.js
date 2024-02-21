@@ -167,10 +167,37 @@
 
 
 //     Task -09
-// İstənilən rəqəmin faktorialını hesablayan bir funksiya yaradın. (dövrlə və if-else ilə)
+// İstənilən rəqəmin faktorialını hesablayan bir funksiya yaradın. (dövr-ilə)
+
+// const factorial = (number) => {
+//     result = 1;
+//     for (let i = 1; i <= number; i++) {
+//         result *= i
+//     }
+//     return result
+// }
+// console.log(factorial(7)); //120
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // Task - 10
 // İstifadəçidən rəqəm qəbul edən və onun müsbət, mənfi və ya sıfır olduğunu yoxlayan bir funksiya yazın. (if-else ilə)
+
+
+// function numbers() {
+//     let user = prompt('Isdediyiniz reqemi yazin')
+//     if (user === '0') {
+//         return `${user} sıfırdı `
+//     } else if (user > 0) {
+//         return `${user} musbetdir`
+//     } else if (user < 0) {
+//         return `${user} menfidi`
+//     } else {
+//         return `YALNIS!!!.`
+//     }
+// }
+// console.log(numbers());
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 // Task - 11
 // İstifadəçidən bir ədəd daxil etməsini tələb edən və rəqəmin mükəmməl və ya mükəmməl olmadığını bildirən bir proqram yazın. (if-else ilə)
