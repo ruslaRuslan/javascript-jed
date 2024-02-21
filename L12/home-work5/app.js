@@ -61,10 +61,10 @@
 
 
 
-let RublUSD = parseFloat(prompt('Nece dollar oldugunu yazin'))
-let USD_Rubl = parseFloat(prompt('Nece Rubl oldugunu yazin'))
-let result = `Bütün depozitlər üzrə məbləğ: ${RublUSD * 75 + USD_Rubl}`
-console.log(result);
+// let RublUSD = parseFloat(prompt('Nece dollar oldugunu yazin'))
+// let USD_Rubl = parseFloat(prompt('Nece Rubl oldugunu yazin'))
+// let result = `Bütün depozitlər üzrə məbləğ: ${RublUSD * 75 + USD_Rubl}`
+// console.log(result);
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
@@ -72,6 +72,10 @@ console.log(result);
 
 //     Task-04
 // Parametr kimi iki ədəd qəbul edən və onlardan ən kiçiyini qaytaran min() funksiyası tərtib edin.
+
+const parametr = (numbers) => numbers; console.log(parametr(Math.min(5, 6, 8, 2)));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 //     Task-05
 // Parametr kimi iki ədəd və riyazi əməliyyatın işarəsini qəbul edən və
