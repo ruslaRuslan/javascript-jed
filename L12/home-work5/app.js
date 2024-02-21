@@ -18,35 +18,35 @@
 // Parametr olaraq üç ədəd qəbul edən və konsolda ən böyüyünü göstərən bir funksiya tərtib edin.
 // Fərqli arqumentlərlə funksiyanı üç dəfə çağırın
 
-function TheLargestOfTheNumber(a, b, c) {
+// function TheLargestOfTheNumber(a, b, c) {
 
-    if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
-        return 'YALNIS REQEM YADA EDED YAZIN!!!!'
-    }
-    if (a > b && c < a) {
-        return a;
-    } else if (b > a && c < b) {
-        return b;
-    } else if (c > b && a < c) {
-        return c;
+//     if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
+//         return 'YALNIS REQEM YADA EDED YAZIN!!!!'
+//     }
+//     if (a > b && c < a) {
+//         return a;
+//     } else if (b > a && c < b) {
+//         return b;
+//     } else if (c > b && a < c) {
+//         return c;
 
-    } else if (a === b || a === c) {
-        return a
-    } else if (b === c) {
-        return b
-    }
+//     } else if (a === b || a === c) {
+//         return a
+//     } else if (b === c) {
+//         return b
+//     }
 
-}
-console.log(TheLargestOfTheNumber(100, 100, 120));
-console.log(TheLargestOfTheNumber('Salam', 10, 10));
+// }
+// console.log(TheLargestOfTheNumber(100, 100, 120));
+// console.log(TheLargestOfTheNumber('Salam', 10, 10));
 
 
 // _________________________________________________________________________________________________________________________________________
 
-// ozumnen yazdim 
-const TheLargestOfTheNumberV2 = (a, b, c) => typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' ? 'YALNIS REQEM YADA EDED YAZIN!!!!' :  (a > b && a > c ? a : (b > a && b > c ? b : (c > a && c > b ? c : (a === b || a === c ? a : c === b ? c : b))))
-console.log(TheLargestOfTheNumberV2(120, 1985, 1450));
-console.log(TheLargestOfTheNumberV2('Salam', 10, 10));
+// ozumnen yazdim
+// const TheLargestOfTheNumberV2 = (a, b, c) => typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' ? 'YALNIS REQEM YADA EDED YAZIN!!!!' :  (a > b && a > c ? a : (b > a && b > c ? b : (c > a && c > b ? c : (a === b || a === c ? a : c === b ? c : b))))
+// console.log(TheLargestOfTheNumberV2(120, 1985, 1450));
+// console.log(TheLargestOfTheNumberV2('Salam', 10, 10));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -58,6 +58,16 @@ console.log(TheLargestOfTheNumberV2('Salam', 10, 10));
 // Tutaq ki, müştərinin rubl hesabında 1200 rubl, dollar hesabında isə 20 dollar var.
 //     Bir dollar üçün məzənnə 75 rubl təşkil edir.
 // Bu halda, funksiya belə mesaj göstərməlidir: Bütün depozitlər üzrə məbləğ: 2700 rubl.
+
+
+
+let RublUSD = parseFloat(prompt('Nece dollar oldugunu yazin'))
+let USD_Rubl = parseFloat(prompt('Nece Rubl oldugunu yazin'))
+let result = `Bütün depozitlər üzrə məbləğ: ${RublUSD * 75 + USD_Rubl}`
+console.log(result);
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //     Task-04
