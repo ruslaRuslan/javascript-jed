@@ -134,7 +134,7 @@
 //         return true;
 //     } else if (number % 2 !== 0) {
 //         return false;
-//     } 
+//     }
 // }
 // console.log(isEven(5));
 // console.log(isEven(120));
@@ -202,18 +202,18 @@
 // Task - 11
 // İstifadəçidən bir ədəd daxil etməsini tələb edən və rəqəmin mükəmməl və ya mükəmməl olmadığını bildirən bir proqram yazın. (if-else ilə)
 
-function users(user) {
-    let result = 0;
-    for (let i = 1; i < user; i++) {
-        if (user % i === 0) {
-            result += i
-        }
-    }
-    return user === result ? true : false
-}
-console.log(users(28));
-console.log(users(6));
-console.log(users(8));
+// function users(user) {
+//     let result = 0;
+//     for (let i = 1; i < user; i++) {
+//         if (user % i === 0) {
+//             result += i
+//         }
+//     }
+//     return user === result ? true : false
+// }
+// console.log(users(28));
+// console.log(users(6));
+// console.log(users(8));
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
@@ -222,8 +222,46 @@ console.log(users(8));
 // Task - 12
 // İstifadəçidən bir ay adı daxil etməsini tələb edən və həmin ayın neçə gün çəkdiyini göstərən bir proqram yazın. (switch-case ilə)
 
+function nameMonth(getDay) {
+    let result;
+    switch (getDay.toLowerCase()) {
+        case 'yanvar':
+        case 'mart':
+        case 'may':
+        case 'iyul':
+        case 'avqust':
+        case 'oktyabr':
+        case 'dekabr':
+            result = 31;
+            break;
+        case 'aprel':
+        case 'iyun':
+        case 'sentyabr':
+        case 'noyabr':
+            result = 30
+            break;
+        case 'fevral':
+            result = 28
+        default: {
+            console.error('YALNIS!!!')
+            result = 'YALNIS!!!'
+        }
+    }
+    return result
+}
+let user = prompt('ayi yazin')
+let Inputuser = nameMonth(user)
+console.log(Inputuser)
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //     Task - 13
 // İstifadəçidən iki ədəd daxil etməsini tələb edən və onların ən böyük ortaq bölünənini tapıb göstərən bir proqram yazın. (dövrlə və if-else ilə)
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //     Task - 14
