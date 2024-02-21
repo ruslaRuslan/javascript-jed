@@ -73,7 +73,7 @@
 //     Task-04
 // Parametr kimi iki ədəd qəbul edən və onlardan ən kiçiyini qaytaran min() funksiyası tərtib edin.
 
-const parametr = (numbers) => numbers; console.log(parametr(Math.min(5, 6, 8, 2)));
+// const parametr = (numbers) => numbers; console.log(parametr(Math.min(5, 6, 8, 2)));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -81,6 +81,23 @@ const parametr = (numbers) => numbers; console.log(parametr(Math.min(5, 6, 8, 2)
 // Parametr kimi iki ədəd və riyazi əməliyyatın işarəsini qəbul edən və
 // bu riyazi əməliyyatın nəticəsini qaytaran calc funksiyasını yazın.
 //     Məsələn, calc(4, 6, '+');  //  10 qaytaracaq
+
+const calculator = (number1, number2, operator) => {
+    switch (operator) {
+        case '+': {
+            console.log(`${number1 + number2}`);
+        }
+            break;
+        default: {
+            console.log(`YALNIS!`);
+        }
+    }
+    return operator
+}
+calculator(4, 6, '+')
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // Task-06
 // Biletin şanslı olub olmadığını yoxlayan funksiya yazın.
