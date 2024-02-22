@@ -364,21 +364,21 @@
 //         Task - 19
 //     3 rəqəmli ədəd qəbul edən və onun rəqəmlərinin cəmini qaytaran funksiya yazın.Məsələn daxil edilib 547, cavab olmalıdı 5 + 4 + 7 yəqni 16
 
-const ThreeNumbers = (number) => {
-    let result = 0;
-    const numberAsString = String(number)
-    for (let i = 0; i < numberAsString.length; i++) {
-        result += parseInt(numberAsString[i])
-    }
-    return result
-}
-console.log(ThreeNumbers(547)); //16
+// const ThreeNumbers = (number) => {
+//     let result = 0;
+//     const numberAsString = String(number)
+//     for (let i = 0; i < numberAsString.length; i++) {
+//         result += parseInt(numberAsString[i])
+//     }
+//     return result
+// }
+// console.log(ThreeNumbers(547)); //16
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
-//     Taks - 20
+//     Taksk - 20
 // Ureyimde bir reqem tutmusam 0 - dan 50ye qeder.User her defesinde hemin ededi sorusun.Eger sehvdirse, yeniden sorussun.Duz olanda, kapital bank hesabinda 1000 manat kocurulsun console - a cixarin.
 //         // *ADVANCED*: nece defeye tapdi, onu da cixarin. Tutaq ki,  ehsen, 10 defeye tapdin.
 //         // *ADVANCED ADVANCED* :
@@ -388,6 +388,45 @@ console.log(ThreeNumbers(547)); //16
 //         //  eger addimlarin sayi 10+ olarsa  olsun -250 manat  (ozu bize pul versin)
 //         // -------------------------------------------------------------------------------------------------------------------
 
+// function playGame() {
+//     let randomNumber = Math.floor(Math.random() * 51);
+//     let prize = 0;
+
+//     for (let attempts = 1; ; attempts++) {
+//         let userNumber = parseInt(prompt('Введите число от 0 до 50'));
+
+//         if (isNaN(userNumber) || userNumber < 0 || userNumber > 50) {
+//             console.log('Пожалуйста, введите число от 0 до 50.');
+//             continue;
+//         }
+
+//         if (userNumber === randomNumber) {
+//             if (attempts === 1) {
+//                 prize = 1000;
+//             } else if (attempts >= 2 && attempts <= 5) {
+//                 prize = 750;
+//             } else if (attempts >= 6 && attempts <= 9) {
+//                 prize = 250;
+//             } else {
+//                 prize = -250;
+//             }
+
+//             console.log(`Поздравляем! Вы угадали число за ${attempts} попыток.`);
+//             console.log(`Ваш выигрыш составляет ${prize} манат.`);
+//             break;
+//         } else if (userNumber < randomNumber) {
+//             console.log('Мало. Попробуйте еще раз.');
+//         } else {
+//             console.log('Много. Попробуйте еще раз.');
+//         }
+//     }
+// }
+
+// // Чтобы начать игру:
+// playGame();
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 //         Task - 21
 //     1 - den verilen edede qeder olan ededlerin cemi.
