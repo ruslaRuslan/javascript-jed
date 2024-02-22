@@ -302,6 +302,28 @@
 //     Task - 16
 // İstifadəçidən bir ədəd daxil etməsini tələb edən və bu ədədin Armstrong rəqəmi olub olmadığını yoxlayan bir proqram yazın. (dövrlə və if-else ilə)
 
+// function isArmStrong(number) {
+//     const numString = String(number)
+//     const numDight = numString.length;
+//     let result = 0;
+//     for (let i = 0; i < numDight; i++) {
+//         let digit = Number(numString[i]);
+//         result += Math.pow(digit, numDight);
+//     }
+//     if (result === number) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(isArmStrong(153));
+// console.log(isArmStrong(171));
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //     Task - 17
 // İstifadəçidən bir mətn və bir hərf daxil etməsini istəyən və bu hərfin mətndə neçə dəfə təkrarlandığını hesablayan bir proqram yazın. (dövr, if-else)
 
