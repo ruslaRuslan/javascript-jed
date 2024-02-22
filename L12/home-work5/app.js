@@ -5,6 +5,7 @@
 //     Funksiyanı 3 müxtəlif ad üçün çağırın.
 
 
+
 // let İstifadəçiAdı = () => {
 //     let id = prompt('Muxtelif adlar yazin')
 //     console.log(`[${id}] is active now`);
@@ -280,7 +281,7 @@
 //     Task - 14
 // İstifadəçidən bir söz daxil etməsini tələb edən və bu sözün palindrom olub olmadığını yoxlayan bir proqram yazın. (funksiya, dövr və if-else ilə)
 
-// let user = prompt('palindrom olub olmadığını yoxla') 
+// let user = prompt('palindrom olub olmadığını yoxla')
 // function palindrome(stringOrNumber) {
 //     let result = stringOrNumber
 
@@ -288,7 +289,7 @@
 //     for (let i = 0; i < wordsLength ; i++) {
 //         if (result[i] !== result[wordsLength - 1 - i]) {
 //             return ` ${stringOrNumber} Polindrom deyil`
-//         } 
+//         }
 //     }
 //     return `${stringOrNumber} duzdu: ${result} Palindromdu`
 // }
@@ -327,9 +328,25 @@
 //     Task - 17
 // İstifadəçidən bir mətn və bir hərf daxil etməsini istəyən və bu hərfin mətndə neçə dəfə təkrarlandığını hesablayan bir proqram yazın. (dövr, if-else)
 
+const User = (a, b) => {
+    let result = 0;
+    for (let i = 0; i < a.length; i++) {
+        if (a.slice(i, i + b.length) === b){
+            result++
+        }
+    }
+    return result
+}
+console.log(User('Ruslan Zeynalov Mehman, Qardasi Qehraman', 'a'));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //     Task - 18
 // isİnteger adında funksiya yazın.Bu funksiya 1 parametr alacaq və parametr olaraq hər şey daxil edə bilərəm.Funksiya, əgər daxil edilən parametr integerdirsə true deyilsə false qaytarsın.
+
+
+
 
 
 //         Task - 19
