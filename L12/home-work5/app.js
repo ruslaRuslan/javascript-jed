@@ -430,6 +430,17 @@
 
 //         Task - 21
 //     1 - den verilen edede qeder olan ededlerin cemi.
+// let user = prompt('1-den yazacaqiniz reqeme yada edede qeder toplayacax ')
+// function numbers(n) {
+//     let result = 0;
+//     for (let i = 1; i <= n; i++) {
+//         result += i
+//     }
+//     return result
+// }
+// console.log(numbers(user));
+
+
 
 
 //         Task - 22
@@ -438,6 +449,9 @@
 //   ***
 //   **
 //   *
+
+
+
 
 //         Task - 23
 //     1 - den verilen edede qeder ededlerin hasili -=> faktorial(5 != 1 * 2 * 3 * 4 * 5)
