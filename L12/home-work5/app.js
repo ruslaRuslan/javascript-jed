@@ -259,24 +259,19 @@
 //     Task - 13
 // İstifadəçidən iki ədəd daxil etməsini tələb edən və onların ən böyük ortaq bölünənini tapıb göstərən bir proqram yazın. (dövrlə və if-else ilə)
 
-let userTwoNumber = () => {
-    let a = parseFloat(prompt('birinci reqemi yazin'));
-    let b = parseFloat(prompt('ikinci reqemi yazin'))
-    let result = 0
-    let numbers = (a, b) //Math.min-de yaza bilerik 
-    for (let i = 1; i < numbers; i++) {
-        if (a % i === 0 && b % i === 0) {
-            result = i
-        }
-    }
-    return result
-}
-console.log(userTwoNumber());
-
-// (20250, 1200)); //150
-// (2025, 1200)); //75
-// (18, 1200));  //6
-
+// let userTwoNumber = () => {
+//     let a = parseFloat(prompt('birinci reqemi yazin'));
+//     let b = parseFloat(prompt('ikinci reqemi yazin'))
+//     let result = 0
+//     let numbers = (a, b) //Math.min ve ya Math.max yaza bilerik
+//     for (let i = 1; i < numbers; i++) {
+//         if (a % i === 0 && b % i === 0) {
+//             result = i
+//         }
+//     }
+//     return result
+// }
+// console.log(userTwoNumber());
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
@@ -284,6 +279,25 @@ console.log(userTwoNumber());
 
 //     Task - 14
 // İstifadəçidən bir söz daxil etməsini tələb edən və bu sözün palindrom olub olmadığını yoxlayan bir proqram yazın. (funksiya, dövr və if-else ilə)
+
+// let user = prompt('palindrom olub olmadığını yoxla') 
+// function palindrome(stringOrNumber) {
+//     let result = stringOrNumber
+
+//     let wordsLength = result.length
+//     for (let i = 0; i < wordsLength ; i++) {
+//         if (result[i] !== result[wordsLength - 1 - i]) {
+//             return ` ${stringOrNumber} Polindrom deyil`
+//         } 
+//     }
+//     return `${stringOrNumber} duzdu: ${result} Palindromdu`
+// }
+
+// console.log(palindrome(user));
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //     Task - 16
 // İstifadəçidən bir ədəd daxil etməsini tələb edən və bu ədədin Armstrong rəqəmi olub olmadığını yoxlayan bir proqram yazın. (dövrlə və if-else ilə)
