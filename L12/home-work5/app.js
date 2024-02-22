@@ -364,6 +364,19 @@
 //         Task - 19
 //     3 rəqəmli ədəd qəbul edən və onun rəqəmlərinin cəmini qaytaran funksiya yazın.Məsələn daxil edilib 547, cavab olmalıdı 5 + 4 + 7 yəqni 16
 
+const ThreeNumbers = (number) => {
+    let result = 0;
+    const numberAsString = String(number)
+    for (let i = 0; i < numberAsString.length; i++) {
+        result += parseInt(numberAsString[i])
+    }
+    return result
+}
+console.log(ThreeNumbers(547)); //16
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //     Taks - 20
 // Ureyimde bir reqem tutmusam 0 - dan 50ye qeder.User her defesinde hemin ededi sorusun.Eger sehvdirse, yeniden sorussun.Duz olanda, kapital bank hesabinda 1000 manat kocurulsun console - a cixarin.
