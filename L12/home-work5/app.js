@@ -328,16 +328,16 @@
 //     Task - 17
 // İstifadəçidən bir mətn və bir hərf daxil etməsini istəyən və bu hərfin mətndə neçə dəfə təkrarlandığını hesablayan bir proqram yazın. (dövr, if-else)
 
-const User = (a, b) => {
-    let result = 0;
-    for (let i = 0; i < a.length; i++) {
-        if (a.slice(i, i + b.length) === b){
-            result++
-        }
-    }
-    return result
-}
-console.log(User('Ruslan Zeynalov Mehman, Qardasi Qehraman', 'a'));
+// const User = (a, b) => {
+//     let result = 0;
+//     for (let i = 0; i < a.length; i++) {
+//         if (a.slice(i, i + b.length) === b){
+//             result++
+//         }
+//     }
+//     return result
+// }
+// console.log(User('Ruslan Zeynalov Mehman, Qardasi Qehraman', 'a'));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -346,7 +346,19 @@ console.log(User('Ruslan Zeynalov Mehman, Qardasi Qehraman', 'a'));
 // isİnteger adında funksiya yazın.Bu funksiya 1 parametr alacaq və parametr olaraq hər şey daxil edə bilərəm.Funksiya, əgər daxil edilən parametr integerdirsə true deyilsə false qaytarsın.
 
 
+// const Integer = (number) => {
+//     if (Number.isInteger(number)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(Integer(20.1));
+// console.log(Integer(20));
 
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //         Task - 19
