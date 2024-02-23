@@ -479,6 +479,21 @@
 //     Task - 24
 // prompt vasitesile direction(istiqamet) alin.eger up - dirsa, console - a yuxari get, right -> saga get, down -> asagi get, left -> sola get sozlerini cixarin.
 
+// let user = prompt('Isdiqameti yazin')
+// const direction = (istiqamet) => {
+//     if (istiqamet === 'up') {
+//         return `yuxari get`
+//     } else if (istiqamet === 'right') {
+//         return `saga get`
+//     } else if (istiqamet === 'down') {
+//         return `asagi get`
+//     } else if (istiqamet === 'left') {
+//         return `sola get`
+//     }else{
+//         return`YALNIS!!!`
+//     }
+// }
+// console.log(direction(user));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
