@@ -503,11 +503,40 @@
 // Cekisi 67 kq olan 1.65 m boya sahib adamin BMI bu formada hesablanir: 67 / (1.65 * 1.65) =  24.60
 // Demeli bu adam ucun BMI 24.60 - dir.
 
+// let user = prompt('Idediyiniz adamin cekisinin  BMI-ni tapa bilersiz, tek cekini yazmaqla')
+// const Index = (BMI) => {
+//     let result = (BMI / 40.60)
+//     let x = (BMI / (result * result)).toFixed(2)
+//     return `Demeli bu adam ucun BMI ${x} -dir`
+// }
+// console.log(Index(user));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 // Aldigimiz netice 18.5 - den kicikdirse, adamin BMI - si azdir, ariqdir.
 // Aldigimiz netice 25 - den kicikdirse, adamin BMI - si normal beden olcusune sahibdir.
 // Aldigimiz netice 30 - den kicikdirse, adamin BMI - si kokdur.
 // Qalan hallarda "obese" - dir.
 
+let user = prompt('Idediyiniz adamin cekisinin  BMI-ni tapa bilersiz, tek cekini yazmaqla')
+const Index = (BMI) => {
+    let result = (BMI / 40.60)
+    let x = (BMI / (result * result)).toFixed(2)
+    if (x < 18.5) {
+        return `${x} | adamin BMI - si azdir, ariqdir.`
+    } else if (x < 25) {
+        return `${x} | adamin BMI - si normal beden olcusune sahibdir`
+    } else if (x < 30) {
+        return `${x} |   adamin BMI - si kokdur.`
+    } else {
+        return `obese`
+    }
+}
+console.log(Index(user));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //         Task - 26
