@@ -563,25 +563,45 @@
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
 //         Task - 27
 // Konsola N dəfə «I know how to use cycles» mesajı çıxaran proqram yazın.
 // Proqram N ədədini istifadəçidən soruşur.
 
-let user = prompt('eded yada reqem yazin')
-function cycles(N) {
-    let result = ' ';
-    for (let i = 1; i <= N; i++) {
-        result += `I know how to use cycles,`
-    }
-    return `${result}`
-}
-console.log(cycles(user));
+// let user = prompt('eded yada reqem yazin')
+// function cycles(N) {
+//     let result = ' ';
+//     for (let i = 1; i <= N; i++) {
+//         result += `I know how to use cycles,`
+//     }
+//     return `${result}`
+// }
+// console.log(cycles(user));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //         Task - 28
 // Sonu 0 ilə bitən bütün üçrəqəmli ədədləri konsola çıxaran proqram yazın.
+
+const üçrəqəmliEdedler = (number) => {
+    let result = '';
+    for (let i = 100; i <= number; i += 10) {
+        if (number <= 999 && number >= 100 && number % 10 === 0) {
+            result += i + ','
+        } else {
+            return `YALNIS!!`
+        }
+    }
+    return result
+}
+console.log(üçrəqəmliEdedler(190));
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //         Task - 29
 // Bütün ikirəqəmli tək ədədlərin cəmini konsola çıxaran proqram yazın.
