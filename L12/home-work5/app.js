@@ -584,20 +584,18 @@
 //         Task - 28
 // Sonu 0 ilə bitən bütün üçrəqəmli ədədləri konsola çıxaran proqram yazın.
 
-const üçrəqəmliEdedler = (number) => {
-    let result = '';
-    for (let i = 100; i <= number; i += 10) {
-        if (number <= 999 && number >= 100 && number % 10 === 0) {
-            result += i + ','
-        } else {
-            return `YALNIS!!`
-        }
-    }
-    return result
-}
-console.log(üçrəqəmliEdedler(190));
-
-
+// const üçrəqəmliEdedler = (number) => {
+//     let result = '';
+//     for (let i = 100; i <= number; i += 10) {
+//         if (number <= 999 && number >= 100 && number % 10 === 0) {
+//             result += i + ','
+//         } else {
+//             return `YALNIS!!`
+//         }
+//     }
+//     return result
+// }
+// console.log(üçrəqəmliEdedler(190));
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
@@ -605,6 +603,22 @@ console.log(üçrəqəmliEdedler(190));
 
 //         Task - 29
 // Bütün ikirəqəmli tək ədədlərin cəmini konsola çıxaran proqram yazın.
+
+const ikiReqemliTekEded = (number) => {
+    result = 0;
+    for (let i = 11; i <= number; i++) {
+        if (i % 2 !== 0) {
+            result += i
+        } 
+    }
+    return result
+}
+console.log(ikiReqemliTekEded(20));
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 //         Task - 30
 // İstifadəçinin daxil etdiyi ədədin bölünəni olan bütün üçrəqəmli ədədlərin cəmini hesablayan proqram yazın.
