@@ -604,16 +604,17 @@
 //         Task - 29
 // Bütün ikirəqəmli tək ədədlərin cəmini konsola çıxaran proqram yazın.
 
-const ikiReqemliTekEded = (number) => {
-    result = 0;
-    for (let i = 11; i <= number; i++) {
-        if (i % 2 !== 0) {
-            result += i
-        } 
-    }
-    return result
-}
-console.log(ikiReqemliTekEded(20));
+
+// const ikiReqemliTekEded = (number) => {
+//     result = 0;
+//     for (let i = 11; i <= number; i++) {
+//         if (i % 2 !== 0) {
+//             result += i
+//         }
+//     }
+//     return result
+// }
+// console.log(ikiReqemliTekEded(20));
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
@@ -624,3 +625,17 @@ console.log(ikiReqemliTekEded(20));
 // İstifadəçinin daxil etdiyi ədədin bölünəni olan bütün üçrəqəmli ədədlərin cəmini hesablayan proqram yazın.
 // Proqram istifadəçidən ədəd daxil etməyi xahiş edir.Bundan sonra proqram konsolda bu rəqəmin
 // bölünəni olan bütün üçrəqəmli ədədlərin cəmini çıxarır.
+
+
+// const ədədinBölünəni = (number) => {
+//     let result = 0;
+//     for (let i = 100; i <= 999; i++) {
+//         if (i % number === 0) {
+//             result += i
+//         }
+//     }
+//     return result
+// }
+// console.log(ədədinBölünəni(9));
+
+
