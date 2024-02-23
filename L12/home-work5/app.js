@@ -545,19 +545,18 @@
 // Bu rəqəmi üçrəqəmli olana kimi 7 - ədədi qədər artırın.
 // Son dəyəri konsola çıxarın.
 
-const ikirəqəmliEded = (number) => {
-    if (number >= 10 && number <= 99) {
-        for (; number + 7 <= 99;) {
-            number += 7;
-        }
-        return number
-    } else {
-        return `Yalnis`
-    }
-}
-console.log(ikirəqəmliEded(20));
-console.log(ikirəqəmliEded(28));
-
+// const ikirəqəmliEded = (number) => {
+//     if (number >= 10 && number <= 99) {
+//         for (; number + 7 <= 99;) {
+//             number += 7;
+//         }
+//         return number
+//     } else {
+//         return `Yalnis`
+//     }
+// }
+// console.log(ikirəqəmliEded(20));
+// console.log(ikirəqəmliEded(28));
 
 
 
@@ -567,6 +566,19 @@ console.log(ikirəqəmliEded(28));
 //         Task - 27
 // Konsola N dəfə «I know how to use cycles» mesajı çıxaran proqram yazın.
 // Proqram N ədədini istifadəçidən soruşur.
+
+let user = prompt('eded yada reqem yazin')
+function cycles(N) {
+    let result = ' ';
+    for (let i = 1; i <= N; i++) {
+        result += `I know how to use cycles,`
+    }
+    return `${result}`
+}
+console.log(cycles(user));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //         Task - 28
 // Sonu 0 ilə bitən bütün üçrəqəmli ədədləri konsola çıxaran proqram yazın.
