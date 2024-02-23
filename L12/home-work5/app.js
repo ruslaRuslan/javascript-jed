@@ -520,21 +520,21 @@
 // Aldigimiz netice 30 - den kicikdirse, adamin BMI - si kokdur.
 // Qalan hallarda "obese" - dir.
 
-let user = prompt('Idediyiniz adamin cekisinin  BMI-ni tapa bilersiz, tek cekini yazmaqla')
-const Index = (BMI) => {
-    let result = (BMI / 40.60)
-    let x = (BMI / (result * result)).toFixed(2)
-    if (x < 18.5) {
-        return `${x} | adamin BMI - si azdir, ariqdir.`
-    } else if (x < 25) {
-        return `${x} | adamin BMI - si normal beden olcusune sahibdir`
-    } else if (x < 30) {
-        return `${x} |   adamin BMI - si kokdur.`
-    } else {
-        return `obese`
-    }
-}
-console.log(Index(user));
+// let user = prompt('Idediyiniz adamin cekisinin  BMI-ni tapa bilersiz, tek cekini yazmaqla')
+// const Index = (BMI) => {
+//     let result = (BMI / 40.60)
+//     let x = (BMI / (result * result)).toFixed(2)
+//     if (x < 18.5) {
+//         return `${x} | adamin BMI - si azdir, ariqdir.`
+//     } else if (x < 25) {
+//         return `${x} | adamin BMI - si normal beden olcusune sahibdir`
+//     } else if (x < 30) {
+//         return `${x} |   adamin BMI - si kokdur.`
+//     } else {
+//         return `obese`
+//     }
+// }
+// console.log(Index(user));
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -544,6 +544,25 @@ console.log(Index(user));
 // İstifadəçidən ikirəqəmli ədəd daxil etməsini xahiş edin.
 // Bu rəqəmi üçrəqəmli olana kimi 7 - ədədi qədər artırın.
 // Son dəyəri konsola çıxarın.
+
+const ikirəqəmliEded = (number) => {
+    if (number >= 10 && number <= 99) {
+        for (; number + 7 <= 99;) {
+            number += 7;
+        }
+        return number
+    } else {
+        return `Yalnis`
+    }
+}
+console.log(ikirəqəmliEded(20));
+console.log(ikirəqəmliEded(28));
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //         Task - 27
 // Konsola N dəfə «I know how to use cycles» mesajı çıxaran proqram yazın.
