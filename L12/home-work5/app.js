@@ -441,6 +441,9 @@
 // console.log(numbers(user));
 
 
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 //         Task - 22
@@ -452,13 +455,32 @@
 
 
 
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 //         Task - 23
 //     1 - den verilen edede qeder ededlerin hasili -=> faktorial(5 != 1 * 2 * 3 * 4 * 5)
 
+// let user = prompt('isdediyiniz reqemin faktorialini tapin')
+// function factorial(number) {
+//     result = 1;
+//     for (let i = 1; i <= number; i++) {
+//         result *= i
+//     }
+//     return result
+// }
+// console.log(factorial(user));
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+
 // Ramin Mammadzada, [20.02.2024 15: 55]
 //     Task - 24
 // prompt vasitesile direction(istiqamet) alin.eger up - dirsa, console - a yuxari get, right -> saga get, down -> asagi get, left -> sola get sozlerini cixarin.
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 //         Task - 25
