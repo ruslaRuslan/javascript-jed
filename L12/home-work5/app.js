@@ -988,10 +988,10 @@ console.log(ID);
 
 // T2.en uzun email - i tap;
 
-let email = users.reduce((result, user) => {
+let findEmail = users.reduce((result, user) => {
     return result + user.email.length
 }, 0)
-console.log(email);
+console.log(findEmail);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1023,7 +1023,5 @@ let SeherAd = users.reduce((result, seher) => {
 })
 console.log(SeherAd.address.city);
 
+
 // ---------------------------------------------------------------------------------------------------------------------------------------
-
-
-
