@@ -33,7 +33,7 @@
 
 const input = document.querySelector('input')
 const getValue = () => {
-console.log(input.value);
+    console.log(input.value);
 }
 
 
