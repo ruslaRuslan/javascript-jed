@@ -9,16 +9,21 @@
 
 // }
 // ---------------------------------------------------------------------------------------------------------------------------------
+// const btn = document.querySelector('button')
+// btn.onclick = () => {
+//     if (btn.classList.contains('active')) {
+//         btn.classList.remove('active')
+//     } else {
+//         btn.classList.add('active')
+//     }
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------------
+
 const btn = document.querySelector('button')
 btn.onclick = () => {
-    if (btn.classList.contains('active')) {
-        btn.classList.remove('active')
-    } else {
-        btn.classList.add('active')
-    }
+    btn.classList.toggle('active')
 }
-
-
 
 
 
