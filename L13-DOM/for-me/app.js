@@ -32,26 +32,28 @@
 // ilkHerifBoyuk.textContent = value[0].toUpperCase() + value.slice(1).toLowerCase()
 // }
 
+
+
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const getCalculate = () => {
-    const uzunluq = document.getElementById('uzunluq')
-    const cevre = document.getElementById('cevre')
+// const getCalculate = () => {
+//     const uzunluq = document.getElementById('uzunluq')
+//     const cevre = document.getElementById('cevre')
 
-    const uzunluqValueWithAndHeight = uzunluq.value
-    cevre.style.width = uzunluqValueWithAndHeight + 'px'
-    cevre.style.height = uzunluqValueWithAndHeight + 'px'
-    if (uzunluqValueWithAndHeight >= 0 && uzunluqValueWithAndHeight <= 30) {
-        cevre.style.backgroundColor = 'red'
-    } else if (uzunluqValueWithAndHeight > 30 && uzunluqValueWithAndHeight <= 60) {
-        cevre.style.backgroundColor = 'yellow'
-    } else if (uzunluqValueWithAndHeight > 60 && uzunluqValueWithAndHeight <= 80) {
-        cevre.style.backgroundColor = 'orange'
-    } else if (uzunluqValueWithAndHeight > 80 && uzunluqValueWithAndHeight <= 100) {
-        cevre.style.backgroundColor = 'lime'
-    }
-    // eger value -> 0-30 red = 30-60 yellow = 60-80 orange = 80-100 lime
+//     const uzunluqValueWithAndHeight = uzunluq.value
+//     cevre.style.width = uzunluqValueWithAndHeight + 'px'
+//     cevre.style.height = uzunluqValueWithAndHeight + 'px'
+//     if (uzunluqValueWithAndHeight >= 0 && uzunluqValueWithAndHeight <= 30) {
+//         cevre.style.backgroundColor = 'red'
+//     } else if (uzunluqValueWithAndHeight > 30 && uzunluqValueWithAndHeight <= 60) {
+//         cevre.style.backgroundColor = 'yellow'
+//     } else if (uzunluqValueWithAndHeight > 60 && uzunluqValueWithAndHeight <= 80) {
+//         cevre.style.backgroundColor = 'orange'
+//     } else if (uzunluqValueWithAndHeight > 80 && uzunluqValueWithAndHeight <= 100) {
+//         cevre.style.backgroundColor = 'lime'
+//     }
+//     // eger value -> 0-30 red = 30-60 yellow = 60-80 orange = 80-100 lime
 
-}
+// }
 
