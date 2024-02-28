@@ -4,13 +4,15 @@
 
 // -------------------------------------------------------------
 //<button onclick="rengDeyis()">click me</button> asqidakiler buna aitdir
-// const rengDeyis = () => {
-//     console.dir(document.body.style.backgroundColor = prompt('isdediyin rengi yaz'))   // arxa terefde isdediyimiz rengi prompta yazmaqla teyin edirik
 
+// const rengDeyis = () => {
+//     console.dir(document.body.style.backgroundColor = prompt('isdediyin rengi teyin et'))
 // }
+
+
 // ---------------------------------------------------------------
 // function kopyala(){
-//     navigator.clipboard.writeText(' RUSLAN ❤ ALI ') //bu teyin etdiyimizi kopyaladi
+//     navigator.clipboard.writeText(' ALI ❤ RUSLAN ')
 // }
 
 
@@ -21,7 +23,7 @@
 // ______________________________________________________________
 
 
-// <div id="container">bura yaz</div> asaqidakiler buna aitdir 
+// <div id="container">bura yaz</div> asaqidakiler buna aitdir
 // const container = document.getElementById('container')
 
 // container.innerText = prompt('yaz')
@@ -31,10 +33,7 @@
 // const cons = document.querySelectorAll("") //butun secdikleri
 // input.value = prompt('ad yaz ')
 
-const input = document.querySelector('input')
-const getValue = () => {
-    console.log(input.value);
-}
-
-
-
+// const input = document.querySelector('input')
+// const getValue = () => {
+//     console.log(input.value);
+// }
