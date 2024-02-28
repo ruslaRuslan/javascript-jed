@@ -19,15 +19,39 @@
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-const inputAd = document.getElementById('ad')
-const goster = document.getElementById('goster')
-const boyuk = document.getElementById('boyuk')
-const kicik = document.getElementById('kicik')
-const ilkHerifBoyuk = document.getElementById('ilkHerifBoyuk')
+// const inputAd = document.getElementById('ad')
+// const goster = document.getElementById('goster')
+// const boyuk = document.getElementById('boyuk')
+// const kicik = document.getElementById('kicik')
+// const ilkHerifBoyuk = document.getElementById('ilkHerifBoyuk')
 
-const calculator = () => {
-const value = inputAd.value
-boyuk.textContent = value.toUpperCase()
-kicik.textContent = value.toLowerCase()
-ilkHerifBoyuk.textContent = value[0].toUpperCase() + value.slice(1).toLowerCase()
+// const calculator = () => {
+// const value = inputAd.value
+// boyuk.textContent = value.toUpperCase()
+// kicik.textContent = value.toLowerCase()
+// ilkHerifBoyuk.textContent = value[0].toUpperCase() + value.slice(1).toLowerCase()
+// }
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+const getCalculate = () => {
+    const uzunluq = document.getElementById('uzunluq')
+    const cevre = document.getElementById('cevre')
+
+    const uzunluqValueWithAndHeight = uzunluq.value
+    cevre.style.width = uzunluqValueWithAndHeight + 'px'
+    cevre.style.height = uzunluqValueWithAndHeight + 'px'
+    if (uzunluqValueWithAndHeight >= 0 && uzunluqValueWithAndHeight <= 30) {
+        cevre.style.backgroundColor = 'red'
+    } else if (uzunluqValueWithAndHeight > 30 && uzunluqValueWithAndHeight <= 60) {
+        cevre.style.backgroundColor = 'yellow'
+    } else if (uzunluqValueWithAndHeight > 60 && uzunluqValueWithAndHeight <= 80) {
+        cevre.style.backgroundColor = 'orange'
+    } else if (uzunluqValueWithAndHeight > 80 && uzunluqValueWithAndHeight <= 100) {
+        cevre.style.backgroundColor = 'lime'
+    }
+    // eger value -> 0-30 red = 30-60 yellow = 60-80 orange = 80-100 lime
+
 }
+
