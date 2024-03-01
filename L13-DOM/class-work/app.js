@@ -19,21 +19,21 @@
 // console.log(document.getElementById('container'));
 // console.dir(document.getElementById('container'))
 // --------------------------------------------------------------
-// document.getElementById('container').innerHTML = prompt('yaz')
+document.getElementById('container').innerHTML = prompt('yaz')
 // ______________________________________________________________
 
 
 // <div id="container">bura yaz</div> asaqidakiler buna aitdir
-// const container = document.getElementById('container')
+const container = document.getElementById('container')
 
-// container.innerText = prompt('yaz')
-// container.style.color = prompt('isdediyin rengi tekste teyin et')
+container.innerText = prompt('yaz')
+container.style.color = prompt('isdediyin rengi tekste teyin et')
 
-// const con = document.querySelector("")   //ilk secdiyi
-// const cons = document.querySelectorAll("") //butun secdikleri
-// input.value = prompt('ad yaz ')
+const con = document.querySelector("")   //ilk secdiyi
+const cons = document.querySelectorAll("") //butun secdikleri
+input.value = prompt('ad yaz ')
 
-// const input = document.querySelector('input')
-// const getValue = () => {
-//     console.log(input.value);
-// }
+const input = document.querySelector('input')
+const getValue = () => {
+    console.log(input.value);
+}

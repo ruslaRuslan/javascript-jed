@@ -75,22 +75,35 @@
 // HTML - de id - si root olan element yaradin.JS vasitesile  prompt - dan tag adini ve icerisindeki sozu alin.Daha sonra hemin tag ve icerisindeki sozu root - a yazdirin.Mes: eger tag - a p, metne salam yazsam, root - un icerisinde < p > salam</p > olmus olsun.
 
 // Root elementini seç
-const rootElement = document.getElementById('root');
+// const rootElement = document.getElementById('root');
 
-// Kullanıcıdan tag adını ve içeriğini al
-const tag = prompt("Tag adını girin (örneğin: p, h1, div):");
-const content = prompt("İçeriği girin:");
+// // // Kullanıcıdan tag adını ve içeriğini al
+// const tag = prompt("Tag adını girin (örneğin: p, h1, div):");
+// const content = prompt("İçeriği girin:");
 
-// Yeni bir element oluştur
-const newElement = document.createElement(tag);
+// // Yeni bir element oluştur
+// const newElement = document.createElement(tag);
 
-// Elementin içeriğini ayarla
-newElement.textContent = content;
+// // Elementin içeriğini ayarla
+// newElement.textContent = content;
 
-// Root elementine yeni elementi ekle
-rootElement.appendChild(newElement);
-
-
+// // Root elementine yeni elementi ekle
+// rootElement.appendChild(newElement);
 
 
 
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+// task:
+// input-dan deyer al ve kvadrata yukseldib, p tagina yazdir
+
+const btn = document.getElementById('btn')
+const kvadratSpan = document.getElementById('kvadratSpan')
+
+btn.onclick = () => {
+    const InputNumber = document.getElementById('InputNumber')
+    kvadratSpan.innerHTML = InputNumber.value ** 2
+    InputNumber.value = ''
+
+}

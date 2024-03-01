@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #031e4e;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.selector {
+    background-image: url('./pngtree-award-certificate-or-diploma-border-png-image_3349145.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vh;
+    height: 100vh;
+    text-align: center;
+}
+
+.senet {
+    padding-top: 5px;
+    padding-bottom: 3rem;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.Ruslan {
+    color: #DCA44F;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.sertiv_Basliq {
+    padding-top: 12rem;
+}
+
+.mudur {
+    padding-left: 30rem;
+    padding-top: 10rem;
+}
+
