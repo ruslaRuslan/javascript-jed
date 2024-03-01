@@ -19,6 +19,13 @@
 // -------------------------------------------------------------------02-----------------------------------------------------------------
 
 
+const root = document.getElementById('root')
+const button = document.querySelector('button')
+
+button.onclick = () => {
+    root.classList.toggle('red')
+}
+
 
 
 
