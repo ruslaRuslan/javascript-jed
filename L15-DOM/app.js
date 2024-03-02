@@ -156,33 +156,39 @@
 
 // -----------------------------------------------------------------------------07----------------------------------------------------
 
-const btn = document.querySelector('button')
-const div = document.querySelector('div')
+// const btn = document.querySelector('button')
+// const div = document.querySelector('div')
 
 
-function makeTextRed(e) {
-    e.target.style.color = 'red'
-}
+// function makeTextRed(e) {
+//     e.target.style.color = 'red'
+// }
 
-window.onmousemove = (event) => {
-    div.style.width = '20px'
-    div.style.height = '20px'
-    div.style.top = (event.y - 10) + 'px'
-    div.style.left = (event.x - 10) + 'px'
-}
+// window.onmousemove = (event) => {
+//     div.style.width = '20px'
+//     div.style.height = '20px'
+//     div.style.top = (event.y - 10) + 'px'
+//     div.style.left = (event.x - 10) + 'px'
+// }
 
-window.onclick = (e) => {
-    div.style.transform = "scale(1.5)"
-    setTimeout(() => {
-        div.style.transform = "scale(0.75)"
+// window.onclick = (e) => {
+//     div.style.transform = "scale(1.5)"
+//     setTimeout(() => {
+//         div.style.transform = "scale(0.75)"
    
-    }, 100);
+//     }, 100);
 
-}
+// }
 
 
 // -----------------------------------------------------------------------08------------------------------------------------------------
 
+
+// window.onkeyup = ()=>{
+//     console.log('salam');
+// }
+
+// ______________________________________________________________________________________________________________________________
 
 
 
