@@ -191,22 +191,57 @@
 // ______________________________________________________________________________________________________________________________
 
 
-const div = document.querySelector('div')
-window.onkeydown = (e) => {
-    if (e.keyCode >= 65 && e.keyCode <= 122 || e.keyCode === 32){
+// const div = document.querySelector('div')
+// window.onkeydown = (e) => {
+//     if (e.keyCode >= 65 && e.keyCode <= 122 || e.keyCode === 32) {
 
-        div.textContent += e.key
-    }
-}
+//         div.textContent += e.key
+//     }
+// }
 
 
 // -----------------------------------------------------------------------------08----------------------------------------------------
 
+// let mesaj = ''
 
+// window.onkeydown = (e) => {
+//     mesaj += e.key
+//     console.log(mesaj);
+//     if(mesaj === 'htmlacil'){
+//         document.write('Burdayam geldim')
+//     }
+// }
 
 // -----------------------------------------------------------------------------09----------------------------------------------------
 
+let mesaj = ''
+const audio = document.querySelector('audio')
 
+window.onkeydown = (e) => {
+    mesaj += e.key
+    if (e.code === 'Delete') {
+        mesaj = ''
+    }
+    if (mesaj === 'on') {
+        audio.play()
+        mesaj = ''
+    }
+    if (mesaj === 'off') {
+        audio.pause()
+        mesaj = ''
+    }
+    if (mesaj === 'sesli') {
+        audio.playbackRate = 2
+        mesaj = ''
+    }
+    if (mesaj === 'norm') {
+        audio.playbackRate = 1
+        mesaj = ''
+    } if (mesaj === 'lezy') {
+        audio.playbackRate = 0.5
+        mesaj = ''
+    }
+}
 
 
 
