@@ -42,33 +42,48 @@
 
 // -----------------------------------------------------------------------------04----------------------------------------------------
 
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
 
-const func = () => {
-    console.log('salam');
-}
+// const func = () => {
+//     console.log('salam');
+// }
 
 
 
-const func2 = () => {
-    alert('salam')
-}
+// const func2 = () => {
+//     alert('salam')
+// }
 
-const func3 =  () => { // #jpsd 
-    console.log('heyyy@@22222!!!');
-}
+// const func3 =  () => { // #jpsd 
+//     console.log('heyyy@@22222!!!');
+// }
 
-// addEventListener
-btn.addEventListener('click', () => {
-    console.log('heyyy!!!');
-})
+// // addEventListener
+// btn.addEventListener('click', () => {
+//     console.log('heyyy!!!');
+// })
 
-btn.addEventListener('click', func3) //#jpsd bura func3 - un referansi elave olunur - (yani func3-e menimsetdiyimiz prosess)
-btn.addEventListener('click', () => {
-    alert('RUSLAN!!!!!!');
-})
+// btn.addEventListener('click', func3) //#jpsd bura func3 - un referansi elave olunur - (yani func3-e menimsetdiyimiz prosess)
+// btn.addEventListener('click', () => {
+//     alert('RUSLAN!!!!!!');
+// })
 
-btn.removeEventListener('click', func3) //#jpsd bura func3 - un referansi elave olunur - (yani func3-e menimsetdiyimiz prosess)
+// btn.removeEventListener('click', func3) //#jpsd bura func3 - un referansi elave olunur - (yani func3-e menimsetdiyimiz prosess)
 
 
 // -----------------------------------------------------------------------------04----------------------------------------------------
+
+
+// -----------------------------------------------------------------------------05----------------------------------------------------
+
+// _________________________________________________________________________________________________________________________________
+// const btn = document.querySelector('button')
+// btn.onclick = (e) => {
+//     e.target.style.backgroundColor = 'red'; //dinamikdi 
+//     btn.style.backgroundColor = 'red'; //dinam deyil dinamik olani yazmax tovsiye olunur
+// }
+// _________________________________________________________________________________________________________________________________
+
+
+
+// -----------------------------------------------------------------------------05----------------------------------------------------
