@@ -1,3 +1,6 @@
+
+
+
 const body = document.body;
 body.style.backgroundColor = ' black ';
 body.style.color = '#fff'
@@ -5,20 +8,19 @@ body.style.color = '#fff'
 
 
 const root = document.getElementById('root')
-
 const divMain = document.createElement('div')
 divMain.classList.add('d-flex')
-
 
 
 const card1 = document.createElement('div')
 const img = document.createElement('img')
 const h = document.createElement('h2')
 const p1 = document.createElement('p')
-// p1.classList.add('center') 
-h.classList.add('center') 
+img.classList.add('radius')
+p1.classList.add('center') 
+h.classList.add('center')
 card1.classList.add('avto')
-p1.classList.add('center')
+card1.classList.add('border')
 p1.innerHTML = 'developer'
 h.innerHTML = 'Ali'
 img.src = './ali.jpg'
@@ -33,6 +35,8 @@ const card2 = document.createElement('div')
 const img2 = document.createElement('img')
 const h2 = document.createElement('h2')
 const p2 = document.createElement('p')
+img2.classList.add('radius')
+card2.classList.add('border')
 h2.classList.add('center')
 p2.classList.add('center')
 card2.classList.add('avto')
@@ -50,8 +54,10 @@ const card3 = document.createElement('div')
 const img3 = document.createElement('img')
 const h3 = document.createElement('h2')
 const p3 = document.createElement('p')
-h3.classList.add('center') 
-p3.classList.add('center') 
+img3.classList.add('radius')
+card3.classList.add('border')
+h3.classList.add('center')
+p3.classList.add('center')
 card3.classList.add('avto')
 p3.innerHTML = 'test3'
 h3.innerHTML = 'duman'
@@ -66,6 +72,8 @@ const card4 = document.createElement('div')
 const img4 = document.createElement('img')
 const h4 = document.createElement('h2')
 const p4 = document.createElement('p')
+img4.classList.add('radius')
+card4.classList.add('border')
 h4.classList.add('center')
 p4.classList.add('center')
 card4.classList.add('avto')
@@ -85,6 +93,8 @@ const card6 = document.createElement('div')
 const img6 = document.createElement('img')
 const h6 = document.createElement('h2')
 const p6 = document.createElement('p')
+img6.classList.add('radius')
+card6.classList.add('border')
 h6.classList.add('center')
 p6.classList.add('center')
 card6.classList.add('avto')
@@ -101,6 +111,8 @@ const card7 = document.createElement('div')
 const img7 = document.createElement('img')
 const h7 = document.createElement('h2')
 const p7 = document.createElement('p')
+img7.classList.add('radius')
+card7.classList.add('border')
 h7.classList.add('center')
 p7.classList.add('center')
 card7.classList.add('avto')
@@ -112,10 +124,13 @@ card7.append(img7, h7, p7)
 divMain.append(card7)
 
 
+
 const card8 = document.createElement('div')
 const img8 = document.createElement('img')
 const h8 = document.createElement('h2')
 const p8 = document.createElement('p')
+img8.classList.add('radius')
+card8.classList.add('border')
 h8.classList.add('center')
 p8.classList.add('center')
 card8.classList.add('avto')
@@ -134,6 +149,8 @@ const card5 = document.createElement('div')
 const img5 = document.createElement('img')
 const h5 = document.createElement('h2')
 const p5 = document.createElement('p')
+img5.classList.add('radius')
+card5.classList.add('border')
 h5.classList.add('center')
 p5.classList.add('center')
 card5.classList.add('avto')
