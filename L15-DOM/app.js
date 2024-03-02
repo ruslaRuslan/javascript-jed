@@ -84,11 +84,45 @@
 // }
 // _________________________________________________________________________________________________________________________________
 
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
 
-function makeTextRed(e) {
-    e.target.style.color = 'red'
-}
-btn.onclick = makeTextRed
+// function makeTextRed(e) {
+//     e.target.style.color = 'red'
+// }
+// // btn.onclick = makeTextRed // 1 defe klikleyende isleyir
+// // btn.ondblclick = makeTextRed // 2 defe klikleyende isleyir
+// btn.oncontextmenu = makeTextRed // mishin sag knopkasini klikleyende isleyir
+
 
 // -----------------------------------------------------------------------------05----------------------------------------------------
+
+
+// -----------------------------------------------------------------------------06----------------------------------------------------
+
+
+
+// const btn = document.querySelector('button')
+// const div = document.querySelector('div')
+
+
+// function makeTextRed(e) {
+//     e.target.style.color = 'red'
+// }
+
+// window.onmousemove = (event) => {
+//     div.style.width = '20px'
+//     div.style.height = '20px'
+//     div.style.top = (event.y - 10) + 'px'
+//     div.style.left = (event.x - 10) + 'px'
+// }
+
+// window.onclick = (e) => {
+// div.style.width = '30px'
+// div.style.height = '30px'
+
+// }
+
+// -----------------------------------------------------------------------------06----------------------------------------------------
+
+
+
