@@ -125,4 +125,47 @@
 // -----------------------------------------------------------------------------06----------------------------------------------------
 
 
+// -----------------------------------------------------------------------------07----------------------------------------------------
+
+const btn = document.querySelector('button')
+const div = document.querySelector('div')
+
+
+function makeTextRed(e) {
+    e.target.style.color = 'red'
+}
+
+window.onmousemove = (event) => {
+    div.style.width = '20px'
+    div.style.height = '20px'
+    div.style.top = (event.y - 10) + 'px'
+    div.style.left = (event.x - 10) + 'px'
+}
+
+window.onclick = (e) => {
+setTimeout(() => {
+    const btn = document.querySelector('button')
+const div = document.querySelector('div')
+
+
+function makeTextRed(e) {
+    e.target.style.color = 'red'
+}
+
+window.onmousemove = (event) => {
+    div.style.width = '20px'
+    div.style.height = '20px'
+    div.style.top = (event.y - 10) + 'px'
+    div.style.left = (event.x - 10) + 'px'
+}
+
+window.onclick = (e) => {
+div.style.width = '30px'
+div.style.height = '30px'
+}
+}, 100);
+
+}
+
+// -----------------------------------------------------------------------------07----------------------------------------------------
 
