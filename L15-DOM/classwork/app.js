@@ -61,8 +61,19 @@
 // window-un uzerine getirip klik edende ve hansi klaviaturani bassax "salam" sayini gostereceh istifade etdiyimiz klaviatura qeder
 // -----------------------------------------------------------------------------------
 
+// const btn = document.querySelector('button')
+// window.onkeyup = () => {
+//     console.log('salam');
+// }
+// ekranda her hansi klaviaturani kliklediyimiz qeder "salam" gostereceh (yani kliki basili saxlayarken yox basip ve buraxannan sonra isleyir menti budu)
+
+// -----------------------------------------------------------------------------------
+
+
 const btn = document.querySelector('button')
-window.onkeyup = () => {
+window.onkeydown = () => {
     console.log('salam');
 }
-// ekranda her hansi klaviaturani kliklediyimiz qeder "salam" gostereceh (yani kliki basili saxlayarken yox basip ve buraxannan sonra isleyir menti budu)
+// ekranda her hansi klaviaturani kliklediyimiz qeder "salam" gostereceh (hetta basili saxlayanda bele)
+
+// -----------------------------------------------------------------------------------
