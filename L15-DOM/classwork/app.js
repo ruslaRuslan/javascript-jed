@@ -35,8 +35,17 @@
 
 // -----------------------------------------------------------------------------------
 
-const btn = document.querySelector('button')
-btn.onmouseleave = () => {
-    console.log('salam');
-}
+// const btn = document.querySelector('button')
+// btn.onmouseleave = () => {
+//     console.log('salam');
+// }
 // mishi uzerine getirende yox uzerine getirip ceken zaman isleyir (yani uzerine ne qeder getirip cekseh bir o qeder "salam" gostereceh)
+
+// -----------------------------------------------------------------------------------
+
+
+// const btn = document.querySelector('button')
+// btn.onkeydown = () => {
+//     console.log('salam');
+// }
+// button-u uzerine getirip klik edende ve hansi klaviaturani bassax "salam" sayini gostereceh istifade etdiyimiz klaviatura qeder
