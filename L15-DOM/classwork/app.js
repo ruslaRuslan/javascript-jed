@@ -18,9 +18,19 @@
 
 // -----------------------------------------------------------------------------------
 
+// const btn = document.querySelector('button')
+// btn.onmouseenter = () => {
+//     console.log('salam');
+// }
+// her defe uzerine getirende sayi artacax (yani her uzerine getirip cekende baslayacax bir o qeder salam gostermeye)
+// -----------------------------------------------------------------------------------
+
+
+
 const btn = document.querySelector('button')
-btn.onmouseenter = () => {
-console.log('salam');
+btn.onmousemove = () => {
+    console.log('salam');
 }
+// uzerinde ne qeder hereket eletdirsek bir o qeder "salam" gostereceh (uzerinden cekseh isdemiyeceh ve ya uzerinde misi hereket etdirmeseh isdemiyeceh)
 
-
+// -----------------------------------------------------------------------------------
