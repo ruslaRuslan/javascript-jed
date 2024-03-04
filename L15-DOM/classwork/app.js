@@ -65,4 +65,4 @@ const btn = document.querySelector('button')
 window.onkeyup = () => {
     console.log('salam');
 }
-// ekrana her hansi klaviaturani kliklediyimiz qeder "salam" gostereceh
+// ekrana her hansi klaviaturani kliklediyimiz qeder "salam" gostereceh (yani kliki basili saxlayarken yox basip ve buraxannan sonra isleyir menti budu)
