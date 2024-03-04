@@ -27,10 +27,16 @@
 
 
 
-const btn = document.querySelector('button')
-btn.onmousemove = () => {
-    console.log('salam');
-}
+// const btn = document.querySelector('button')
+// btn.onmousemove = () => {
+//     console.log('salam');
+// }
 // uzerinde ne qeder hereket eletdirsek bir o qeder "salam" gostereceh (uzerinden cekseh isdemiyeceh ve ya uzerinde misi hereket etdirmeseh isdemiyeceh)
 
 // -----------------------------------------------------------------------------------
+
+const btn = document.querySelector('button')
+btn.onmouseleave = () => {
+    console.log('salam');
+}
+// mishi uzerine getirende yox uzerine getirip ceken zaman isleyir (yani uzerine ne qeder getirip cekseh bir o qeder "salam" gostereceh)
