@@ -70,10 +70,19 @@
 // -----------------------------------------------------------------------------------
 
 
-const btn = document.querySelector('button')
-window.onkeydown = () => {
-    console.log('salam');
-}
+// const btn = document.querySelector('button')
+// window.onkeydown = () => {
+//     console.log('salam');
+// }
 // ekranda her hansi klaviaturani kliklediyimiz qeder "salam" gostereceh (hetta basili saxlayanda bele)
 
 // -----------------------------------------------------------------------------------
+const btn = document.querySelector('button')
+
+let m = ''
+window.onkeydown = (e) => {
+    m += e.key
+    console.log(m);
+}
+
+// hamsini birlsdirdi butun yazdiqlarimizi
