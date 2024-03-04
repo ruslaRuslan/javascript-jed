@@ -89,13 +89,13 @@
 
 // -----------------------------------------------------------------------------------
 
-// const btn = document.querySelector('button')
+const btn = document.querySelector('button')
 
-// let m = ''
-// window.onkeydown = (e) => {
-//     m += e.key
-//     console.log(m);
-// }
+let m = ''
+window.onkeydown = (e) => {
+    m += e.key
+    console.log(m);
+}
 
 // -----------------------------------------------------------------------------------
 
