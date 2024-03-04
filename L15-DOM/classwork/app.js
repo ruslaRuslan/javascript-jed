@@ -1,12 +1,14 @@
 // event driven programming
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
 
-btn.onclick = () => {
-    console.log('salam');
-}
+// btn.onclick = () => {
+//     console.log('salam');
+// }
 // -----------------------------------------------------------------------------------
 
-
+window.onclick=()=>{
+    console.log('salam');
+}
 
 
 
