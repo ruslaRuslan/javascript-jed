@@ -77,12 +77,35 @@
 // ekranda her hansi klaviaturani kliklediyimiz qeder "salam" gostereceh (hetta basili saxlayanda bele)
 
 // -----------------------------------------------------------------------------------
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
 
-let m = ''
-window.onkeydown = (e) => {
-    m += e.key
-    console.log(m);
-}
+// let m = ''
+// window.onkeydown = (e) => {
+//     m += e.key
+//     console.log(m);
+// }
 
 // hamsini birlsdirdi butun yazdiqlarimizi
+
+// -----------------------------------------------------------------------------------
+
+// const btn = document.querySelector('button')
+
+// let m = ''
+// window.onkeydown = (e) => {
+//     m += e.key
+//     console.log(m);
+// }
+
+// -----------------------------------------------------------------------------------
+
+const btn = document.querySelector('button')
+
+const buble = document.createElement('div')
+buble.className = 'buble'
+document.body.prepend(buble)
+buble.onmouseenter = ()=>{
+    buble.remove()
+}
+// yumuru dairenin uzrine getirende yox olur daire
+
