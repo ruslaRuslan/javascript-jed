@@ -99,13 +99,13 @@
 
 // -----------------------------------------------------------------------------------
 
-const btn = document.querySelector('button')
+// const btn = document.querySelector('button')
+// const buble = document.createElement('div')
+// buble.className = 'buble'
+// document.body.prepend(buble)
+// buble.onmouseenter = () => {
+//     buble.remove()
+// }
 
-const buble = document.createElement('div')
-buble.className = 'buble'
-document.body.prepend(buble)
-buble.onmouseenter = ()=>{
-    buble.remove()
-}
 // yumuru dairenin uzrine getirende yox olur daire
 
