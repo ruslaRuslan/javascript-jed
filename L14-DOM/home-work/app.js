@@ -172,13 +172,6 @@
 
 
 
-
-
-
-
-
-
-
 const users = [
     {
         id: 1,
@@ -245,7 +238,7 @@ users.forEach((user) => {
     const img = document.createElement('img')
     const h = document.createElement('h2')
     const p = document.createElement('p')
-    img.className='radius withAndHeight'
+    img.className = 'radius withAndHeight'
     card.className = 'border card avto'
     h.classList.add('center')
     p.classList.add('center')
@@ -253,5 +246,6 @@ users.forEach((user) => {
     h.innerHTML = user.username
     img.src = `./${user.img}.jpg`
     card.append(img, h, p)
-    divMain.appendChild(card)
+    divMain.appendChild(card)    
 })
+

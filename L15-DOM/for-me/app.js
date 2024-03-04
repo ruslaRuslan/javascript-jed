@@ -214,34 +214,39 @@
 
 // -----------------------------------------------------------------------------09----------------------------------------------------
 
-let mesaj = ''
-const audio = document.querySelector('audio')
+// let mesaj = ''
+// const audio = document.querySelector('audio')
 
-window.onkeydown = (e) => {
-    mesaj += e.key
-    if (e.code === 'Delete') {
-        mesaj = ''
-    }
-    if (mesaj === 'on') {
-        audio.play()
-        mesaj = ''
-    }
-    if (mesaj === 'off') {
-        audio.pause()
-        mesaj = ''
-    }
-    if (mesaj === 'sesli') {
-        audio.playbackRate = 2
-        mesaj = ''
-    }
-    if (mesaj === 'norm') {
-        audio.playbackRate = 1
-        mesaj = ''
-    } if (mesaj === 'lezy') {
-        audio.playbackRate = 0.5
-        mesaj = ''
-    }
-}
+// window.onkeydown = (e) => {
+//     mesaj += e.key
+//     console.log(mesaj)
+//     if (e.code === 'Delete') {
+//         mesaj = ''
+//     }
+//     // T1: switch ile yaz
+//     switch (mesaj) {
+//         case 'on':
+//             audio.play()
+//             mesaj = ''
+//             break;
+//     }
+   
+//     if (mesaj === 'off') {
+//         audio.pause()
+//         mesaj = ''
+//     }
+//     if (mesaj === 'sesli') {
+//         audio.playbackRate = 2
+//         mesaj = ''
+//     }
+//     if (mesaj === 'norm') {
+//         audio.playbackRate = 1
+//         mesaj = ''
+//     } if (mesaj === 'lezy') {
+//         audio.playbackRate = 0.5
+//         mesaj = ''
+//     }
+// }
 
 
 
