@@ -246,6 +246,6 @@ users.forEach((user) => {
     h.innerHTML = user.username
     img.src = `./${user.img}.jpg`
     card.append(img, h, p)
-    divMain.appendChild(card)    
+    divMain.appendChild(card)
 })
 
