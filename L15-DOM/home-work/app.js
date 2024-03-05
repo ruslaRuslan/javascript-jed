@@ -1,12 +1,24 @@
 // T1: chat application yazirsan: window-da yazanda p-nin icerisinde yazilsin
 
 // const pElement = document.querySelector('p')
-
 // let m = ''
 // window.onkeydown = (element) => {
 //     m += element.key
 //     pElement.innerHTML = m
 // }
+// ___________________________________________________________________________________
+// ele et ki, ancaq reqem ve herfler yazilsin.
+const div = document.querySelector('div')
+window.onkeydown = (element) => {
+    if (element.keyCode >= 65 && element.keyCode <= 122 && element.keyCode || element.keyCode === 32) {
+        div.textContent += element.key
+    }
+
+    if (element.keyCode === 8) {
+        div.textContent = div.textContent.slice(0, -1)
+    }
+}
+
 // -----------------------------------------------------------------------------------
 
 // T2. bubble partlatmaq. 10 eded sar olsun, uzerinde gelende partlasin
@@ -96,10 +108,10 @@
 //     buble.style.backgroundColor = color;
 //     document.body.prepend(buble)
 
-//     buble.onmouseenter = element => element.target.remove() //silir hamsini goturur altdan yuxariya dogru
+// buble.onmouseenter = element => element.target.remove() //silir hamsini goturur altdan yuxariya dogru
 
-//     // buble.onmouseenter = e => e.target.style.opacity = 0 // sirf secdiyimizi silir
-//     // buble.onmouseleave = e => e.target.style.opacity = 1 //uzerine getirende yox olur uzerinden cekende geri qayidir
+// buble.onmouseenter = e => e.target.style.opacity = 0 // sirf secdiyimizi silir
+// // buble.onmouseleave = e => e.target.style.opacity = 1 //uzerine getirende yox olur uzerinden cekende geri qayidir
 
 // })
 
@@ -107,34 +119,23 @@
 
 
 
+
 // T3. img elave et. uzerine gelende "zoom" yazsam, sekili 2 defe boyutsun
 
-const img = document.createElement('img')
-const root = document.getElementById('root')
-img.src = './Изображение WhatsApp 2024-02-23 в 14.30.24_490a8b81.jpg'
-img.classList.add('height')
-root.appendChild(img)
-let m = ''
-window.onkeydown = (elemet) => {
-    m += elemet.key
-    if (m === 'zoom') {
-        img.classList.add('height2')
-    } else {
-        img.classList.add('height')
-    }
-}
+// const img = document.createElement('img')
+// const root = document.getElementById('root')
+// img.src = './Изображение WhatsApp 2024-02-23 в 14.30.24_490a8b81.jpg'
+// img.classList.add('height')
+// root.appendChild(img)
 
-// let m = ''
-// window.onkeydown = (e) => {
-//     m += e.key
-//     console.log(m);
-// }
-
-
-
-// const btn = document.querySelector('button')
-// window.onkeydown = () => {
-//     console.log('salam');
+// let result = ''
+// window.onkeydown = (elemet) => {
+//     result += elemet.key
+//     if (result === 'zoom') {
+//         img.classList.add('height2')
+//     } else {
+//         img.classList.add('height')
+//     }
 // }
 
 
@@ -142,22 +143,5 @@ window.onkeydown = (elemet) => {
 
 
 
-// const card5 = document.createElement('div')
-// const img5 = document.createElement('img')
-// const h5 = document.createElement('h2')
-// const p5 = document.createElement('p')
 
 
-// img5.classList.add('radius')
-// card5.classList.add('border')
-// h5.classList.add('center')
-// p5.classList.add('center')
-// card5.classList.add('avto')
-// p5.innerHTML = 'test8'
-// h5.innerHTML = 'novxani'
-// img5.src = './novxani.jpg'
-// img5.classList.add('withAndHeight')
-// card5.append(img5, h5, p5)
-// divMain.append(card5)
-
-// root.append(divMain)

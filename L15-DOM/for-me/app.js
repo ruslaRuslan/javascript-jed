@@ -80,7 +80,7 @@
 // const btn = document.querySelector('button')
 // btn.onclick = (e) => {
 //     e.target.style.backgroundColor = 'red'; //dinamikdi 
-//     btn.style.backgroundColor = 'red'; //dinam deyil dinamik olani yazmax tovsiye olunur
+//     btn.style.backgroundColor = 'red'; //dinamik deyil dinamik olani yazmax tovsiye olunur
 // }
 // _________________________________________________________________________________________________________________________________
 
