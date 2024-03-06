@@ -34,16 +34,24 @@
 // 3. const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"]; massivi verilib. printWithIndex adli funksiya yaradin ve onu names.forEach methoduna callback kimi verin. Ekrana adin index-i ve adi cixarsin. (0-Michael, 1-Trevor ve.s.)  
 //  names.forEach(printWithIndex);
 
-const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
-const printWithIndex = (names) => {
-    let result = ' '
-    names.forEach((name, index) => {
-         result += ' ' + name + '-' + index + ','
-    })
-    return result
-}
-console.log(printWithIndex(names));
+// const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+// const printWithIndex = (names) => {
+//     let result = ' '
+//     names.forEach((name, index) => {
+//          result += ' ' + name + '-' + index + ','
+//     })
+//     return result
+// }
+// console.log(printWithIndex(names));
+// ___________________________________________________________________________________
 
+const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+const printWithIndex = (names) => { 
+    names.forEach((name, index) => {
+        console.log(name +'-' + index);
+    })
+}
+(printWithIndex(names));
 
 
 
