@@ -98,12 +98,32 @@
 // }
 // console.log(mənfiMüsbət(numbers));
 // --------------------------------------------------------------------------------
+
 // 6. A hərfi ilə başlayan orijinal massivdəki elementlərdən ibarət yeni massiv yaradın.
 // let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
 
-let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
+// let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
+// let aHerfBaslangic = names.filter((element) =>  element.charAt(0) === 'A' )
+// console.log(aHerfBaslangic);
 
-// let massiv = []
-let aHerfBaslangic = names.filter((element) =>  element.charAt(0) === 'A' )
+// --------------------------------------------------------------------------------
 
-console.log(aHerfBaslangic);
+// 7. Ədədlər massivindəki tək və cüt ədədləri saymaq üçün proqram yazın.
+// let numbers=[1,4,7,8,3,5,0,2,4,6,12,15,18,46,45,48,97,84]
+// meselen, countEvensAndOdds(numbers); // evens: 12, odds: 13
+
+let numbers = [1, 4, 7, 8, 3, 5, 0, 2, 4, 6, 12, 15, 18, 46, 45, 48, 97, 84]
+const countEvensAndOdds = (numbers) => {
+    let evenCount = 0
+    let oddCount = 0
+    numbers.forEach((element) => {
+        if (element % 2 === 0) {
+            evenCount++
+        } else {
+            oddCount++
+        }
+    })
+    return `evens: ${evenCount}  odds: ${oddCount}`
+}
+console.log(countEvensAndOdds(numbers));
+
