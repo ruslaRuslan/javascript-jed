@@ -20,24 +20,25 @@
 
 // _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-const h1 = document.querySelector('h1')
-const removeBtn = document.querySelector('button')
-const userNameFromLocaleStorage = localStorage.getItem('userName')
-if (userNameFromLocaleStorage) {
+// const h1 = document.querySelector('h1')
+// const removeBtn = document.querySelector('button')
+// const userNameFromLocaleStorage = localStorage.getItem('userName')
+// if (userNameFromLocaleStorage) {
 
-    h1.textContent = userNameFromLocaleStorage
-} else {
-    h1.textContent = getName()
-}
+//     h1.textContent = userNameFromLocaleStorage
+// } else {
+//     h1.textContent = getName()
+// }
 
 
-removeBtn.onclick = () => {
-    localStorage.removeItem('userName')
-}
+// removeBtn.onclick = () => {
+//     localStorage.removeItem('userName')
+// }
 
-function getName() {
+// function getName() {
+//     const ad = prompt('adi daxi edin')
+//     localStorage.setItem("userName", ad)
+//     return ad
+// }
 
-    const ad = prompt('adi daxi edin')
-    localStorage.setItem("userName", ad)
-    return ad
-}
+// ------------------------------------------------------------------------------------
