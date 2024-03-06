@@ -8,16 +8,18 @@
 // }
 // ___________________________________________________________________________________
 // ele et ki, ancaq reqem ve herfler yazilsin.
-const div = document.querySelector('div')
-window.onkeydown = (element) => {
-    if (element.keyCode >= 65 && element.keyCode <= 122 && element.keyCode || element.keyCode === 32) {
-        div.textContent += element.key
-    }
+// const div = document.querySelector('div')
+// window.onkeydown = (element) => {
+//     if (element.keyCode >= 65 && element.keyCode <= 122 && element.keyCode || element.keyCode === 32) {
+//         div.textContent += element.key
+//     }
 
-    if (element.keyCode === 8) {
-        div.textContent = div.textContent.slice(0, -1)
-    }
-}
+//     if (element.keyCode === 8) {
+//         div.textContent = div.textContent.slice(0, -1)
+//     }
+// }
+
+
 
 // -----------------------------------------------------------------------------------
 
@@ -99,6 +101,7 @@ window.onkeydown = (element) => {
 //     buble10.remove()
 // }
 // -----------------------------------------------------------------------------------
+
 // let colors = ['red', 'green', 'blue', 'purple', 'yellow', 'gray', 'black', 'orange', 'pink', 'lime']
 
 
@@ -114,8 +117,6 @@ window.onkeydown = (element) => {
 // // buble.onmouseleave = e => e.target.style.opacity = 1 //uzerine getirende yox olur uzerinden cekende geri qayidir
 
 // })
-
-
 
 
 
@@ -137,11 +138,3 @@ window.onkeydown = (element) => {
 //         img.classList.add('height')
 //     }
 // }
-
-
-
-
-
-
-
-
