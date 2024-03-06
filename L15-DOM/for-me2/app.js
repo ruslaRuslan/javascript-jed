@@ -16,8 +16,8 @@
 
 // -----------------------------------------------------------------------------------
 
-// 2. Adlar massivini parametr kimi qebul eden bir funksiya yazin, bele ki, o funksiyadan bize en uzun adi cixaracaq. 
-// mes: // let arr = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles'] 
+// 2. Adlar massivini parametr kimi qebul eden bir funksiya yazin, bele ki, o funksiyadan bize en uzun adi cixaracaq.
+// mes: // let arr = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles']
 // findLongestName(arr); // 'muhammad'
 
 // let words = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles']
@@ -31,7 +31,7 @@
 
 // -----------------------------------------------------------------------------------
 
-// 3. const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"]; massivi verilib. printWithIndex adli funksiya yaradin ve onu names.forEach methoduna callback kimi verin. Ekrana adin index-i ve adi cixarsin. (0-Michael, 1-Trevor ve.s.)  
+// 3. const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"]; massivi verilib. printWithIndex adli funksiya yaradin ve onu names.forEach methoduna callback kimi verin. Ekrana adin index-i ve adi cixarsin. (0-Michael, 1-Trevor ve.s.)
 //  names.forEach(printWithIndex);
 
 // const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
@@ -45,15 +45,32 @@
 // console.log(printWithIndex(names));
 // ___________________________________________________________________________________
 
-const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
-const printWithIndex = (names) => { 
-    names.forEach((name, index) => {
-        console.log(name +'-' + index);
-    })
+// const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+// const printWithIndex = (names) => {
+//     names.forEach((name, index) => {
+//         console.log(name +'-' + index);
+//     })
+// }
+// (printWithIndex(names));
+
+// -----------------------------------------------------------------------------------
+
+// 4.Asagidaki funksiyalari yazin:
+// kebabToSnake('ali-greenheart');//ALI_GREENHEART
+// SnakeToKebab('JAVASCRIPT_IS_HELL'); // javascript-is-hell
+
+
+const kebabToSnake = (string) => {
+    return string.replace('-', '_').toUpperCase()
+
 }
-(printWithIndex(names));
+console.log(kebabToSnake('ali-greenheart'));
 
 
+const SnakeToKebab = (string) => {
+    return string.replace('_', '-').toLowerCase()
 
+}
+console.log(SnakeToKebab('JAVASCRIPT_IS_HELL'));
 
 // -----------------------------------------------------------------------------------
