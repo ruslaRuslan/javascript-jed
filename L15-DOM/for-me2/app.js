@@ -60,17 +60,40 @@
 // SnakeToKebab('JAVASCRIPT_IS_HELL'); // javascript-is-hell
 
 
-const kebabToSnake = (string) => {
-    return string.replace('-', '_').toUpperCase()
+// const kebabToSnake = (string) => {
+//     return string.replace('-', '_').toUpperCase()
 
-}
-console.log(kebabToSnake('ali-greenheart'));
+// }
+// console.log(kebabToSnake('ali-greenheart'));
 
 
-const SnakeToKebab = (string) => {
-    return string.replace('_', '-').toLowerCase()
+// const SnakeToKebab = (string) => {
+//     return string.replace('_', '-').toLowerCase()
 
-}
-console.log(SnakeToKebab('JAVASCRIPT_IS_HELL'));
+// }
+// console.log(SnakeToKebab('JAVASCRIPT_IS_HELL'));
 
 // -----------------------------------------------------------------------------------
+
+// 5. let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+// Rəqəmlər massivi verilmişdir. Aşağıdakı kimi dəyişdirilən orijinal massivin elementlərindən ibarət yeni massiv yaradın:
+// - mənfi ədədlər müsbət olublar;
+// - müsbət ədədlər ikiqat artırılıb.
+
+let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+
+const mənfiMüsbət = (numbers) => {
+    let result = 0;
+
+    numbers.forEach((element, index) => {
+        if (element > 0) {
+            result += element * 2
+        } else if (element < 0) {
+            console.log(numbers[index] = Math.abs(element));
+        }
+
+    })
+    return result
+
+}
+console.log(mənfiMüsbət(numbers));
