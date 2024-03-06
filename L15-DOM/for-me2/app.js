@@ -16,19 +16,35 @@
 
 // -----------------------------------------------------------------------------------
 
-// Adlar massivini parametr kimi qebul eden bir funksiya yazin, bele ki, o funksiyadan bize en uzun adi cixaracaq. 
+// 2. Adlar massivini parametr kimi qebul eden bir funksiya yazin, bele ki, o funksiyadan bize en uzun adi cixaracaq. 
 // mes: // let arr = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles'] 
 // findLongestName(arr); // 'muhammad'
 
-let words = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles']
-// findLongestName(arr); // 'muhammad'
+// let words = ['ali', 'reza', 'alireza', 'muhammad', 'coshqun', 'eles']
+// findLongestName = (arr) => {
+//     return arr.reduce((result, massiv) => {
+//         return result.length > massiv.length ? result : massiv
+//     })
+// }
+// console.log(findLongestName(words));
 
-findLongestName = (arr) => {
-    return arr.reduce((result, massiv) => {
-        return result.length > massiv.length ? result : massiv
+
+// -----------------------------------------------------------------------------------
+
+// 3. const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"]; massivi verilib. printWithIndex adli funksiya yaradin ve onu names.forEach methoduna callback kimi verin. Ekrana adin index-i ve adi cixarsin. (0-Michael, 1-Trevor ve.s.)  
+//  names.forEach(printWithIndex);
+
+const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+const printWithIndex = (names) => {
+    let result = ' '
+    names.forEach((name, index) => {
+         result += ' ' + name + '-' + index + ','
     })
+    return result
 }
-console.log(findLongestName(words));
+console.log(printWithIndex(names));
+
+
 
 
 
