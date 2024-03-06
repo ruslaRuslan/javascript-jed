@@ -112,18 +112,34 @@
 // let numbers=[1,4,7,8,3,5,0,2,4,6,12,15,18,46,45,48,97,84]
 // meselen, countEvensAndOdds(numbers); // evens: 12, odds: 13
 
-let numbers = [1, 4, 7, 8, 3, 5, 0, 2, 4, 6, 12, 15, 18, 46, 45, 48, 97, 84]
-const countEvensAndOdds = (numbers) => {
-    let evenCount = 0
-    let oddCount = 0
-    numbers.forEach((element) => {
-        if (element % 2 === 0) {
-            evenCount++
-        } else {
-            oddCount++
-        }
+// let numbers = [1, 4, 7, 8, 3, 5, 0, 2, 4, 6, 12, 15, 18, 46, 45, 48, 97, 84]
+// const countEvensAndOdds = (numbers) => {
+//     let evenCount = 0
+//     let oddCount = 0
+//     numbers.forEach((element) => {
+//         if (element % 2 === 0) {
+//             evenCount++
+//         } else {
+//             oddCount++
+//         }
+//     })
+//     return `evens: ${evenCount}  odds: ${oddCount}`
+// }
+// console.log(countEvensAndOdds(numbers));
+
+// --------------------------------------------------------------------------------
+// 8. Mətn tip dəyişənlərdən ibarət massivi doğum ilinə görə siralamaq üçün funksiya yazın.sortByBirth
+// let guys = ['Ada Lovelace, 1915', 'Nicola Tesla, 1856', 'Alan Turing, 2012']
+// sortByBirth(guys);// [ 'Nicola Tesla, 1856', 'Ada Lovelace, 1915', 'Alan Turing, 2012']
+
+let guys = ['Ada Lovelace, 1915', 'Nicola Tesla, 1856', 'Alan Turing, 2012']
+const sortByBirth = (guys) => {
+    return guys.sort((a, b) => {
+        let yearA = parseInt(a.split(', ')[1])
+        let yearB = parseInt(b.split(', ')[1])
+        return yearA - yearB
     })
-    return `evens: ${evenCount}  odds: ${oddCount}`
 }
-console.log(countEvensAndOdds(numbers));
+console.log(sortByBirth(guys));
+
 
