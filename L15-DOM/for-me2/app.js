@@ -80,20 +80,30 @@
 // - mənfi ədədlər müsbət olublar;
 // - müsbət ədədlər ikiqat artırılıb.
 
-let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+// let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
 
-const mənfiMüsbət = (numbers) => {
-    let result = 0;
+// const mənfiMüsbət = (numbers) => {
+//     let result = [];
 
-    numbers.forEach((element, index) => {
-        if (element > 0) {
-            result += element * 2
-        } else if (element < 0) {
-            console.log(numbers[index] = Math.abs(element));
-        }
+//     numbers.forEach((element, index) => {
+//         if (element > 0) {
+//             result.push(element * 2) 
+//         } else if (element < 0) {
+//              result.push(Math.abs(element));
+//         }
 
-    })
-    return result
+//     })
+//     return result
 
-}
-console.log(mənfiMüsbət(numbers));
+// }
+// console.log(mənfiMüsbət(numbers));
+// --------------------------------------------------------------------------------
+// 6. A hərfi ilə başlayan orijinal massivdəki elementlərdən ibarət yeni massiv yaradın.
+// let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
+
+let names = ['Sam', 'Alan', 'Bill', 'Adam', 'Anna', 'George'];
+
+// let massiv = []
+let aHerfBaslangic = names.filter((element) =>  element.charAt(0) === 'A' )
+
+console.log(aHerfBaslangic);
