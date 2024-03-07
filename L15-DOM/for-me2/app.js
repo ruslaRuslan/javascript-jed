@@ -132,14 +132,14 @@
 // let guys = ['Ada Lovelace, 1915', 'Nicola Tesla, 1856', 'Alan Turing, 2012']
 // sortByBirth(guys);// [ 'Nicola Tesla, 1856', 'Ada Lovelace, 1915', 'Alan Turing, 2012']
 
-let guys = ['Ada Lovelace, 1915', 'Nicola Tesla, 1856', 'Alan Turing, 2012']
-const sortByBirth = (guys) => {
-    return guys.sort((a, b) => {
-        let yearA = parseInt(a.split(', ')[1])
-        let yearB = parseInt(b.split(', ')[1])
-        return yearA - yearB
-    })
-}
-console.log(sortByBirth(guys));
+// let guys = ['Ada Lovelace, 1915', 'Nicola Tesla, 1856', 'Alan Turing, 2012']
+// const sortByBirth = (guys) => {
+//     return guys.sort((a, b) => {
+//         let yearA = parseInt(a.split(', ')[1])
+//         let yearB = parseInt(b.split(', ')[1])
+//         return yearA - yearB
+//     })
+// }
+// console.log(sortByBirth(guys));
 
 
