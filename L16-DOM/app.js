@@ -118,14 +118,31 @@
 
 // -----------------------------------------------------------------------------------
 
-function makeCounter() {
-    let count = 0;
-    return () => {
-        return ++count
-    };
-} 
-let counter = makeCounter()
-counter()//1
-counter()//2
-console.log(counter());
+// function makeCounter() {
+//     let count = 0;
+//     return () => {
+//         return ++count
+//     };
+// } 
+// let counter = makeCounter()
+// counter()//1
+// counter()//2
+// console.log(counter());
 
+// -----------------------------------------------------------------------------------
+
+
+const fs = require('fs')
+fs.writeFileSync(randomFileName(), 'salam abi')
+
+// Node.Js yuxaridakiler
+
+function randomFileName() {
+    let fileName = ''
+    for (let i = 0; i < 5; i++) {
+        const randomCharCode = Math.floor(Math.random() * 26 + 97)
+        const randomHerf = String.fromCharCode(randomCharCode)
+        fileName += randomHerf
+    }
+    return fileName + `.txt`;
+}
