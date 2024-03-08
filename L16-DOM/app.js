@@ -78,14 +78,40 @@
 // showDetalis({ ad: 'ferid', gender: true })
 // -----------------------------------------------------------------------------------
 
+// let human = {
+//     ad: 'ali',
+//     age: 22
+// }
+
+// function showDetalis({ age = 0, ad= '{--yoxdur--}' }) {
+//     console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
+// }
+// showDetalis(human)
+// showDetalis({ ad: 'ferid', gender: true })
+// showDetalis({ gender: true })
+
+// -----------------------------------------------------------------------------------
+
+
 let human = {
     ad: 'ali',
     age: 22
 }
 
-function showDetalis({ age = 0, ad= '{--yoxdur--}' }) {
+function showDetalis({ age = 0, ad = '{--yoxdur--}' }) {
     console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
 }
 showDetalis(human)
 showDetalis({ ad: 'ferid', gender: true })
 showDetalis({ gender: true })
+
+// global
+{
+    // global
+    // local 1
+    {
+        // global
+        // local1
+        // local2
+    }
+}
