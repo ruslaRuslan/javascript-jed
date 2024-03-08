@@ -93,25 +93,39 @@
 // -----------------------------------------------------------------------------------
 
 
-let human = {
-    ad: 'ali',
-    age: 22
-}
+// let human = {
+//     ad: 'ali',
+//     age: 22
+// }
 
-function showDetalis({ age = 0, ad = '{--yoxdur--}' }) {
-    console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
-}
-showDetalis(human)
-showDetalis({ ad: 'ferid', gender: true })
-showDetalis({ gender: true })
+// function showDetalis({ age = 0, ad = '{--yoxdur--}' }) {
+//     console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
+// }
+// showDetalis(human)
+// showDetalis({ ad: 'ferid', gender: true })
+// showDetalis({ gender: true })
 
-// global
-{
-    // global
-    // local 1
-    {
-        // global
-        // local1
-        // local2
-    }
-}
+// // global
+// {
+//     // global
+//     // local 1
+//     {
+//         // global
+//         // local1
+//         // local2
+//     }
+// }
+
+// -----------------------------------------------------------------------------------
+
+function makeCounter() {
+    let count = 0;
+    return () => {
+        return ++count
+    };
+} 
+let counter = makeCounter()
+counter()//1
+counter()//2
+console.log(counter());
+
