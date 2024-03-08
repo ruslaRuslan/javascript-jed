@@ -66,14 +66,26 @@
 // -----------------------------------------------------------------------------------
 
 
+// let human = {
+//     ad: 'ali',
+//     age: 22
+// }
+
+// function showDetalis({ age = 0, ad }) {
+//     console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
+// }
+// showDetalis(human)
+// showDetalis({ ad: 'ferid', gender: true })
+// -----------------------------------------------------------------------------------
+
 let human = {
     ad: 'ali',
     age: 22
 }
 
-function showDetalis({ age = 0, ad }) {
+function showDetalis({ age = 0, ad= '{--yoxdur--}' }) {
     console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
 }
 showDetalis(human)
 showDetalis({ ad: 'ferid', gender: true })
-// -----------------------------------------------------------------------------------
+showDetalis({ gender: true })
