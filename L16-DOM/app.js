@@ -26,15 +26,27 @@
 
 // -----------------------------------------------------------------------------------
 
+// let human = {
+//     ad: 'ali',
+//     age: 22
+// }
+
+// function showDetalis(ad, age) {
+//     console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
+// }
+// showDetalis('sah', 98) //Hi, my names is sah. I'm 98 years old
+// showDetalis(human.ad, human.age)//Hi, my names is ali. I'm 22 years old
+
+// -----------------------------------------------------------------------------------
+
 let human = {
     ad: 'ali',
     age: 22
 }
 
-function showDetalis(ad, age) {
+function showDetalis({ age, ad }) {
     console.log(`Hi, my names is ${ad}. I'm ${age} years old`);
 }
-showDetalis('sah', 98) //Hi, my names is sah. I'm 98 years old
-showDetalis(human.ad, human.age)//Hi, my names is ali. I'm 22 years old
-
+showDetalis(human)
+showDetalis({ ad: 'ferid', age: 18, gender: true })
 
