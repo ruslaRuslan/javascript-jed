@@ -4,15 +4,51 @@
 // Мы будем считать a, e, i, гласными для этой Ката (но не o) .uy
 
 // Входная строка будет состоять только из строчных букв и/или пробелов.
-let user = prompt('напишите слово или предложение (будет считать гласные a, e, i)')
-const countVowels = (words) => {
-    let vowels = ['a', 'e', 'i']
-    let result = 0
-    for (let char of words) {
-        if (vowels.includes(char)) {
-            result++
+
+// let user = prompt('напишите слово или предложение (будет считать гласные a, e, i)')
+// const countVowels = (words) => {
+//     let vowels = ['a', 'e', 'i']
+//     let result = 0
+//     for (let char of words) {
+//         if (vowels.includes(char)) {
+//             result++
+//         }
+//     }
+//     return result
+// }
+// console.log('Клочество гласных в строке:', countVowels(`${user}`));
+//------------------------------------------------------------------------------------
+
+// Вам дан массив (длина которого не менее 3, но может быть очень большим), содержащий целые числа. Массив либо полностью состоит из нечетных целых чисел, либо полностью состоит из четных целых чисел, за исключением одного целого числа N. Напишите метод, который принимает массив в качестве аргумента и возвращает этот «выброс» N. 
+
+// [2, 4, 0, 100, 4, 11, 2602, 36] -->  11 (the only odd number)
+// [160, 3, 1719, 19, 11, 13, -21] --> 160 (the only even number)
+
+let even = [160, 3, 1719, 19, 11, 13, -21]
+
+let odd = [2, 4, 0, 100, 4, 11, 2602, 36];
+
+const findEvenAndOdd = (evenAndOdd) => {
+    const type = evenAndOdd.slice(0, 3).filter(num => num % 2 === 0).length >= 2 ? 'even' : 'odd'
+    for (let num of evenAndOdd) {
+        if ((type === 'even' && num % 2 !== 0) || (type === 'odd' && num % 2 === 0)) {
+            return num
         }
     }
-    return result
 }
-console.log( 'Клочество гласных в строке:', countVowels( `${user}`));
+console.log('Выбранное число:', findEvenAndOdd(odd) );
+
+console.log('Выбранное число:', findEvenAndOdd(even) );
+
+
+
+
+
+
+
+
+
+
+
+
+
