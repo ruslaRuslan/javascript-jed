@@ -69,18 +69,52 @@
 
 // "Дерматоглифика" --> истинное "аба" --> ложное "moOse" --> ложное (игнорировать регистр букв)
 
-const isIsogram = (word) => {
-    let wordString = word.toString()
-    for (let i = 0; i < wordString.length; i++) {
-        for (let j = i + 1; j < wordString.length; j++) {
-            if (wordString[i] === wordString[j]) {
-                return false
-            }
-        }
-    }
-    return true
-}
-console.log(isIsogram('salam'));
-console.log(isIsogram('привет'));
+// const isIsogram = (word) => {
+//     let wordString = word.toString()
+//     for (let i = 0; i < wordString.length; i++) {
+//         for (let j = i + 1; j < wordString.length; j++) {
+//             if (wordString[i] === wordString[j]) {
+//                 return false
+//             }
+//         }
+//     }
+//     return true
+// }
+// console.log(isIsogram('salam'));
+// console.log(isIsogram('привет'));
 
 // -----------------------------------------------------------------------------------
+
+// Реализуйте функцию, которая принимает 3 целочисленных значения a, b, c. Функция должна возвращать true, если треугольник можно построить со сторонами заданной длины, и false в любом другом случае.
+
+// (В этом случае все треугольники должны иметь поверхность больше 0, чтобы их можно было принять).
+
+// Примеры:
+
+// Input -> Output
+// 1,2,2 -> true
+// 4,2,3 -> true
+// 2,2,2 -> true
+// 1,2,3 -> false
+// -5,1,3 -> false
+// 0,2,3 -> false
+// 1,2,9 -> false 
+
+const threeNumber = (a, b, c) => {
+    if (a <= 0 || b <= 0 || c <= 0) {
+        return false
+    }
+    if (a + b > c && a + c && b + c > a) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(threeNumber(1, 2, 2));
+console.log(threeNumber(4, 2, 3));
+console.log(threeNumber(2, 2, 2));
+console.log(threeNumber(1, 2, 3));
+console.log(threeNumber(-5, 1, 3));
+console.log(threeNumber(0, 2, 3));
+console.log(threeNumber(1, 2, 9))
+//------------------------------------------------------------------------------------
