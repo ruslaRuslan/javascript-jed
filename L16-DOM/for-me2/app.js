@@ -100,21 +100,36 @@
 // 0,2,3 -> false
 // 1,2,9 -> false 
 
-const threeNumber = (a, b, c) => {
-    if (a <= 0 || b <= 0 || c <= 0) {
-        return false
-    }
-    if (a + b > c && a + c && b + c > a) {
-        return true
-    } else {
-        return false
-    }
-}
-console.log(threeNumber(1, 2, 2));
-console.log(threeNumber(4, 2, 3));
-console.log(threeNumber(2, 2, 2));
-console.log(threeNumber(1, 2, 3));
-console.log(threeNumber(-5, 1, 3));
-console.log(threeNumber(0, 2, 3));
-console.log(threeNumber(1, 2, 9))
+// const threeNumber = (a, b, c) => {
+//     if (a <= 0 || b <= 0 || c <= 0) {
+//         return false
+//     }
+//     if (a + b > c && a + c && b + c > a) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(threeNumber(1, 2, 2));
+// console.log(threeNumber(4, 2, 3));
+// console.log(threeNumber(2, 2, 2));
+// console.log(threeNumber(1, 2, 3));
+// console.log(threeNumber(-5, 1, 3));
+// console.log(threeNumber(0, 2, 3));
+// console.log(threeNumber(1, 2, 9))
+
 //------------------------------------------------------------------------------------
+
+// Создайте программу, которая фильтрует список строк и возвращает список, содержащий только имена ваших друзей.
+
+// Если в имени ровно 5 буквы, можете быть уверены, что это ваш друг! В противном случае, вы можете быть уверены, что он не...
+
+// Пример: Ввод = ["Райан", "Киран", "Джейсон", "Ты"], Выход = ["Райан", "Киран", Ты"]
+
+let friends = ["Райан", "Киран", "Джейсон", "Ты"]
+
+const friendsMassiv = (friends) => {
+    let result = friends.filter((friend) => friend.length <= 5)
+    return result
+}
+console.log(friendsMassiv(friends));
