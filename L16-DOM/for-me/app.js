@@ -4,7 +4,6 @@
 // // yazilari massive yazdigimiz sira ile saydi ne yazsax siraya gore sayacax
 
 
-
 // // "destructure" var ve "structure" var
 // // bug -> debug
 // // -----------------------------------------------------------------------------------
@@ -132,17 +131,17 @@
 // -----------------------------------------------------------------------------------
 
 
-const fs = require('fs')
-fs.writeFileSync(randomFileName(), 'salam abi')
+// const fs = require('fs')
+// fs.writeFileSync(randomFileName(), 'salam abi')
 
-// Node.Js yuxaridakiler
+// // Node.Js yuxaridakiler
 
-function randomFileName() {
-    let fileName = ''
-    for (let i = 0; i < 5; i++) {
-        const randomCharCode = Math.floor(Math.random() * 26 + 97)
-        const randomHerf = String.fromCharCode(randomCharCode)
-        fileName += randomHerf
-    }
-    return fileName + `.txt`;
-}
+// function randomFileName() {
+//     let fileName = ''
+//     for (let i = 0; i < 5; i++) {
+//         const randomCharCode = Math.floor(Math.random() * 26 + 97)
+//         const randomHerf = String.fromCharCode(randomCharCode)
+//         fileName += randomHerf
+//     }
+//     return fileName + `.txt`;
+// }
