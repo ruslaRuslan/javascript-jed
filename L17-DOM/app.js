@@ -79,17 +79,25 @@
 
 // statik metodlar
 
-class Calculator {
-    constructor(a, b) {
-        this.a = a
-        this.b = b
-    }
-    sum() {
-        console.log(this.a + this.b);
-    }
-}
-const cal = new Calculator(12, 23)
-cal.sum() //35
-// tovsiye olunmayan kod
+// class Calculator {
+//     constructor(a, b) {
+//         this.a = a
+//         this.b = b
+//     }
+//     sum() {
+//         console.log(this.a + this.b);
+//     }
+// }
+// const cal = new Calculator(12, 23)
+// cal.sum() //35
+// // tovsiye olunmayan kod
 
 // -----------------------------------------------------------------------------------
+
+class Calculator {
+    static sum(a, b) {
+        console.log(a + b);
+    }
+}
+Calculator.sum(23, 12) // 35
+// tovsiye olunan kod
