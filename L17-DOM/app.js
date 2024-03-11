@@ -157,11 +157,15 @@
 Array.prototype.isEmpty = function () {
     return this.length === 0
 }
+String.prototype.toCapitalCase = function () {
+    return this.replace(this[0], this[0].toUpperCase())
+}
+const ad = 'alion'
+console.log(ad.toCapitalCase());
+// const arr = [1, 4, 56, 7, 78, 3, 5, 6, 7]
 
-const arr = [1, 4, 56, 7, 78, 3, 5, 6, 7]
-
-console.log(arr.isEmpty()); //false
+// console.log(arr.isEmpty()); //false
 
 
-const arr2 = []
-console.log(arr2.isEmpty()); //true
+// const arr2 = []
+// console.log(arr2.isEmpty()); //true
