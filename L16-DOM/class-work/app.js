@@ -60,3 +60,15 @@
 //     console.log(a); //12
 // })()
 // console.log(b); //cixmayacax cunki iceriden cole islemir ancax iceriden iceri ve colden iceri isleyir
+
+// -----------------------------------------------------------------------------------
+
+// clousure
+let a = 12;
+
+(() => {
+   a = 9
+    console.log(a); //9
+})()
+console.log(a) //9 
+// ikiside 9 olacax cunki sonuncu deyisikliyi goturur
