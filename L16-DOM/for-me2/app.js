@@ -177,14 +177,16 @@
 
 // Возьмите 2 строки s1 и s2 включайте только буквы от aдо z. Возвращает новую отсортированную строку, максимально длинную, содержащую отдельные буквы (каждая из которых берется только один раз), исходящие из s1 или s2.
 
-const longestUniqueString = (s1, s2) => {
-    const combinedString = (s1, s2).split('');
-    const uniqueCharacters = combinedString.filter(char => /[a-z]/i.test(char)).filter((char, index, self) => self.indexOf(char) === index)
+// const longestUniqueString = (s1, s2) => {
+//     const combinedString = (s1, s2).split('');
+//     const uniqueCharacters = combinedString.filter(char => /[a-z]/i.test(char)).filter((char, index, self) => self.indexOf(char) === index)
 
-    const sortedUniqueCharacters = uniqueCharacters.sort()
+//     const sortedUniqueCharacters = uniqueCharacters.sort()
 
-    const result = sortedUniqueCharacters.join('')
-    return result
-}
-console.log(longestUniqueString("xyaabbbccccdefww", "xxxxyyyyabklmopq")); //abcdefklmopqwxy
+//     const result = sortedUniqueCharacters.join('')
+//     return result
+// }
+// console.log(longestUniqueString("xyaabbbccccdefww", "xxxxyyyyabklmopq")); //abcdefklmopqwxy
+
+
 
