@@ -211,7 +211,7 @@
 
 // -----------------------------------------------------------------------------------
 
-window.onerror = function (message, url, line, col, error) {
-    console.log(message, url, line, col, error);
-}
-console.log(ad);
+// window.onerror = function (message, url, line, col, error) {
+//     console.log(message, url, line, col, error);
+// }
+// console.log(ad);
