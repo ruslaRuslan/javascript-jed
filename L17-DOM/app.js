@@ -136,16 +136,32 @@
 
 // -----------------------------------------------------------------------------------
 
-class NewArray extends Array {
-    isEmpty() {
-        return this.length === 0
-    }
+// class NewArray extends Array {
+//     isEmpty() {
+//         return this.length === 0
+//     }
+// }
+
+// const arr = new NewArray(1, 4, 56, 7, 78, 3, 5, 6, 7)
+
+// console.log(arr.isEmpty()); //false
+
+
+// const arr2 = new NewArray()
+// console.log(arr2.isEmpty()); //true
+
+
+// -----------------------------------------------------------------------------------
+
+
+Array.prototype.isEmpty = function () {
+    return this.length === 0
 }
 
-const arr = new NewArray(1, 4, 56, 7, 78, 3, 5, 6, 7)
+const arr = [1, 4, 56, 7, 78, 3, 5, 6, 7]
 
 console.log(arr.isEmpty()); //false
 
 
-const arr2 = new NewArray()
+const arr2 = []
 console.log(arr2.isEmpty()); //true
