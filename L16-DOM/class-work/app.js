@@ -75,12 +75,28 @@
 
 // -----------------------------------------------------------------------------------
 
-// clousure
-let a = 12;
+// // clousure
+// let a = 12;
 
-(() => {
-    let a = 9
-    console.log(a); //9
-})()
-console.log(a) //12 
-// iceriden iceri, colden cole ve colden iceri isleyir
+// (() => {
+//     let a = 9
+//     console.log(a); //9
+// })()
+// console.log(a) //12 
+// // iceriden iceri, colden cole ve colden iceri isleyir
+
+// -----------------------------------------------------------------------------------
+
+function f() {
+    let value = 123;
+    function g() {
+        console.log(value);
+    }
+    return g
+}
+let s = f()
+s = null // null ile islemiyecek cunki return null olacax, ve value-nuda silir ramda yer tutmamasi ucun (avtomatik silir)
+s()
+// orphan variables|| garbage collection onceki proqramlasdirma dillerinde istifade olunmayan bir xususiyetdi
+// low level -> c, c++
+// hight level -> c#, java, js, python
