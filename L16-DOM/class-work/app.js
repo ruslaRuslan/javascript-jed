@@ -63,12 +63,24 @@
 
 // -----------------------------------------------------------------------------------
 
+// // clousure
+// let a = 12;
+
+// (() => {
+//    a = 9
+//     console.log(a); //9
+// })()
+// console.log(a) //9 
+// // ikiside 9 olacax cunki sonuncu deyisikliyi goturur
+
+// -----------------------------------------------------------------------------------
+
 // clousure
 let a = 12;
 
 (() => {
-   a = 9
+    let a = 9
     console.log(a); //9
 })()
-console.log(a) //9 
-// ikiside 9 olacax cunki sonuncu deyisikliyi goturur
+console.log(a) //12 
+// iceriden iceri, colden cole ve colden iceri isleyir
