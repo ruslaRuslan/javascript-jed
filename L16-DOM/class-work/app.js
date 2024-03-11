@@ -87,16 +87,16 @@
 
 // -----------------------------------------------------------------------------------
 
-function f() {
-    let value = 123;
-    function g() {
-        console.log(value);
-    }
-    return g
-}
-let s = f()
-s = null // null ile islemiyecek cunki return null olacax, ve value-nuda silir ramda yer tutmamasi ucun (avtomatik silir)
-s()
-// orphan variables|| garbage collection onceki proqramlasdirma dillerinde istifade olunmayan bir xususiyetdi
-// low level -> c, c++
-// hight level -> c#, java, js, python
+// function f() {
+//     let value = 123;
+//     function g() {
+//         console.log(value);
+//     }
+//     return g
+// }
+// let s = f()
+// s = null // null ile islemiyecek cunki return null olacax, ve value-nuda silir ramda yer tutmamasi ucun (avtomatik silir)
+// s()
+// // orphan variables|| garbage collection onceki proqramlasdirma dillerinde istifade olunmayan bir xususiyetdi
+// // low level -> c, c++
+// // hight level -> c#, java, js, python
