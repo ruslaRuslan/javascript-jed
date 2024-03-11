@@ -109,15 +109,27 @@
 // 1. instance-in fieldlari
 // 2.class-in fieldlari
 
-class Calculator {
+// class Calculator {
 
-    static sum(a, b) {
-        console.log(a + b);
-    }
-    test(){
-        console.log('test');
-    }
+//     static sum(a, b) {
+//         console.log(a + b);
+//     }
+//     test(){
+//         console.log('test');
+//     }
+// }
+// Calculator.sum(23, 12) // 35
+// const a = new Calculator()
+// a.test() //test
+// -----------------------------------------------------------------------------------
+Array.prototype.isEmpty = function () {
+    return this.length === 0
+
 }
-Calculator.sum(23, 12) // 35
-const a = new Calculator()
-a.test() //test
+const arr = [1, 4, 56, 7, 78, 3, 5, 6, 7]
+
+console.log(arr.isEmpty());
+
+
+const arr2 = []
+console.log(arr2.isEmpty()); //true
