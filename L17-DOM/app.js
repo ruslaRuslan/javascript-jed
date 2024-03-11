@@ -165,11 +165,25 @@
 
 // -----------------------------------------------------------------------------------
 
-let ad = prompt('adin daxil et:')
-try {
-    console.log(ad.toUpperCase());
-} catch (err) {
-    console.log('error cixdi');
-    console.log(err);
-} 
-console.log('heyat davam edir');
+// let ad = prompt('adin daxil et:')
+// try {
+//     console.log(ad.toUpperCase());
+// } catch (err) {
+//     console.log('error cixdi');
+//     console.log(err);
+// } 
+// console.log('heyat davam edir');
+
+// -----------------------------------------------------------------------------------
+
+const hesab = {
+    parol: "Ruslan",
+    hesab: 7500
+}
+const pass = prompt('passwordu daxil et:')
+if (pass === hesab.parol){
+    console.log('pullar cixir'); 
+    console.log('kart cixir'); 
+}else{
+    throw new Error('parol sefdir!')
+}
