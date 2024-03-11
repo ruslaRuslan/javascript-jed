@@ -18,12 +18,27 @@
 
 // -----------------------------------------------------------------------------------
 
+// class User {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     }
+//     tellName() {
+//         console.log(`My name is ${this.name}`);
+//     }
+// }
+// const ali = new User('Ruslan', 12)
+// ali.tellName() //My name is Ruslan
+
+// -----------------------------------------------------------------------------------
+
+
 class User {
     constructor(name, age) {
         this.name = name
         this.age = age
     }
-    tellName() {
+    tellName = function () {
         console.log(`My name is ${this.name}`);
     }
 }
