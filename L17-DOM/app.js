@@ -94,10 +94,30 @@
 
 // -----------------------------------------------------------------------------------
 
+
+// class Calculator {
+//     static sum(a, b) {
+//         console.log(a + b);
+//     }
+// }
+// Calculator.sum(23, 12) // 35
+// // tovsiye olunan kod
+
+// -----------------------------------------------------------------------------------
+
+// field: field-ler iki yere bolunur
+// 1. instance-in fieldlari
+// 2.class-in fieldlari
+
 class Calculator {
+
     static sum(a, b) {
         console.log(a + b);
     }
+    test(){
+        console.log('test');
+    }
 }
 Calculator.sum(23, 12) // 35
-// tovsiye olunan kod
+const a = new Calculator()
+a.test() //test
