@@ -33,14 +33,44 @@
 // -----------------------------------------------------------------------------------
 
 
-class User {
-    constructor(name, age) {
+// class User {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     }
+//     tellName = function () {
+//         console.log(`My name is ${this.name}`);
+//     }
+// }
+// const ali = new User('Ruslan', 12)
+// ali.tellName() //My name is Ruslan
+
+// -----------------------------------------------------------------------------------
+
+class Human {
+    constructor(name, surname, age) {
         this.name = name
         this.age = age
+        this.surname = surname
     }
     tellName = function () {
         console.log(`My name is ${this.name}`);
     }
+    hhd() {
+        console.log(`My dear, ${this.name} HBD to you`);
+        this.age++
+    }
 }
-const ali = new User('Ruslan', 12)
-ali.tellName() //My name is Ruslan
+class User extends Human {
+    constructor(username, surname, name, age, isOnline) {
+        super(name, surname, age)
+        this.username = username
+        this.isOnline = this.isOnline
+    }
+
+}
+const ali = new User('Ruslan', 'Zeynalov', 'Gahraman', 12, true)
+ali.tellName() //My name is Gahraman
+console.log(ali.age);//12
+ali.hhd()   //My dear, Gahraman HBD to you
+console.log(ali.age); //13
