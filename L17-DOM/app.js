@@ -176,14 +176,37 @@
 
 // -----------------------------------------------------------------------------------
 
+// const hesab = {
+//     parol: "Ruslan",
+//     hesab: 7500
+// }
+// const pass = prompt('passwordu daxil et:')
+// if (pass === hesab.parol){
+//     console.log('pullar cixir'); 
+//     console.log('kart cixir'); 
+// }else{
+//     throw new Error('parol sefdir!')
+// }
+
+// -----------------------------------------------------------------------------------
+
 const hesab = {
     parol: "Ruslan",
     hesab: 7500
 }
 const pass = prompt('passwordu daxil et:')
-if (pass === hesab.parol){
-    console.log('pullar cixir'); 
-    console.log('kart cixir'); 
-}else{
-    throw new Error('parol sefdir!')
+
+try {
+    if (pass === hesab.parol) {
+        console.log('pullar cixir');
+    } else {
+        throw new Error('parol sefdir!')
+    }
+} catch (err) {
+    console.log(err.message);
+
+} finally {
+    console.log('kart cixir');
 }
+
+// -----------------------------------------------------------------------------------
