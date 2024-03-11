@@ -154,18 +154,22 @@
 // -----------------------------------------------------------------------------------
 
 
-Array.prototype.isEmpty = function () {
-    return this.length === 0
-}
-String.prototype.toCapitalCase = function () {
-    return this.replace(this[0], this[0].toUpperCase())
-}
-const ad = 'alion'
-console.log(ad.toCapitalCase());
-// const arr = [1, 4, 56, 7, 78, 3, 5, 6, 7]
+// Array.prototype.isEmpty = function () {
+//     return this.length === 0
+// }
+// String.prototype.toCapitalCase = function () {
+//     return this.replace(this[0], this[0].toUpperCase())
+// }
+// const ad = 'alion'
+// console.log(ad.toCapitalCase());
 
-// console.log(arr.isEmpty()); //false
+// -----------------------------------------------------------------------------------
 
-
-// const arr2 = []
-// console.log(arr2.isEmpty()); //true
+let ad = prompt('adin daxil et:')
+try {
+    console.log(ad.toUpperCase());
+} catch (err) {
+    console.log('error cixdi');
+    console.log(err);
+} 
+console.log('heyat davam edir');
