@@ -16,22 +16,30 @@ body {
     color: #000;
 }
 
-.container {
+.container,
+.container2 {
     text-align: center;
 }
 
-h1 {
+h1,
+h2 {
     margin-top: 1rem;
 }
 
-.input {
+.input,
+#input_calculyator {
     width: 200px;
     height: 1.8rem;
     margin-top: 1rem;
     border: 1px solid black;
 }
+#input_calculyator{
+    width: 210px !important;
+    height: 1.8rem !important;
+}
 
-button {
+button,
+.button_calculator {
     height: 1.8rem;
     width: 2.5rem;
     background: red;
@@ -40,6 +48,11 @@ button {
     color: #fff;
 }
 
-p {
+.button_calculator {
+    width: 4rem;
+}
+
+p,
+#result {
     margin-top: 1rem;
 }
