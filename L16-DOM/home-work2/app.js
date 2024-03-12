@@ -16,10 +16,9 @@ button2.onclick = () => {
     span.textContent = ''
 }
 
+
 function calculate() {
     let expression = document.getElementById('input_calculyator').value;
     let result = eval(expression);
-    document.getElementById('result').textContent = result;
+    document.getElementById('result').textContent = "Result: " + result;
 }
-
-
