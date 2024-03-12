@@ -28,12 +28,12 @@ function newElement() {
     let span = document.createElement('span')
     span.textContent = "❌"
     span.className = 'close'
-    span.onclick = function(){
+    span.onclick = function () {
         console.log(this);
         this.parentElement.remove()
     }
     li.appendChild(span)
 
-   
+
 }
 

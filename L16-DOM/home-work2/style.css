@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellowgreen;
+    color: #000;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {margin-top: 1rem;}
+
+.input {
+    width: 200px;
+    height: 1.8rem;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+
+button {
+    height: 1.8rem;
+    width: 2.5rem;
+    background: red;
+    border: 1px solid red;
+    cursor: pointer;
+    color: #fff;
+}
+
+p {
+    margin-top: 1rem;
+}
+
