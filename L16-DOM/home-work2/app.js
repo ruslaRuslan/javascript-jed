@@ -3,12 +3,9 @@ let button = document.getElementById('button')
 button.showText = () => {
     let input = document.querySelector('input').value
     let span = document.querySelector('span')
-
-    span.textContent.input += ''
-    document.querySelector('input')
+    span.textContent += input + ' '
     document.querySelector('input').value = ''
-    span.textContent = input
-    // span.style.display = 'inline'
+    span.style.display = 'inline'
 
 }
 
@@ -18,3 +15,6 @@ button2.onclick = () => {
     let span = document.querySelector('span')
     span.textContent = ''
 }
+
+
+
