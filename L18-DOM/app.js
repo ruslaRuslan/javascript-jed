@@ -82,4 +82,20 @@
 // -------------------------------------------------------------------------------------------------------------
 
 
+// endpoint*, api, url, link
+const url = `https://jsonplaceholder.typicode.com/users`
+// promise chaining -> promis zenciri
+fetch(url)
+    .then((respons) => {
+        return respons.json()
+    })
+    .then((data) => {
+        console.log(data);
+        return 'Ruslan'
+    })
+    .then((ad) => {
+        console.log(ad);
+    })
+   
+console.log('ne?');
 
