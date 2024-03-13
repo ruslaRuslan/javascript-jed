@@ -14,6 +14,17 @@
 // }
 // yuxaridakilerin evezine asagidakileri yazmaz olar
 
+// function createHuman(ad, age) {
+//     const obj = {
+//         ad,
+//         age
+//     }
+//     return obj
+// }
+// const ali = createHuman('ali', 21)
+
+// -------------------------------------------------------------------------------------------------------------
+
 function createHuman(ad, age) {
     const obj = {
         ad,
@@ -22,3 +33,11 @@ function createHuman(ad, age) {
     return obj
 }
 const ali = createHuman('ali', 21)
+
+// OOP -> object oriented programming (OYP)-> obyekt yonlu proqramlasdirma
+// class, object (blueprint) -> qelibi
+
+// ruslan, ali -> Insan
+// toplan -> It
+
+
