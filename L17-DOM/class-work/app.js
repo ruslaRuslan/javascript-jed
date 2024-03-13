@@ -70,10 +70,10 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
-try {
-    const ad = prompt('adini daxil et:')
-    console.log(ad.toUpperCase());
-} catch (err) {
-    console.log(err + 'adinizi yazin');
+// try {
+//     const ad = prompt('adini daxil et:')
+//     console.log(ad.toUpperCase());
+// } catch (err) {
+//     console.log(err + 'adinizi yazin');
     
-}
+// }
