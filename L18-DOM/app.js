@@ -186,6 +186,8 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
+// axios.get(url).then((resp)=>{}) asaqidakiler bularin daha yaxsi formasidi
+
 // function a() {
 //     setTimeout(() => {
 //         console.log('Ruslan');
@@ -197,11 +199,13 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
+// axios.get(url).then((resp)=>{}) asaqidakiler bularin daha yaxsi formasidi
+
 const url = `https://jsonplaceholder.typicode.com/users`
 
 async function a() {
-    const resp = await axios.get(url)
-    console.log(resp.data);
+    const {data} = await axios.get(url)
+    console.log(data);
 }
 a()
 
