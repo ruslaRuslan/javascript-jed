@@ -170,11 +170,16 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
-async function a(){
-    console.log('Ruslan');
-}
-a() //Ruslan
-console.log('SALAMLAR OLSUN');
+// async function a(){
+//     console.log('Ruslan');
+// }
+// a() //Ruslan
+// console.log('SALAMLAR OLSUN'); 
 
 // -------------------------------------------------------------------------------------------------------------
 
+async function a(){
+    return 'Ruslan'
+}
+const txt = a()
+console.log(txt);
