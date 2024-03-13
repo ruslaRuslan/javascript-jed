@@ -138,20 +138,32 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
+// const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('backendden data geldi')
+//     }, 1000)
+//     setTimeout(() => {
+//         reject('ne eror!')
+//     }, 400);
+// })
+// promise.then((pakize) => {
+//     console.log(pakize);
+// }).catch((eror) => {
+//     console.log('eroru tapdim ve tutdum');
+//     console.log(eror);
+// })
+
+
+// -------------------------------------------------------------------------------------------------------------
+
 const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('backendden data geldi')
-    }, 1000)
-    setTimeout(() => {
-        reject('ne eror!')
-    }, 400);
+    resolve('backendden data geldi')
+    reject('ne eror!')
 })
-promise.then((pakize) => {
-    console.log(pakize);
-}).catch((eror) => {
-    console.log('eroru tapdim ve tutdum');
-    console.log(eror);
-})
-
-
-
+promise
+    .then((pakize) => {
+        console.log(pakize);
+    }).catch((eror) => {
+        console.log('eroru tapdim ve tutdum');
+        console.log(eror);
+    })
