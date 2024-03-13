@@ -201,12 +201,26 @@
 
 // axios.get(url).then((resp)=>{}) asaqidakiler bularin daha yaxsi formasidi
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+
+// async function a() {
+//     const {data} = await axios.get(url)
+//     console.log(data);
+// }
+// a()
+
+// console.log('neee');
+
+// -------------------------------------------------------------------------------------------------------------
+
+
 const url = `https://jsonplaceholder.typicode.com/users`
 
 async function a() {
     const {data} = await axios.get(url)
-    console.log(data);
+    return data ;
 }
-a()
+const data =  a()
 
 console.log('neee');
+console.log(data);
