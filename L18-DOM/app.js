@@ -114,8 +114,16 @@
 // -------------------------------------------------------------------------------------------------------------
 
 // endpoint*, api, url, link
-const url = `https://jsonplaceholder.typicode.com/users`
+// const url = `https://jsonplaceholder.typicode.com/users`
 
-axios.get(url).then((response) => {
-    console.log(response.data[0]);
+// axios.get(url).then((response) => {
+//     console.log(response.data[0]);
+// })
+
+// -------------------------------------------------------------------------------------------------------------
+
+// promise yaratmaq
+const promise = new Promise((res, rej) => {
+    res('salam')
 })
+console.log(promise);
