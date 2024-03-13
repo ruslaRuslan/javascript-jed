@@ -156,14 +156,25 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
-const promise = new Promise((resolve, reject) => {
-    resolve('backendden data geldi')
-    reject('ne eror!')
-})
-promise
-    .then((pakize) => {
-        console.log(pakize);
-    }).catch((eror) => {
-        console.log('eroru tapdim ve tutdum');
-        console.log(eror);
-    })
+// const promise = new Promise((resolve, reject) => {
+//     resolve('backendden data geldi')
+//     reject('ne eror!')
+// })
+// promise
+//     .then((pakize) => {
+//         console.log(pakize);
+//     }).catch((eror) => {
+//         console.log('eroru tapdim ve tutdum');
+//         console.log(eror);
+//     })
+
+// -------------------------------------------------------------------------------------------------------------
+
+async function a(){
+    console.log('Ruslan');
+}
+a() //Ruslan
+console.log('SALAMLAR OLSUN');
+
+// -------------------------------------------------------------------------------------------------------------
+
