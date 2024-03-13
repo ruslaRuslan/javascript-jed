@@ -186,14 +186,23 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
-function a() {
-    setTimeout(() => {
-        console.log('Ruslan');
-    }, 100);
-}
-a()
+// function a() {
+//     setTimeout(() => {
+//         console.log('Ruslan');
+//     }, 100);
+// }
+// a()
 
-console.log('SALAMLAR');
+// console.log('SALAMLAR');
 
 // -------------------------------------------------------------------------------------------------------------
 
+const url = `https://jsonplaceholder.typicode.com/users`
+
+async function a() {
+    const resp = await axios.get(url)
+    console.log(resp.data);
+}
+a()
+
+console.log('neee');
