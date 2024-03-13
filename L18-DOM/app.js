@@ -82,10 +82,20 @@
 // -------------------------------------------------------------------------------------------------------------
 
 
+// // endpoint*, api, url, link
+// const url = `https://jsonplaceholder.typicode.com/users`
+
+// axios.get(url).then((resp) => {
+// console.log(resp);
+// })
+
+// -------------------------------------------------------------------------------------------------------------
+
+
+
 // endpoint*, api, url, link
 const url = `https://jsonplaceholder.typicode.com/users`
 
 axios.get(url).then((resp) => {
-console.log(resp);
+console.log(resp.data);
 })
-
