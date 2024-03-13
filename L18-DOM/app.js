@@ -129,9 +129,29 @@
 // console.log(promise);
 // -------------------------------------------------------------------------------------------------------------
 
+// const promise = new Promise((resolve, reject) => {
+//     resolve('salam')
+// })
+// promise.then((pakize) => {
+//     console.log(pakize);
+// })
+
+// -------------------------------------------------------------------------------------------------------------
+
 const promise = new Promise((resolve, reject) => {
-    resolve('salam')
+    setTimeout(() => {
+        resolve('backendden data geldi')
+    }, 1000)
+    setTimeout(() => {
+        reject('ne eror!')
+    }, 400);
 })
-promise.then((pakize)=>{
-console.log(pakize);
+promise.then((pakize) => {
+    console.log(pakize);
+}).catch((eror) => {
+    console.log('eroru tapdim ve tutdum');
+    console.log(eror);
 })
+
+
+
