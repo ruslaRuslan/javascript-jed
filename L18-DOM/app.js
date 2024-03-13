@@ -123,7 +123,15 @@
 // -------------------------------------------------------------------------------------------------------------
 
 // promise yaratmaq
-const promise = new Promise((res, rej) => {
-    res('salam')
+// const promise = new Promise((res, rej) => {
+//     res('salam')
+// })
+// console.log(promise);
+// -------------------------------------------------------------------------------------------------------------
+
+const promise = new Promise((resolve, reject) => {
+    resolve('salam')
 })
-console.log(promise);
+promise.then((pakize)=>{
+console.log(pakize);
+})
