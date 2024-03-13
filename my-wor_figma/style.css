@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Roboto"
+}
+
+.header {
+    background-color: #131A22;
+    color: #fff;
+}
+
+.BaddhiShop {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.BaddhiShop_img {
+    object-fit: cover;
+    width: 275px;
+    height: 70px;
+}
+
+.input-header {
+    width: 600px;
+    height: 50px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.haraba {
+    background-color: #fff;
+    object-fit: contain;
+    height: 100px;
+}
+
+.fa-cart-shopping {
+    color: white;
+}
+
+.contact,
+.cart {
+    display: flex;
+}
+
+.fa-solid {
+    width: rem;
+    height: 1rem;
+}
