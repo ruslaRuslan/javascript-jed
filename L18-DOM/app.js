@@ -94,8 +94,19 @@
 
 
 // endpoint*, api, url, link
+// const url = `https://jsonplaceholder.typicode.com/users`
+
+// axios.get(url).then((resp) => {
+// console.log(resp.data);
+// })
+
+// -------------------------------------------------------------------------------------------------------------
+
+
+
+// endpoint*, api, url, link
 const url = `https://jsonplaceholder.typicode.com/users`
 
-axios.get(url).then((resp) => {
-console.log(resp.data);
+axios.get(url).then(({data}) => {
+console.log(data);
 })
