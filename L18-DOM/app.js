@@ -246,19 +246,17 @@
 // -------------------------------------------------------------------------------------------------------------
 
 
-const url = `https://jsonplaceholder.typicode.com/users`
+// const url = `https://jsonplaceholder.typicode.com/users`
 
-async function a() {
-    const { data } = await axios.get(url)
-    return data
-}
+// async function a() {
+//     const { data } = await axios.get(url)
+//     return data
+// }
 
-async function writeData() {
-    const data = await a()
-   data.forEach((user) => {
-    document.write(user.name, `</hr> </br>`)
-   });
-}
-writeData()
-
-console.log('neee');
+// async function writeData() {
+//     const data = await a()
+//    data.forEach((user) => {
+//     document.write(user.name, `</hr> </br>`)
+//    });
+// }
+// writeData()
