@@ -90,11 +90,32 @@
 // -------------------------------------------------------------------------------------------------------------
 
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+// async function a() {
+//     const { data } = await axios.get(url)
+//     console.log(data);
+// }
+// a()
+
+// -------------------------------------------------------------------------------------------------------------
+
 const url = `https://jsonplaceholder.typicode.com/users`
+const xhr = new XMLHttpRequest()
 
+xhr.open('GET', url)
+xhr.send()
 
-async function a() {
-    const { data } = await axios.get(url)
-    console.log(data);
+xhr.onreadystatechange = () => {
+    if (xhr.readyState === 4) {
+        const users = JSON.parse(xhr.responseText)
+        users.forEach((user) => {
+            document.write(user.name)
+            document.write(`<br/>`)
+            document.write(user.username)
+            document.write(`<br/>`)
+            document.write(`<hr/>`)
+        })
+    }
 }
-a()
+
+
