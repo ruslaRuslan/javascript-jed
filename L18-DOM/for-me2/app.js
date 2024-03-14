@@ -21,10 +21,21 @@
 
 //------------------------------------------------------------------------------------------------------------- 
 
+// let human = {
+//     ad: "ruslan",
+//     age: 23,
+//     enemy: undefined
+// }
+// const strigJsonHuman = JSON.stringify(human)
+// console.log(strigJsonHuman);
+
+//------------------------------------------------------------------------------------------------------------- 
+
+
 let human = {
     ad: "ruslan",
     age: 23,
-    enemy: undefined
+    enemy: null
 }
 const strigJsonHuman = JSON.stringify(human)
 console.log(strigJsonHuman);
