@@ -32,10 +32,24 @@
 //------------------------------------------------------------------------------------------------------------- 
 
 
+// let human = {
+//     ad: "ruslan",
+//     age: 23,
+//     enemy: null
+// }
+// const strigJsonHuman = JSON.stringify(human)
+// console.log(strigJsonHuman);
+
+//------------------------------------------------------------------------------------------------------------- 
+
 let human = {
     ad: "ruslan",
     age: 23,
-    enemy: null
+    enemy: null,
+    doing: () => {
+        console.log('salam');
+    }
+
 }
 const strigJsonHuman = JSON.stringify(human)
 console.log(strigJsonHuman);
