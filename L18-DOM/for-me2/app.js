@@ -158,14 +158,21 @@
 //------------------------------------------------------------------------------------------------------------- 
 
 
-const url = `https://jsonplaceholder.typicode.com/users/`
+// const url = `https://jsonplaceholder.typicode.com/users/`
 
-fetch(url).then((respons) => respons.json())
-    .then((users) => {
-        console.log(users);
-        users.forEach((user) => {
-            console.log(user.id);
+// fetch(url).then((respons) => respons.json())
+//     .then((users) => {
+//         console.log(users);
+//         users.forEach((user) => {
+//             console.log(user.id);
 
-        })
-    })
-console.log('Ruslan');
+//         })
+//     })
+// console.log('Ruslan');
+
+//------------------------------------------------------------------------------------------------------------- 
+
+setTimeout(() => {
+    console.log('a');
+}, 0);
+console.log('b');
