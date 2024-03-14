@@ -41,6 +41,21 @@
 
 // AJAX -> Asynchronous JavaScript And Xml
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+// const xhr = new XMLHttpRequest()
+
+// xhr.open('GET', url)
+// xhr.send()
+// xhr.onreadystatechange = () => {
+//     if (xhr.readyState === 4) {
+//         console.log(xhr.response);
+//     }
+
+// }
+
+// -------------------------------------------------------------------------------------------------------------
+
+
 const url = `https://jsonplaceholder.typicode.com/users`
 const xhr = new XMLHttpRequest()
 
@@ -48,7 +63,8 @@ xhr.open('GET', url)
 xhr.send()
 xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
-        console.log(xhr.response);
+        const data = JSON.parse(xhr.responseText)
+       console.log(data);
     }
     
 }
