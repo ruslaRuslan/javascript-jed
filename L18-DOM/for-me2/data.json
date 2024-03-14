@@ -1,0 +1,15 @@
+{
+    "ruslan": "1234",
+    "test": true,
+    "friends": [
+        "isa",
+        "ramin",
+        "sukran",
+        "ali"
+    ],
+    "bestFriends": [
+        "sebine",
+        "sada"
+    ],
+    "car": null
+}

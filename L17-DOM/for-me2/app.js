@@ -99,23 +99,21 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
-const url = `https://jsonplaceholder.typicode.com/users`
-const xhr = new XMLHttpRequest()
+// const url = `https://jsonplaceholder.typicode.com/users`
+// const xhr = new XMLHttpRequest()
+// xhr.open('GET', url)
+// xhr.send()
+// xhr.onreadystatechange = () => {
+//     if (xhr.readyState === 4) {
+//         const users = JSON.parse(xhr.responseText)
+//         users.forEach((user) => {
+//             document.write(user.name)
+//             document.write(`<br/>`)
+//             document.write(user.username)
+//             document.write(`<br/>`)
+//             document.write(`<hr/>`)
+//         })
+//     }
+// }
 
-xhr.open('GET', url)
-xhr.send()
-
-xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-        const users = JSON.parse(xhr.responseText)
-        users.forEach((user) => {
-            document.write(user.name)
-            document.write(`<br/>`)
-            document.write(user.username)
-            document.write(`<br/>`)
-            document.write(`<hr/>`)
-        })
-    }
-}
-
-
+// -------------------------------------------------------------------------------------------------------------
