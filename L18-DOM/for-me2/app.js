@@ -19,4 +19,12 @@
 // (email) ~ ('ruslan@gmail.com'),     
 // ]
 
+//------------------------------------------------------------------------------------------------------------- 
 
+let human = {
+    ad: "ruslan",
+    age: 23,
+    enemy: undefined
+}
+const strigJsonHuman = JSON.stringify(human)
+console.log(strigJsonHuman);
