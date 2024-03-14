@@ -138,18 +138,34 @@
 
 
 
+// const url = `https://jsonplaceholder.typicode.com/users/`
+
+// fetch(url).then((respons) => respons.json())
+//     .then((users) => {
+//         console.log(users);
+//         users.forEach((user) => {
+//             document.write(
+//                 `<h1> ${user.id}.${user.name}</h1>
+//                  <h2>${user.username}</h2>
+//                  <p>${user.company.name}</p>
+//                  <hr/>
+//                 `)
+
+//         })
+//     })
+
+
+//------------------------------------------------------------------------------------------------------------- 
+
+
 const url = `https://jsonplaceholder.typicode.com/users/`
 
 fetch(url).then((respons) => respons.json())
     .then((users) => {
         console.log(users);
         users.forEach((user) => {
-            document.write(
-                `<h1> ${user.id}.${user.name}</h1>
-                 <h2>${user.username}</h2>
-                 <p>${user.company.name}</p>
-                 <hr/>
-                `)
+            console.log(user.id);
 
         })
     })
+console.log('Ruslan');
