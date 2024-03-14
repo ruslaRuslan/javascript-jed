@@ -1,6 +1,0 @@
-{
-    "javascript.format.semicolons": "inherit",
-    "javascript.format.enable": true,
-    "javascript.format.quoteStyle": "double"
-    
-}

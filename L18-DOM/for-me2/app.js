@@ -80,26 +80,34 @@
 
 //------------------------------------------------------------------------------------------------------------- 
 
-let human = {
-    ad: "ruslan",
-    age: 23,
-    enemy: null,
-    doing: () => {
-        console.log('salam');
-    },
-    friends: [
-        "isa",
-        "ramin",
-        "sukran",
-        "ali"
-    ],
-    bestFriends: [
-        "sebine",
-        "sada"
-    ],
-}
-const strigJsonHuman = JSON.stringify(human)
+// let human = {
+//     ad: "ruslan",
+//     age: 23,
+//     enemy: null,
+//     doing: () => {
+//         console.log('salam');
+//     },
+//     friends: [
+//         "isa",
+//         "ramin",
+//         "sukran",
+//         "ali"
+//     ],
+//     bestFriends: [
+//         "sebine",
+//         "sada"
+//     ],
+// }
+// const strigJsonHuman = JSON.stringify(human)
 
-const obj = JSON.parse(strigJsonHuman)
+// const obj = JSON.parse(strigJsonHuman)
 
-console.log(obj);
+// console.log(obj);
+
+//------------------------------------------------------------------------------------------------------------- 
+
+const url = `https://jsonplaceholder.typicode.com/users/`
+
+fetch(url).then((respons) => {
+    console.log(respons);
+})
