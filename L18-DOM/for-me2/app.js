@@ -56,6 +56,30 @@
 
 //------------------------------------------------------------------------------------------------------------- 
 
+// let human = {
+//     ad: "ruslan",
+//     age: 23,
+//     enemy: null,
+//     doing: () => {
+//         console.log('salam');
+//     },
+//     friends: [
+//         "isa",
+//         "ramin",
+//         "sukran",
+//         "ali"
+//     ],
+//     bestFriends: [
+//         "sebine",
+//         "sada"
+//     ],
+
+// }
+// const strigJsonHuman = JSON.stringify(human)
+// console.log(strigJsonHuman);
+
+//------------------------------------------------------------------------------------------------------------- 
+
 let human = {
     ad: "ruslan",
     age: 23,
@@ -73,7 +97,9 @@ let human = {
         "sebine",
         "sada"
     ],
-
 }
 const strigJsonHuman = JSON.stringify(human)
-console.log(strigJsonHuman);
+
+const obj = JSON.parse(strigJsonHuman)
+
+console.log(obj);
