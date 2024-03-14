@@ -179,9 +179,9 @@
 
 //------------------------------------------------------------------------------------------------------------- 
 
-console.log('request');          
-setTimeout(() => {
-    console.log('response');
-}, 0);
-console.log('dizayn');
-console.log('animesy');
+// console.log('request');
+// setTimeout(() => {
+//     console.log('response');
+// }, 0);
+// console.log('dizayn');
+// console.log('animesy');
