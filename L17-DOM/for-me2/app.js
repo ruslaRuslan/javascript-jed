@@ -56,15 +56,25 @@
 // -------------------------------------------------------------------------------------------------------------
 
 
-const url = `https://jsonplaceholder.typicode.com/users`
-const xhr = new XMLHttpRequest()
+// const url = `https://jsonplaceholder.typicode.com/users`
+// const xhr = new XMLHttpRequest()
 
-xhr.open('GET', url)
-xhr.send()
-xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-        const data = JSON.parse(xhr.responseText)
-       console.log(data);
-    }
-    
-}
+// xhr.open('GET', url)
+// xhr.send()
+// xhr.onreadystatechange = () => {
+//     if (xhr.readyState === 4) {
+//         const data = JSON.parse(xhr.responseText)
+//         console.log(data);
+//     }
+
+// }
+
+// -------------------------------------------------------------------------------------------------------------
+
+const url = `https://jsonplaceholder.typicode.com/users`
+fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data);
+    })
+
