@@ -1,15 +1,6 @@
 {
-    "ruslan": "1234",
-    "test": true,
-    "friends": [
-        "isa",
-        "ramin",
-        "sukran",
-        "ali"
-    ],
-    "bestFriends": [
-        "sebine",
-        "sada"
-    ],
-    "car": null
+    "javascript.format.semicolons": "inherit",
+    "javascript.format.enable": true,
+    "javascript.format.quoteStyle": "double"
+    
 }
