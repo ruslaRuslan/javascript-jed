@@ -81,8 +81,20 @@
 // -------------------------------------------------------------------------------------------------------------
 
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+// axios.get(url)
+//     .then(({ data }) => {
+//         console.log(data);
+//     })
+
+// -------------------------------------------------------------------------------------------------------------
+
+
 const url = `https://jsonplaceholder.typicode.com/users`
-axios.get(url)
-    .then(({ data }) => {
-        console.log(data);
-    })
+
+
+async function a() {
+    const { data } = await axios.get(url)
+    console.log(data);
+}
+a()
