@@ -106,8 +106,20 @@
 
 //------------------------------------------------------------------------------------------------------------- 
 
+// const url = `https://jsonplaceholder.typicode.com/users/`
+
+// fetch(url).then((respons) => {
+//     console.log(respons);
+// })
+
+//------------------------------------------------------------------------------------------------------------- 
+
+
 const url = `https://jsonplaceholder.typicode.com/users/`
 
 fetch(url).then((respons) => {
-    console.log(respons);
+    return respons.json()
 })
+    .then((data) => {
+        console.log(data);
+    })
