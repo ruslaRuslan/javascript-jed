@@ -44,19 +44,19 @@
 
 // -------------------------------------------------------------------------------------------------------------
 
-// istifadecinin name-lerini ve company-lerini cixartmaliyiq
+// istifadecinin name-lerini ve company-lerinin name-lerini cixartmaliyiq
 
 
-const url = `https://jsonplaceholder.typicode.com/users`
-const root = document.getElementById('root')
+// const url = `https://jsonplaceholder.typicode.com/users`
+// const root = document.getElementById('root')
 
-fetch(url)
-    .then((respons) => respons.json())
-    .then((data) => {
-        data.forEach((user) => {
-            const p = document.createElement('p')
-            p.innerHTML = `${user.name} <br/> <hr/> ${user.company.name }`
+// fetch(url)
+//     .then((respons) => respons.json())
+//     .then((data) => {
+//         data.forEach((user) => {
+//             const p = document.createElement('p')
+//             p.innerHTML = `${user.name} <br/> <hr/> ${user.company.name }`
              
-            root.appendChild(p)
-        });
-    })
+//             root.appendChild(p)
+//         });
+//     })
