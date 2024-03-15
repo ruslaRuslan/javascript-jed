@@ -30,16 +30,33 @@
 
 // istifadecinin id-lerini ve name-lerini cixartmaliyiq
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+// const root = document.getElementById('root')
+// fetch(url)
+//     .then((respons) => respons.json())
+//     .then((data) => {
+//         data.forEach((user) => {
+//             const p = document.createElement('p')
+//             p.textContent = `${user.id}  ${user.name}`
+//             root.appendChild(p)
+//         });
+//     })
+
+// -------------------------------------------------------------------------------------------------------------
+
+// istifadecinin name-lerini ve company-lerini cixartmaliyiq
+
+
 const url = `https://jsonplaceholder.typicode.com/users`
 const root = document.getElementById('root')
+
 fetch(url)
     .then((respons) => respons.json())
     .then((data) => {
         data.forEach((user) => {
             const p = document.createElement('p')
-            p.textContent = `${user.id}  ${user.name}`
+            p.innerHTML = `${user.name} <br/> <hr/> ${user.company.name }`
+             
             root.appendChild(p)
         });
     })
-
-
