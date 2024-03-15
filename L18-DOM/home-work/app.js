@@ -56,7 +56,26 @@
 //         data.forEach((user) => {
 //             const p = document.createElement('p')
 //             p.innerHTML = `${user.name} <br/> <hr/> ${user.company.name }`
-             
+
 //             root.appendChild(p)
 //         });
 //     })
+
+// -------------------------------------------------------------------------------------------------------------
+
+// istifadecinin username-lerini ve email-lerini cixartmaliyiq
+
+
+const url = `https://jsonplaceholder.typicode.com/users`
+
+const root = document.getElementById('root')
+fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        data.forEach((user) => {
+            const p = document.createElement('p')
+            p.innerHTML = `${user.username}   <br/> ${user.email} <hr/> `
+            root.appendChild(p)
+        });
+    })
+
