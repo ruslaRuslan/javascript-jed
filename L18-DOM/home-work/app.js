@@ -66,16 +66,38 @@
 // istifadecinin username-lerini ve email-lerini cixartmaliyiq
 
 
-const url = `https://jsonplaceholder.typicode.com/users`
+// const url = `https://jsonplaceholder.typicode.com/users`
 
+// const root = document.getElementById('root')
+// fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => {
+//         data.forEach((user) => {
+//             const p = document.createElement('p')
+//             p.innerHTML = `${user.username}   <br/> ${user.email} <hr/> `
+//             root.appendChild(p)
+//         });
+//     })
+
+// -------------------------------------------------------------------------------------------------------------
+
+// istifadecinin name-lerini, id-lerini, username-lerini ve email-lerini cixartmaliyiq
+
+const url = `https://jsonplaceholder.typicode.com/users`
 const root = document.getElementById('root')
+
+root.style.cursor = 'pointer'
+
 fetch(url)
-    .then((response) => response.json())
+    .then((respons) => respons.json())
     .then((data) => {
         data.forEach((user) => {
             const p = document.createElement('p')
-            p.innerHTML = `${user.username}   <br/> ${user.email} <hr/> `
+            p.innerHTML = `${user.id}. ${user.name} <br/>  ${user.username} ${user.email} <hr/>`
             root.appendChild(p)
         });
     })
+
+
+
 
