@@ -198,22 +198,44 @@
 
 // ________________________________________________________________________________________________________
 
-function writeData(data) {
-    document.body.innerHTML += data.strMeal
+// function writeData(data) {
+//     document.body.innerHTML += data.strMeal
 
-}
+// }
 
-axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
-    .then((respons) => {
-        const data = respons.data.meals[0];
-        writeData(data)
-    })
-    .catch(() => {
-        console.log('neyniyisen?!');
-    })
-    .then(() => {
-        console.log('proqrama davam');
-    })
-    .then(() => {
-        console.log('proqrama davam2');
-    })
+// axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+//     .then((respons) => {
+//         const data = respons.data.meals[0];
+//         writeData(data)
+//     })
+//     .catch(() => {
+//         console.log('neyniyisen?!');
+//     })
+//     .then(() => {
+//         console.log('proqrama davam');
+//     })
+//     .then(() => {
+//         console.log('proqrama davam2');
+//     })
+
+// ________________________________________________________________________________________________________
+
+
+
+    function writeData(data) {
+        document.body.innerHTML += data.strMeal
+    
+    }
+    
+    axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+        .then((respons) => {
+            const data = respons.data.meals[0];
+            writeData(data)
+        })
+        .catch(() => {
+            console.log('neyniyisen?!');
+        })
+        .then((ad) => {
+            console.log('proqrama davam', ad);
+        })
+       
