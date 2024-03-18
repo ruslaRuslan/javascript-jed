@@ -85,7 +85,16 @@
 
 // ________________________________________________________________________________________________________
 
+// const promiseObject = new Promise((resolve, reject)=>{
+//     resolve('data geldi')
+// })
+// console.log(promiseObject);
+
+// ________________________________________________________________________________________________________
+
 const promiseObject = new Promise((resolve, reject)=>{
-    resolve('data geldi')
+    setTimeout(() => {
+        resolve('data geldi')
+    }, 1000);
 })
 console.log(promiseObject);
