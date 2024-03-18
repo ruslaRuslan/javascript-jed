@@ -101,8 +101,14 @@
 // _____________________________________________________________________________________________________________
 
 
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// fetch(url)
+//     .then((respons) => respons.json())
+//     .then((data) => console.log(data));
+// // Promise-leri .then ile resolve edirik (resolve -> yani hell etmek cavabi gozlemek )
+
+// _____________________________________________________________________________________________________________
+
 const url = `https://jsonplaceholder.typicode.com/users` // endpoint
-fetch(url)
-    .then((respons) => respons.json())
-    .then((data) => console.log(data));
-// Promise-leri .then ile resolve edirik (resolve -> yani hell etmek cavabi gozlemek )
+const data = axios.get(url)
+console.log(data);
