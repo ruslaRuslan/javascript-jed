@@ -120,6 +120,13 @@
 // ________________________________________________________________________________________________________
 
 
-const promise = axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
-console.log(promise);
+// const promise = axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+// console.log(promise);
 
+// ________________________________________________________________________________________________________
+
+axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+    .then((respons) => {
+        console.log(respons);
+    })
+console.log(promise);
