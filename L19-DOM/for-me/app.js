@@ -101,18 +101,25 @@
 
 // ________________________________________________________________________________________________________
 
-const promiseObject = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve('data geldi')
-    }, 1000);
-    setTimeout(() => {
-        reject('internet erroru')
-    }, 1500);
-})
-promiseObject
-    .then((data) => {
-        console.log(data);
-    })
-    .catch((error) => {
-        console.log(error);
-    })
+// const promiseObject = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('data geldi')
+//     }, 1000);
+//     setTimeout(() => {
+//         reject('internet erroru')
+//     }, 1500);
+// })
+// promiseObject
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     })
+
+// ________________________________________________________________________________________________________
+
+
+const promise = axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+console.log(promise);
+
