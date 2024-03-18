@@ -146,14 +146,31 @@
 //     .catch(() => {
 //         console.log('sefdi');
 //     })
-    
+
 // ________________________________________________________________________________________________________
 
- 
-axios.get('https://www.themea.com/api/json/v1/1/random.php')
+
+// axios.get('https://www.themea.com/api/json/v1/1/random.php')
+//     .then((respons) => {
+//         console.log(respons.data.meals[0]);
+//     })
+//     setTimeout(() => {
+//         console.log('proqrama davam');
+//     }, 2000);
+// ________________________________________________________________________________________________________
+
+
+axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
     .then((respons) => {
         console.log(respons.data.meals[0]);
     })
-    setTimeout(() => {
+    .catch(() => {
+        console.log('neyniyisen?!');
+    })
+    .then(() => {
         console.log('proqrama davam');
-    }, 2000);
+    })
+    .then(() => {
+        console.log('proqrama davam2');
+    })
+// ________________________________________________________________________________________________________
