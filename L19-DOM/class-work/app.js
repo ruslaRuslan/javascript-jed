@@ -125,8 +125,16 @@
 
 //_____________________________________________________________________________________________________________
 
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// axios.get(url)
+//     .then(({data}) => {
+//         console.log(data);
+//     })
+
+//_____________________________________________________________________________________________________________
+
 const url = `https://jsonplaceholder.typicode.com/users` // endpoint
 axios.get(url)
-    .then(({data}) => {
-        console.log(data);
+    .then((respons) => {
+        console.log(respons.data);
     })
