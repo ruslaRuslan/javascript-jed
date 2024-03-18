@@ -92,9 +92,27 @@
 
 // ________________________________________________________________________________________________________
 
-const promiseObject = new Promise((resolve, reject)=>{
+// const promiseObject = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve('data geldi')
+//     }, 1000);
+// })
+// console.log(promiseObject);
+
+// ________________________________________________________________________________________________________
+
+const promiseObject = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve('data geldi')
     }, 1000);
+    setTimeout(() => {
+        reject('internet erroru')
+    }, 1500);
 })
-console.log(promiseObject);
+promiseObject
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
