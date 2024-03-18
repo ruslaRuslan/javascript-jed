@@ -125,8 +125,14 @@
 
 // ________________________________________________________________________________________________________
 
+// axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+//     .then((respons) => {
+//         console.log(respons);
+//     })
+
+// ________________________________________________________________________________________________________
+
 axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
     .then((respons) => {
-        console.log(respons);
+        console.log(respons.data.meals[0]);
     })
-console.log(promise);
