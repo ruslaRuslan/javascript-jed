@@ -68,7 +68,7 @@ fetch(url).then((respons) => {
     respons.json().then((data) => {
 console.log(data);
     });
-})
+}) // tovsiye olunmayan yol
 
 
 
