@@ -139,11 +139,21 @@
 
 // ________________________________________________________________________________________________________
 
+// axios.get('https://www.themea.com/api/json/v1/1/random.php')
+//     .then((respons) => {
+//         console.log(respons.data.meals[0]);
+//     })
+//     .catch(() => {
+//         console.log('sefdi');
+//     })
+    
+// ________________________________________________________________________________________________________
+
+ 
 axios.get('https://www.themea.com/api/json/v1/1/random.php')
     .then((respons) => {
         console.log(respons.data.meals[0]);
     })
-    .catch(() => {
-        console.log('sefdi');
-    })
- 
+    setTimeout(() => {
+        console.log('proqrama davam');
+    }, 2000);
