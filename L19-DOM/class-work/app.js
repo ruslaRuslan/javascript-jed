@@ -46,11 +46,23 @@
 // let data = fetch(url)
 // console.log(data);
 
+// _____________________________________________________________________________________________________________
+
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// fetch(url).then((respons) => {
+// console.log(respons);
+// })
+
+// _____________________________________________________________________________________________________________
+
 
 const url = `https://jsonplaceholder.typicode.com/users` // endpoint
 fetch(url).then((respons) => {
-console.log(respons);
+console.log(respons.json());
 })
+
+
+
 
 
 
