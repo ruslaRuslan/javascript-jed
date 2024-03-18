@@ -28,4 +28,24 @@
 //     j += i ** i + i ** i
 // }
 // console.log(j);
-// console.log('salam'); // "salam" cixmayacaq cunki sonsuz dovr edecek
+// console.log('salam'); // "salam" cixmayacaq cunki sonsuz dovr edecek, "salam" bloklanip
+// ------------------------------------------------------------------------------------------------------
+
+// asinxrom kodlar promise-ile olur
+
+// Promise [soz vermek] 
+// soz vermeyin nece hali var:
+// Ruslan saat 3-cu gun saat 12-de dersimiz var
+// 1. hemin vaxta qeder gozleyisen -> pending
+// 2. sozunu yerine yetirdi -> fulfilled
+// 3. iptal olundu -> rejected
+
+// Promise-nin 3 hali var  pending, fulfilled, rejected
+
+const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+let data = fetch(url)
+console.log(data);
+
+
+
+
