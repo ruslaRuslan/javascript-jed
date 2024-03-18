@@ -90,9 +90,10 @@ fetch(url)
         return 'RUSLAN'
     })
     .then((ad) => {
-        console.log(ad);
-        return 12 +23
+        console.log(ad); // RUSLAN
+        return 12 + 23
     })
-    .then((cem)=>{
-        console.log(cem);
+    .then((cem) => {
+        console.log(cem); // 35
     })
+// tovsiye olunan kod 
