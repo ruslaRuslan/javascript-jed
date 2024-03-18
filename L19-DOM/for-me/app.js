@@ -67,8 +67,15 @@
 //_________________________________________________________________________________________________________
 
 // Promise -> soz vermek
+// const url = `https://www.themealdb.com/api/json/v1/1/random.php`
+
+// fetch(url).then((respons) => respons.json()).then((data) => console.log(data))
+// fetch().then(() => { }).catch(() => { }).finally()
+// console.log('Ruslan')
+
+// ________________________________________________________________________________________________________
+
 const url = `https://www.themealdb.com/api/json/v1/1/random.php`
 
 fetch(url).then((respons) => respons.json()).then((data) => console.log(data))
-fetch().then(() => { }).catch(() => { }).finally()
 console.log('Ruslan')
