@@ -84,16 +84,25 @@
 
 // _____________________________________________________________________________________________________________
 
-const url = `https://jsonplaceholder.typicode.com/users`
+// const url = `https://jsonplaceholder.typicode.com/users`
+// fetch(url)
+//     .then(() => {
+//         return 'RUSLAN'
+//     })
+//     .then((ad) => {
+//         console.log(ad); // RUSLAN
+//         return 12 + 23
+//     })
+//     .then((cem) => {
+//         console.log(cem); // 35
+//     })
+// // tovsiye olunan kod 
+
+// _____________________________________________________________________________________________________________
+
+
+const url = `https://jsonplaceholder.typicode.com/users` // endpoint
 fetch(url)
-    .then(() => {
-        return 'RUSLAN'
-    })
-    .then((ad) => {
-        console.log(ad); // RUSLAN
-        return 12 + 23
-    })
-    .then((cem) => {
-        console.log(cem); // 35
-    })
-// tovsiye olunan kod 
+    .then((respons) => respons.json())
+    .then((data) => console.log(data));
+// Promise-leri .then ile resolve edirik (resolve -> yani hell etmek cavabi gozlemek )
