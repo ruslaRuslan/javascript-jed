@@ -75,7 +75,12 @@
 
 // ________________________________________________________________________________________________________
 
-const url = `https://www.themealdb.com/api/json/v1/1/random.php`
+const url = `https://www.ruslan.com`
 
-fetch(url).then((respons) => respons.json()).then((data) => console.log(data))
+fetch(url)
+    .then((respons) => respons.json())
+    .then((data) => console.log(data))
+    .catch((err) => {
+        document.body.innerHTML +=('<p style="font-size: 2rem; color: red;">error cixdi</p>')
+    })
 console.log('Ruslan')
