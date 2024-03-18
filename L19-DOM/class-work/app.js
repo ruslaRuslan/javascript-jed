@@ -91,4 +91,8 @@ fetch(url)
     })
     .then((ad) => {
         console.log(ad);
+        return 12 +23
+    })
+    .then((cem)=>{
+        console.log(cem);
     })
