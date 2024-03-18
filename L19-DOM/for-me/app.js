@@ -75,12 +75,17 @@
 
 // ________________________________________________________________________________________________________
 
-const url = `https://www.ruslan.com`
+// const url = `https://www.ruslan.com`
+// fetch(url)
+//     .then((respons) => respons.json())
+//     .then((data) => console.log(data))
+//     .catch((err) => {
+//         document.body.innerHTML += ('<p style="font-size: 2rem; color: red;">error cixdi</p>')
+//     })
 
-fetch(url)
-    .then((respons) => respons.json())
-    .then((data) => console.log(data))
-    .catch((err) => {
-        document.body.innerHTML +=('<p style="font-size: 2rem; color: red;">error cixdi</p>')
-    })
-console.log('Ruslan')
+// ________________________________________________________________________________________________________
+
+const promiseObject = new Promise((resolve, reject)=>{
+    resolve('data geldi')
+})
+console.log(promiseObject);
