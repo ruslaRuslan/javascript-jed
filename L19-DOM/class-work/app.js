@@ -63,15 +63,23 @@
 
 // _____________________________________________________________________________________________________________
 
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// fetch(url).then((respons) => {
+//     respons.json().then((data) => {
+// console.log(data);
+//     });
+// }) // tovsiye olunmayan yol
+
+// _____________________________________________________________________________________________________________
+
+
 const url = `https://jsonplaceholder.typicode.com/users` // endpoint
 fetch(url).then((respons) => {
-    respons.json().then((data) => {
-console.log(data);
-    });
+    respons.json()
+        .then((data) => {
+            console.log(data);
+        });
 }) // tovsiye olunmayan yol
-
-
-
 
 
 
