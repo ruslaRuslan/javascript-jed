@@ -39,9 +39,17 @@
 
 //_________________________________________________________________________________________________________
 
-console.log('A');
-console.log('B');
-console.log('C');
+// console.log('A'); //A
+// console.log('B'); //B
+// console.log('C'); //C
 // sinxron proqramlasdirma -> synchronous programming
 
+//_________________________________________________________________________________________________________
+
+// asinxron proqramlasdirma -> asynchronous programming
+
+console.log('A');
+setTimeout(() => {
+    console.log('B');
+}, 1000); console.log('C');
 
