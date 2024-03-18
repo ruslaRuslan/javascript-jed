@@ -133,8 +133,10 @@
 
 //_____________________________________________________________________________________________________________
 
-const url = `https://jsonplaceholder.typicode.com/users` // endpoint
-axios.get(url)
-    .then((respons) => {
-        console.log(respons.data);
-    })
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// axios.get(url)
+//     .then((respons) => {
+//         console.log(respons.data);
+//     })
+
+//_____________________________________________________________________________________________________________
