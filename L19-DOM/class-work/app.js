@@ -56,13 +56,19 @@
 // _____________________________________________________________________________________________________________
 
 
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// fetch(url).then((respons) => {
+// console.log(respons.json());
+// })
+
+// _____________________________________________________________________________________________________________
+
 const url = `https://jsonplaceholder.typicode.com/users` // endpoint
 fetch(url).then((respons) => {
-console.log(respons.json());
+    respons.json().then((data) => {
+console.log(data);
+    });
 })
-
-
-
 
 
 
