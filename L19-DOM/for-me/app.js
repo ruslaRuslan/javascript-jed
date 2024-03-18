@@ -60,6 +60,15 @@
 // fulfilled -> yerine yetirildi  
 // reject -> iptal edildi
 
+// const url = `https://www.themealdb.com/api/json/v1/1/random.php`
+// const data = fetch(url)
+// console.log(data);
+
+//_________________________________________________________________________________________________________
+
+// Promise -> soz vermek
 const url = `https://www.themealdb.com/api/json/v1/1/random.php`
-const data = fetch(url)
-console.log(data);
+
+fetch(url).then((respons) => respons.json()).then((data) => console.log(data))
+fetch().then(() => { }).catch(() => { }).finally()
+console.log('Ruslan')
