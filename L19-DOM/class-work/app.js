@@ -31,7 +31,7 @@
 // console.log('salam'); // "salam" cixmayacaq cunki sonsuz dovr edecek, "salam" bloklanip
 // ------------------------------------------------------------------------------------------------------
 
-// asinxrom kodlar promise-ile olur
+// asinxrom kodlar promise-ile olur (asinxrom-un promise hallari)
 
 // Promise [soz vermek] 
 // soz vermeyin nece hali var:
@@ -42,9 +42,17 @@
 
 // Promise-nin 3 hali var  pending, fulfilled, rejected
 
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// let data = fetch(url)
+// console.log(data);
+
+
 const url = `https://jsonplaceholder.typicode.com/users` // endpoint
-let data = fetch(url)
-console.log(data);
+fetch(url).then((respons) => {
+console.log(respons);
+})
+
+
 
 
 
