@@ -29,10 +29,17 @@
 
 //_________________________________________________________________________________________________________
 
-const url = `https://www.themealdb.com/api/json/v1/1/random.php`
-fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-        const yemek = data.meals[0]
-        console.log(yemek);
-    })
+// const url = `https://www.themealdb.com/api/json/v1/1/random.php`
+// fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => {
+//         const yemek = data.meals[0]
+//         console.log(yemek);
+//     })
+
+//_________________________________________________________________________________________________________
+
+console.log('A');
+console.log('B');
+console.log('C');
+// sinxron proqramlasdirma -> synchronous programming
