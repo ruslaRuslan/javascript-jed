@@ -109,6 +109,18 @@
 
 // _____________________________________________________________________________________________________________
 
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// const data = axios.get(url)
+// console.log(data);
+
+// _____________________________________________________________________________________________________________
+
+
 const url = `https://jsonplaceholder.typicode.com/users` // endpoint
-const data = axios.get(url)
-console.log(data);
+axios.get(url)
+    .then((response) => {
+        console.log(response);
+    })
+// response bir obyektdi
+
+//_____________________________________________________________________________________________________________
