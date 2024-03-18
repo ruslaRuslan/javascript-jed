@@ -23,3 +23,9 @@
 
 
 
+// let j = 0
+// for (let i = 0; i < 100000000; i++) {
+//     j += i ** i + i ** i
+// }
+// console.log(j);
+// console.log('salam'); // "salam" cixmayacaq cunki sonsuz dovr edecek
