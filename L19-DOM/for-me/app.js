@@ -48,8 +48,18 @@
 
 // asinxron proqramlasdirma -> asynchronous programming
 
-console.log('A');
-setTimeout(() => {
-    console.log('B');
-}, 1000); console.log('C');
+// console.log('A');
+// setTimeout(() => {
+//     console.log('B');
+// }, 1000); console.log('C');
 
+//_________________________________________________________________________________________________________
+
+// ayin 22-si saat 2-de atciliqda
+// pending -> gozleme
+// fulfilled -> yerine yetirildi  
+// reject -> iptal edildi
+
+const url = `https://www.themealdb.com/api/json/v1/1/random.php`
+const data = fetch(url)
+console.log(data);
