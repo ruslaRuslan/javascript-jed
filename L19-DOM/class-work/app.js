@@ -73,13 +73,22 @@
 // _____________________________________________________________________________________________________________
 
 
-const url = `https://jsonplaceholder.typicode.com/users` // endpoint
-fetch(url).then((respons) => {
-    respons.json()
-        .then((data) => {
-            console.log(data);
-        });
-}) // tovsiye olunmayan yol
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// fetch(url).then((respons) => {
+//     respons.json()
+//         .then((data) => {
+//             console.log(data);
+//         });
+// }) // tovsiye olunmayan yol
 
 
+// _____________________________________________________________________________________________________________
 
+const url = `https://jsonplaceholder.typicode.com/users`
+fetch(url)
+    .then(() => {
+        return 'RUSLAN'
+    })
+    .then((ad) => {
+        console.log(ad);
+    })
