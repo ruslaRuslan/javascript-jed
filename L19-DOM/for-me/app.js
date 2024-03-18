@@ -132,7 +132,18 @@
 
 // ________________________________________________________________________________________________________
 
-axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+// axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+//     .then((respons) => {
+//         console.log(respons.data.meals[0]);
+//     })
+
+// ________________________________________________________________________________________________________
+
+axios.get('https://www.themea.com/api/json/v1/1/random.php')
     .then((respons) => {
         console.log(respons.data.meals[0]);
     })
+    .catch(() => {
+        console.log('sefdi');
+    })
+ 
