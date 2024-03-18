@@ -160,9 +160,26 @@
 // ________________________________________________________________________________________________________
 
 
+// axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+//     .then((respons) => {
+//         console.log(respons.data.meals[0]);
+//     })
+//     .catch(() => {
+//         console.log('neyniyisen?!');
+//     })
+//     .then(() => {
+//         console.log('proqrama davam');
+//     })
+//     .then(() => {
+//         console.log('proqrama davam2');
+//     })
+// ________________________________________________________________________________________________________
+
+let dataEsas = ''
 axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
     .then((respons) => {
-        console.log(respons.data.meals[0]);
+    const data = respons.data.meals[0];
+    dataEsas = data
     })
     .catch(() => {
         console.log('neyniyisen?!');
@@ -173,4 +190,6 @@ axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
     .then(() => {
         console.log('proqrama davam2');
     })
-// ________________________________________________________________________________________________________
+    .then(()=>{
+        console.log(dataEsas);
+    })
