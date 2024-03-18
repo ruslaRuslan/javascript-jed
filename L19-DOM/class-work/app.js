@@ -116,11 +116,17 @@
 // _____________________________________________________________________________________________________________
 
 
-const url = `https://jsonplaceholder.typicode.com/users` // endpoint
-axios.get(url)
-    .then((response) => {
-        console.log(response);
-    })
+// const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+// axios.get(url)
+//     .then((response) => {
+//         console.log(response);
+//     })
 // response bir obyektdi
 
 //_____________________________________________________________________________________________________________
+
+const url = `https://jsonplaceholder.typicode.com/users` // endpoint
+axios.get(url)
+    .then(({data}) => {
+        console.log(data);
+    })
