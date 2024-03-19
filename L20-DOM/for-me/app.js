@@ -122,4 +122,4 @@ axios.get(url).then((response)=>{
     console.log(response.data[0]);
     data = response.data
 })
-// async/await
+
