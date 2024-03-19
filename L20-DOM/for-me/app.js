@@ -1,8 +1,18 @@
-setTimeout(() => {
-    console.log('a');
-}, 0);
-console.log('b');
-console.log('c');
+// setTimeout(() => {
+//     console.log('a');
+// }, 0);
+// console.log('b');
+// console.log('c');
 // sinxrom proqramlasdirma
 
+// -----------------------------------------------------------------------------------------------------------
 
+// Promise -> soz vermek
+// 1. pending   -> gozleme
+// 2. rejected  -> imtina
+// 3. fulfilled -> yerine yetirildi
+
+// endpoint*, api, url, link
+const  url = `https://jsonplaceholder.typicode.com/users`
+const data = fetch(url)
+console.log(data);
