@@ -165,11 +165,14 @@
 // -----------------------------------------------------------------------------------------------------------
 
 
+const url = `https://jsonplaceholder.typicode.com/users`
 async function a() {
-    setTimeout(() => {
-       console.log('salam');
-    }, 100);
+    const respons = await axios.get(url)
+    console.log(respons.data);
 }
 a()
 console.log('nee!');
+
+
+// -----------------------------------------------------------------------------------------------------------
 
