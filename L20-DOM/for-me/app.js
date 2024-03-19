@@ -32,6 +32,23 @@
 // -----------------------------------------------------------------------------------------------------------
 
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+// // promise chaning
+// fetch(url)
+//     .then((response) => {
+//         return response.json()
+//     })
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch((error) => {
+//         console.log('error', error);
+//     })
+// console.log('ne?'); // "ne?" asinxron-du
+// // resolve -> hell etmek
+
+// -----------------------------------------------------------------------------------------------------------
+
 const url = `https://jsonplaceholder.typicode.com/users`
 // promise chaning
 fetch(url)
@@ -40,6 +57,10 @@ fetch(url)
     })
     .then((data) => {
         console.log(data);
+        return 'Ruslan'
+    })
+    .then((ad) => {
+        console.log(ad);
     })
     .catch((error) => {
         console.log('error', error);
