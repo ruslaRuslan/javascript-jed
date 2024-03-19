@@ -132,3 +132,9 @@
 
 // -----------------------------------------------------------------------------------------------------------
 
+const promise = new Promise((res, rej) => {
+    res('ruslan')
+})
+promise.then((pakize)=>{
+    console.log(pakize);
+})
