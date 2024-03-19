@@ -177,11 +177,27 @@
 // -----------------------------------------------------------------------------------------------------------
 
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+// async function a() {
+//     const { data } = await axios.get(url)
+//     console.log(data);
+// }
+// a()
+// console.log('nee!');
+
+// -----------------------------------------------------------------------------------------------------------
+
 const url = `https://jsonplaceholder.typicode.com/users`
 async function a() {
     const { data } = await axios.get(url)
+   return data
+}
+async function writeData(){
+    const data = await a()
     console.log(data);
 }
-a()
+writeData()
+
+
 console.log('nee!');
 
