@@ -116,10 +116,16 @@
 
 // -----------------------------------------------------------------------------------------------------------
 
-const url = `https://jsonplaceholder.typicode.com/users`
-data = []
-axios.get(url).then((response)=>{
-    console.log(response.data[0]);
-    data = response.data
-})
+// const url = `https://jsonplaceholder.typicode.com/users`
+// data = []
+// axios.get(url).then((response)=>{
+//     console.log(response.data[0]);
+//     data = response.data
+// })
 
+// -----------------------------------------------------------------------------------------------------------
+
+const promise = new Promise((res, rej) => {
+    res('ruslan')
+})
+console.log(promise);
