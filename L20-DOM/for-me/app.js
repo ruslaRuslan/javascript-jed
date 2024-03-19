@@ -92,8 +92,16 @@
 // -----------------------------------------------------------------------------------------------------------
 
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+
+// axios.get(url).then((respons)=>{
+//     console.log(respons);
+// })
+
+// -----------------------------------------------------------------------------------------------------------
+
 const url = `https://jsonplaceholder.typicode.com/users`
 
 axios.get(url).then((respons)=>{
-    console.log(respons);
+    console.log(respons.data);
 })
