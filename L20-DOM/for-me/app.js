@@ -165,14 +165,23 @@
 // -----------------------------------------------------------------------------------------------------------
 
 
-const url = `https://jsonplaceholder.typicode.com/users`
-async function a() {
-    const respons = await axios.get(url)
-    console.log(respons.data);
-}
-a()
-console.log('nee!');
+// const url = `https://jsonplaceholder.typicode.com/users`
+// async function a() {
+//     const respons = await axios.get(url)
+//     console.log(respons.data);
+// }
+// a()
+// console.log('nee!');
 
 
 // -----------------------------------------------------------------------------------------------------------
+
+
+const url = `https://jsonplaceholder.typicode.com/users`
+async function a() {
+    const { data } = await axios.get(url)
+    console.log(data);
+}
+a()
+console.log('nee!');
 
