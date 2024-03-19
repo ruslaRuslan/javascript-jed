@@ -18,10 +18,28 @@
 // console.log(data);
 // -----------------------------------------------------------------------------------------------------------
 
+// const url = `https://jsonplaceholder.typicode.com/users`
+// fetch(url)
+//     .then((response) => {
+//         console.log(response);
+//     })
+//     .catch((error) => {
+//         console.log('error', error);
+//     })
+// console.log('ne?'); // "ne?" asinxron-du
+// // resolve -> hell etmek
+
+// -----------------------------------------------------------------------------------------------------------
+
+
 const url = `https://jsonplaceholder.typicode.com/users`
+// promise chaning
 fetch(url)
     .then((response) => {
-        console.log(response);
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data);
     })
     .catch((error) => {
         console.log('error', error);
