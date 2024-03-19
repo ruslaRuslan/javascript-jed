@@ -108,8 +108,18 @@
 
 // -----------------------------------------------------------------------------------------------------------
 
-const url = `https://jsonplaceholder.typicode.com/users`
+// const url = `https://jsonplaceholder.typicode.com/users`
 
-axios.get(url).then(({data})=>{
-    console.log(data);
+// axios.get(url).then(({data})=>{
+//     console.log(data);
+// })
+
+// -----------------------------------------------------------------------------------------------------------
+
+const url = `https://jsonplaceholder.typicode.com/users`
+data = []
+axios.get(url).then((response)=>{
+    console.log(response.data[0]);
+    data = response.data
 })
+// async/await
