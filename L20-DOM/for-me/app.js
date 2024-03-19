@@ -132,9 +132,24 @@
 
 // -----------------------------------------------------------------------------------------------------------
 
-const promise = new Promise((res, rej) => {
-    res('ruslan')
+// const promise = new Promise((res, rej) => {
+//     res('ruslan')
+// })
+// promise.then((pakize)=>{
+//     console.log(pakize);
+// })
+
+// -----------------------------------------------------------------------------------------------------------
+
+const promise = new Promise((resolve, reject) => {
+        resolve('backendden data')
+        reject('ne error?!')
 })
-promise.then((pakize)=>{
-    console.log(pakize);
-})
+promise
+    .then((pakize) => {
+        console.log(pakize);
+    })
+    .catch((err) => {
+        console.log('erroru tapdim');
+        console.log(err);
+    })
