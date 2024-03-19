@@ -141,15 +141,23 @@
 
 // -----------------------------------------------------------------------------------------------------------
 
-const promise = new Promise((resolve, reject) => {
-        resolve('backendden data')
-        reject('ne error?!')
-})
-promise
-    .then((pakize) => {
-        console.log(pakize);
-    })
-    .catch((err) => {
-        console.log('erroru tapdim');
-        console.log(err);
-    })
+// const promise = new Promise((resolve, reject) => {
+//         resolve('backendden data')
+//         reject('ne error?!')
+// })
+// promise
+//     .then((pakize) => {
+//         console.log(pakize);
+//     })
+//     .catch((err) => {
+//         console.log('erroru tapdim');
+//         console.log(err);
+//     })
+
+// -----------------------------------------------------------------------------------------------------------
+
+async function a() {
+    return 'salam';
+}
+const text = a()
+console.log(text);
