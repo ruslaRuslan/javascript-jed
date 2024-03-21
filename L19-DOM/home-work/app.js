@@ -60,21 +60,23 @@
 // -------------------------------------------------------------------------------------------------------------
 // StarWars apisinden insanlar (people) datalari çəkin və göstərin.
 
-const url = `https://swapi.dev/api/people/`
+// const url = `https://swapi.dev/api/people/`
 
-fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-        const people = data.results;
+// fetch(url)
+//     .then((response) => response.json())
+//     .then((data) => {
+//         const people = data.results;
 
-        people.forEach(person => {
-            document.write(`${person.name} </br>`);
-            document.write(`${person.birth_year} </br>`);
-            document.write(`${person.gender} </br>`);
-            document.write(`${person.eye_color} </br>`);
-            document.write('----------------------------------------------------------------------------------------------------------------------------- </br>');
-        });
-    })
-    .catch((error)=>{
-        console.log('error', error);
-    })
+//         people.forEach(person => {
+//             document.write(`${person.name} </br>`);
+//             document.write(`${person.birth_year} </br>`);
+//             document.write(`${person.gender} </br>`);
+//             document.write(`${person.eye_color} </br>`);
+//             document.write('----------------------------------------------------------------------------------------------------------------------------- </br>');
+//         });
+//     })
+//     .catch((error)=>{
+//         console.log('error', error);
+//     })
+
+
