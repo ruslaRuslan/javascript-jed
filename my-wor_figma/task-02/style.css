@@ -16,7 +16,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #050505;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,11 +160,12 @@ body {
 }
 
 .about-img img {
-    padding-bottom: 20%;
-    max-width: 630px;
-    height: auto;
-    width: 100%;
-    border-radius: 8px;
+.about-img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; /* Для сохранения пропорций изображения и заполнения всего блока */
+}
+
 }
 
 .about-text h2 {
