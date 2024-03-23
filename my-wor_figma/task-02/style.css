@@ -282,6 +282,7 @@ section {
     flex-wrap: wrap;
 }
 
+
 .container1 {
     width: 600px;
     height: 500px;
@@ -336,11 +337,26 @@ section {
 }
 
 
+
 @keyframes animate {
     100% {
         transform: scaleX(1);
-
     }
+}
+
+.Techical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+
+.progress-line.html span {
+    width: 90%;
 }
 
 
