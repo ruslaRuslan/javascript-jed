@@ -136,14 +136,16 @@ const domains = [
 
 // 8. ancaq owner-lerinin melumatlarinin oldugu massiv yaradin. (map)
 
-const domainsOwner = domains.map((domain) => domain.owner)
-console.log(domainsOwner);
+// const domainsOwner = domains.map((domain) => domain.owner)
+// console.log(domainsOwner);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-
 // 9. .com ile biten domain-leri tapin. (filter)
+
+const domainEndWithCom = domains.filter((domain) => domain.name.endsWith('.com'))
+console.log(domainEndWithCom);
 
 // 10. .az ile biten domain-lerin owner-larinin adlari oldugu massiv yaradin. (filter, map)
 
