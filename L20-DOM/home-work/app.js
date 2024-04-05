@@ -162,18 +162,27 @@ const domains = [
 
 // 11. .az ile biten domain-lerin owner-larinin yaslarinin cemini hesablayin (filter, forEach)
 
-let result = 0;
-const endsWithAzAndAge = domains.filter((domain) => domain.name.endsWith('.az'))
-    .forEach((domain) => {
-        result += domain.owner.age
-    })
-console.log(result);
+// let result = 0;
+// const endsWithAzAndAge = domains.filter((domain) => domain.name.endsWith('.az'))
+//     .forEach((domain) => { result += domain.owner.age })
+// console.log(result);
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 12. en uzun ada malik olan domain-i tapin (forEach)
+
+// let max = domains[0]
+// domains.forEach((domain) => {
+//     if (domain.name.length > max.name.length) {
+//         max = domain
+//     }
+// })
+// console.log(max);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 13. en yasli owner-e sahib olan domain-i tapin. (forEach)
 
