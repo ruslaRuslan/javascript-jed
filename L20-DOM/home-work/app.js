@@ -199,11 +199,15 @@ const domains = [
 
 // 14. ozunun ve ya owner-nin adinda n olan domain-leri tapin. (filter)
 
-const domainWithN = domains.filter((domain) => domain.name.includes('n') || domain.owner.name.includes('n'))
-console.log(domainWithN);
+// const domainWithN = domains.filter((domain) => domain.name.includes('n') || domain.owner.name.includes('n'))
+// console.log(domainWithN);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 15. domainin esas hissesi (.com-a qeder olan hissesi) oz owner-nin job-una beraber olan domain-leri tapin. (filter)
 
+const a = domains.filter((domain) => {
+    return domain.name.endsWith('.com') && domain.owner.job.length === domain.name.split('.com')[0].length});
+ console.log(a);
+ 
