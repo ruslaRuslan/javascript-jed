@@ -144,10 +144,21 @@ const domains = [
 
 // 9. .com ile biten domain-leri tapin. (filter)
 
-const domainEndWithCom = domains.filter((domain) => domain.name.endsWith('.com'))
-console.log(domainEndWithCom);
+// const domainEndWithCom = domains.filter((domain) => domain.name.endsWith('.com'))
+// console.log(domainEndWithCom);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 10. .az ile biten domain-lerin owner-larinin adlari oldugu massiv yaradin. (filter, map)
+
+const endsWithAzName = domains.filter((domain) => domain.name.endsWith('az'))
+.map((domain) => domain.owner.name)
+console.log(endsWithAzName)
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 11. .az ile biten domain-lerin owner-larinin yaslarinin cemini hesablayin (filter, forEach)
 
