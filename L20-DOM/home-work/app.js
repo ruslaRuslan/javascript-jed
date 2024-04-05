@@ -152,15 +152,26 @@ const domains = [
 
 // 10. .az ile biten domain-lerin owner-larinin adlari oldugu massiv yaradin. (filter, map)
 
-const endsWithAzName = domains.filter((domain) => domain.name.endsWith('az'))
-.map((domain) => domain.owner.name)
-console.log(endsWithAzName)
+// const endsWithAzName = domains.filter((domain) => domain.name.endsWith('az'))
+// .map((domain) => domain.owner.name)
+// console.log(endsWithAzName)
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 11. .az ile biten domain-lerin owner-larinin yaslarinin cemini hesablayin (filter, forEach)
+
+let result = 0;
+const endsWithAzAndAge = domains.filter((domain) => domain.name.endsWith('.az'))
+    .forEach((domain) => {
+        result += domain.owner.age
+    })
+console.log(result);
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 12. en uzun ada malik olan domain-i tapin (forEach)
 
