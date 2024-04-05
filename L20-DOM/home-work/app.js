@@ -60,15 +60,26 @@ const domains = [
 
 // 2. gender-i woman olan domain-leri massive yigin. Massivi console-a yazdirin. (filter)
 
-let womanDomains = domains.filter((domain) => {
-    return domain.owner.gender === 'woman'
-})
-console.log(womanDomains)
+// let womanDomains = domains.filter((domain) => {
+//     return domain.owner.gender === 'woman'
+// })
+// console.log(womanDomains)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 3. id-si 3 olan domaini tapin. (find)
+
+
+// domains.find((domain) => {
+//     domain.id === 3 ? console.log(domain.owner) : 'yalnis'
+// })
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 4. owner-nin adi 'a' ile biten domain-leri massive yigin. (filter, endsWith)
 
