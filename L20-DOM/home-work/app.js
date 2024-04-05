@@ -50,15 +50,23 @@ const domains = [
 
 // 1. document-e baki.az - ali - man  yazdirmalisiniz. [forEach]
 
-domains.forEach((domain) => {
-    if (domain.name === 'baki.az') {
-        document.write(`${domain.name} - ${domain.owner.name} - ${domain.owner.gender} `)
-    }
-})
+// domains.forEach((domain) => {
+//     if (domain.name === 'baki.az') {
+//         document.write(`${domain.name} - ${domain.owner.name} - ${domain.owner.gender} `)
+//     }
+// })
 
-
+// ---------------------------------------------------------------------------------------------------------------------------------------
 
 // 2. gender-i woman olan domain-leri massive yigin. Massivi console-a yazdirin. (filter)
+
+let womanDomains = domains.filter((domain) => {
+    return domain.owner.gender === 'woman'
+})
+console.log(womanDomains)
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 3. id-si 3 olan domaini tapin. (find)
 
