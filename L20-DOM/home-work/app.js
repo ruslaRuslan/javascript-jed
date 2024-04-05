@@ -106,13 +106,26 @@ const domains = [
 // 5. domain-lerin sahiblerinin adlari oldugu massiv yaradin. (map) ['ali', 'aydan', 'tesla', 'zabilia', 'pakitotunak']
 
 
-const domainsMap = domains.map((domain) => domain.owner.name)
-console.log(domainsMap)
+// const domainsMap = domains.map((domain) => domain.owner.name)
+// console.log(domainsMap)
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 6. owner-nin yasi (15-20) arasi olan (15den boyuk, 20den kicik) domain-leri tapin. (filter)
+
+const domainsFilter = domains.filter((domain) => {
+    if (domain.owner.age > 15 && 20 >= domain.owner.age) {
+        return true
+    }
+
+    return false
+})
+console.log(domainsFilter)
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
 
 // 7. owner-inin job-u designer olan domainin index-ni tapin. (findIndex)
 
