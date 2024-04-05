@@ -128,13 +128,20 @@ const domains = [
 
 // 7. owner-inin job-u designer olan domainin index-ni tapin. (findIndex)
 
-const designerDomains = domains.findIndex((domain) => domain.owner.job === 'designer')
-console.log('Index of the designer domain:', designerDomains);
+// const designerDomains = domains.findIndex((domain) => domain.owner.job === 'designer')
+// console.log('Index of the designer domain:', designerDomains);
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
 
 
 // 8. ancaq owner-lerinin melumatlarinin oldugu massiv yaradin. (map)
+
+const domainsOwner = domains.map((domain) => domain.owner)
+console.log(domainsOwner);
+
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 // 9. .com ile biten domain-leri tapin. (filter)
 
