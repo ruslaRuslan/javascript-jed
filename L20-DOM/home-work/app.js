@@ -186,6 +186,16 @@ const domains = [
 
 // 13. en yasli owner-e sahib olan domain-i tapin. (forEach)
 
+let maxAge = domains[0]
+domains.forEach((domain) => {
+    if (domain.owner.age > maxAge.owner.age) {
+        maxAge = domain
+    }
+})
+console.log(maxAge);
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+
 // 14. ozunun ve ya owner-nin adinda n olan domain-leri tapin. (filter)
 
 // 15. domainin esas hissesi (.com-a qeder olan hissesi) oz owner-nin job-una beraber olan domain-leri tapin. (filter)
