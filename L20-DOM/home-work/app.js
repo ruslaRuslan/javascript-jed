@@ -71,11 +71,23 @@ const domains = [
 // 3. id-si 3 olan domaini tapin. (find)
 
 
-// domains.find((domain) => {
-//     domain.id === 3 ? console.log(domain.owner) : 'yalnis'
-// })
+const foundId3 = domains.find((domain) => {
+    return domain.id === 3
+})
+console.log(foundId3.owner)
 
+// _____________________________________________________________________________________________________________________________________
+// chatGBT -> kodu
 
+const foundDomain = domains.find((domain) => {
+    return domain.id === 3;
+});
+
+if (foundDomain) {
+    console.log(foundDomain.owner);
+} else {
+    console.log('Домен с указанным id не найден.');
+}
 
 
 // ---------------------------------------------------------------------------------------------------------------------------------------
